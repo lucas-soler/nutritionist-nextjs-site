@@ -11,6 +11,8 @@ type Props = {
 export async function generateMetadata({ params: { locale } }: PageProps) {
   const translator = await getTranslator(locale);
 
+  console.log("Vai gerar os metadados");
+
   const metadata: Metadata = {
     category: `${translator("metaData.category")}`,
     title: {
