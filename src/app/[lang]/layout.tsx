@@ -13,15 +13,14 @@ type Props = {
 export async function generateMetadata({ params: { lang } }: PageProps) {
   const dictionaire = await getDictionary(lang);
 
-
   const metadata: Metadata = {
-    category: `${dictionaire.metaData.category}`,
+    category: `${dictionaire.category}`,
     title: {
-      template: `%s | ${dictionaire.metaData.title}`,
-      default: `${dictionaire.metaData.title}`,
+      template: `%s | ${dictionaire.title}`,
+      default: `${dictionaire.title}`,
     },
-    description: `${dictionaire.metaData.description}`,
-    applicationName: `${dictionaire.metaData.title}`,
+    description: `${dictionaire.description}`,
+    applicationName: `${dictionaire.title}`,
     authors: [
       {
         name: `${process.env.DEVELOPERS_NAME}`,
@@ -54,10 +53,10 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
       },
     },
     openGraph: {
-      title: `${dictionaire.metaData.title}`,
-      description: `${dictionaire.metaData.description}`,
+      title: `${dictionaire.title}`,
+      description: `${dictionaire.description}`,
       url: "https://nutrisuemisoler.com",
-      siteName: `${dictionaire.metaData.title}`,
+      siteName: `${dictionaire.title}`,
       images: [
         {
           url: "https://lh3.googleusercontent.com/p/AF1QipNZPXyAo3ECOW4fNjD8gTrh50dY0r0XFEMjO6Rg=s680-w680-h510",
@@ -76,7 +75,7 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
     },
     twitter: {
       card: "app",
-      title: `${dictionaire.metaData.title}`,
+      title: `${dictionaire.title}`,
       description: "",
       creator: "@nextjs",
       images: {
