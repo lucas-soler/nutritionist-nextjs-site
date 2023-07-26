@@ -13,6 +13,8 @@ export async function generateMetadata({ params: { locale } }: PageProps) {
 
   console.log("Vai gerar os metadados");
 
+  const test = 1 + 1;
+
   const metadata: Metadata = {
     category: `${translator("metaData.category")}`,
     title: {
