@@ -115,8 +115,6 @@ export async function generateMetadata({ params: { locale } }: PageProps) {
 export default function LocaleLayout({ children }: Props) {
   const locale = useLocale();
 
-  console.log("Vai gerar a pagina em " + locale);
-
   return (
     <html lang={locale}>
       <body>{children}</body>
