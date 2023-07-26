@@ -59,12 +59,12 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
       siteName: `${dictionaire.title}`,
       images: [
         {
-          url: "https://lh3.googleusercontent.com/p/AF1QipNZPXyAo3ECOW4fNjD8gTrh50dY0r0XFEMjO6Rg=s680-w680-h510",
+          url: `${process.env.FULL_URL}/suemi.jpg`,
           width: 800,
           height: 600,
         },
         {
-          url: "https://lh3.googleusercontent.com/p/AF1QipNZPXyAo3ECOW4fNjD8gTrh50dY0r0XFEMjO6Rg=s680-w680-h510",
+          url: `${process.env.FULL_URL}/suemi.jpg`,
           width: 1800,
           height: 1600,
           alt: "My custom alt",
@@ -79,7 +79,7 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
       description: "",
       creator: "@nextjs",
       images: {
-        url: "https://lh3.googleusercontent.com/p/AF1QipNZPXyAo3ECOW4fNjD8gTrh50dY0r0XFEMjO6Rg=s680-w680-h510",
+        url: `${process.env.FULL_URL}/suemi.jpg`,
         alt: "Nutricionista Suemi Soler",
       },
       app: {
