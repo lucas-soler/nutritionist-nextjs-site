@@ -1,10 +1,9 @@
-import { getDictionary } from "../[lang]/dictionaries";
-import { PageProps } from "../[lang]/page";
+interface HeaderProps {
+  title: string;
+}
 
-async function Header({ params: { lang } }: PageProps) {
-  const dictionaire = await getDictionary(lang);
-
-  return <h2>{dictionaire.title}</h2>;
+async function Header({ title }: HeaderProps) {
+  return <h1>{title}</h1>;
 }
 
 export default Header;

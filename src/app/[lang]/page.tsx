@@ -1,4 +1,6 @@
+import Description from "../components/Description";
 import Header from "../components/Header";
+import { getDictionary } from "./dictionaries";
 
 export type PageProps = {
   params: {
@@ -10,7 +12,13 @@ export type ComponentProps = {
   lang: string;
 };
 
-export default function Home({ params: { lang } }: PageProps) {
-  console.log("Passing through home to test the static generation");
-  return <Header params={{ lang }} />;
+export default async function Home({ params: { lang } }: PageProps) {
+  const dictionaire = await getDictionary(lang);
+
+  return (
+    <>
+      <Header title={dictionaire.title} />
+      <Description description={dictionaire.description} />
+    </>
+  );
 }
