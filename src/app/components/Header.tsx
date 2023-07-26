@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 function Header() {
   const translator = useTranslations();
 
-  return <h1>{translator("title")}</h1>;
+  return <h2>{translator("title")}</h2>;
 }
 
 export default Header;
