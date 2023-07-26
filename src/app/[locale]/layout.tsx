@@ -6,6 +6,9 @@ import { PageProps } from "./page";
 
 type Props = {
   children: ReactNode;
+  params: {
+    lang: string;
+  };
 };
 
 export async function generateMetadata({ params: { locale } }: PageProps) {
@@ -112,7 +115,11 @@ export async function generateMetadata({ params: { locale } }: PageProps) {
   return metadata;
 }
 
-export default function LocaleLayout({ children }: Props) {
+export async function generateStaticParams() {
+  return [{ lang: "pt" }, { lang: "en" }];
+}
+
+export default function Root({ children, params }: Props) {
   const locale = useLocale();
 
   return (
