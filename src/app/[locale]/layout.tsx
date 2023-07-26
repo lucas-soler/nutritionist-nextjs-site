@@ -11,10 +11,6 @@ type Props = {
 export async function generateMetadata({ params: { locale } }: PageProps) {
   const translator = await getTranslator(locale);
 
-  console.log("Vai gerar os metadados");
-
-  const test = 1 + 1;
-
   const metadata: Metadata = {
     category: `${translator("metaData.category")}`,
     title: {
@@ -118,6 +114,9 @@ export async function generateMetadata({ params: { locale } }: PageProps) {
 
 export default function LocaleLayout({ children }: Props) {
   const locale = useLocale();
+
+  console.log("Vai gerar a pagina em " + locale);
+
   return (
     <html lang={locale}>
       <body>{children}</body>
