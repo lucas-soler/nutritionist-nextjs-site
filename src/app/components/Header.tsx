@@ -1,14 +1,10 @@
-import { getTranslator } from "next-intl/server";
-import { ComponentProps } from "../[locale]/page";
+import { getDictionary } from "../[lang]/dictionaries";
+import { PageProps } from "../[lang]/page";
 
-async function Header({ locale }: ComponentProps) {
-  const translator = await getTranslator(locale);
+async function Header({ params: { lang } }: PageProps) {
+  const dictionaire = await getDictionary(lang);
 
-  console.log(
-    "Passing through here to generate the header component in " + locale
-  );
-
-  return <h2>{translator("title")}</h2>;
+  return <h2>{dictionaire.title}</h2>;
 }
 
 export default Header;
