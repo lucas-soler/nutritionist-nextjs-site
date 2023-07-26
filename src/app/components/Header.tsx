@@ -1,7 +1,8 @@
-import { useTranslations } from "next-intl";
+import { getTranslator } from "next-intl/server";
+import { ComponentProps } from "../[locale]/page";
 
-function Header() {
-  const translator = useTranslations();
+async function Header({ locale }: ComponentProps) {
+  const translator = await getTranslator(locale);
 
   return <h2>{translator("title")}</h2>;
 }

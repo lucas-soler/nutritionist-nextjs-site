@@ -1,25 +1,24 @@
-import "../globals.css";
-
+import { Metadata } from "next";
 import { useLocale } from "next-intl";
-import { Inter } from "next/font/google";
+import { getTranslator } from "next-intl/server";
+import { ReactNode } from "react";
+import { PageProps } from "./page";
 
-const inter = Inter({ subsets: ["latin"] });
+type Props = {
+  children: ReactNode;
+};
 
-/*
-export async function generateMetadata({ params: { locale } }) {
-  console.log(locale);
+export async function generateMetadata({ params: { locale } }: PageProps) {
+  const translator = await getTranslator(locale);
 
-  const messages = (await import(`../../../messages/${locale}.json`)).default;
-  const t = createTranslator({ locale, messages });
-
-  return {
-    category: `${metadataConfig.pt.category}`,
+  const metadata: Metadata = {
+    category: `${translator("metaData.category")}`,
     title: {
-      template: `%s | ${metadataConfig.pt.title}`,
-      default: `${metadataConfig.pt.title}`,
+      template: `%s | ${translator("metaData.title")}`,
+      default: `${translator("metaData.title")}`,
     },
-    description: `${metadataConfig.pt.description}`,
-    applicationName: `${metadataConfig.pt.title}`,
+    description: `${translator("metaData.description")}`,
+    applicationName: `${translator("metaData.title")}`,
     authors: [
       {
         name: `${process.env.DEVELOPERS_NAME}`,
@@ -52,10 +51,10 @@ export async function generateMetadata({ params: { locale } }) {
       },
     },
     openGraph: {
-      title: `${metadataConfig.pt.title}`,
-      description: `${metadataConfig.pt.description}`,
+      title: `${translator("metaData.title")}`,
+      description: `${translator("metaData.description")}`,
       url: "https://nutrisuemisoler.com",
-      siteName: `${metadataConfig.pt.title}`,
+      siteName: `${translator("metaData.title")}`,
       images: [
         {
           url: "https://lh3.googleusercontent.com/p/AF1QipNZPXyAo3ECOW4fNjD8gTrh50dY0r0XFEMjO6Rg=s680-w680-h510",
@@ -74,7 +73,7 @@ export async function generateMetadata({ params: { locale } }) {
     },
     twitter: {
       card: "app",
-      title: `${metadataConfig.pt.title}`,
+      title: `${translator("metaData.title")}`,
       description: "",
       creator: "@nextjs",
       images: {
@@ -109,27 +108,15 @@ export async function generateMetadata({ params: { locale } }) {
       },
     },
   };
+
+  return metadata;
 }
-*/
-export default function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: any;
-}) {
+
+export default function LocaleLayout({ children }: Props) {
   const locale = useLocale();
-
-  console.log(locale);
-
-  // Show a 404 error if the user requests an unknown locale
-  if (params.locale !== locale) {
-    //notFound();
-  }
-
   return (
     <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
