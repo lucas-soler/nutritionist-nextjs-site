@@ -31,7 +31,10 @@ export default async function Home({ params: { lang } }: PageProps) {
   return (
     <>
       <header className="sticky top-0 z-50 flex flex-col">
-        <HeaderTop dictionaire={dictionaire} />
+        <HeaderTop
+          dictionaire={dictionaire}
+          siteURL={`${process.env.FULL_URL}`}
+        />
         <nav className="gap-2 md:gap-0 p-5 flex flex-1 flex-row items-center">
           <a
             className="basis-1/2 md:basis-2/12 flex justify-end items-center"

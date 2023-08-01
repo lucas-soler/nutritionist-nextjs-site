@@ -6,12 +6,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface HeaderTopProps {
+  siteURL: string;
   dictionaire: {
     [key: string]: string;
   };
 }
 
-function HeaderTop({ dictionaire }: HeaderTopProps) {
+function HeaderTop({ siteURL, dictionaire }: HeaderTopProps) {
   return (
     <section className="flex justify-stretch mt-2 ml-2 p-2 flex-1 text-sm font-semibold">
       <div className="flex-1 flex justify-start items-center gap-3">
@@ -37,7 +38,7 @@ function HeaderTop({ dictionaire }: HeaderTopProps) {
         </a>
       </div>
       <div className="flex justify-end items-center gap-3 mr-2">
-        <Link href={process.env.FULL_URL + "/pt"} prefetch>
+        <Link href={siteURL + "/pt"} prefetch>
           <Image
             src="/portuguese.png"
             className="link-effect"
@@ -48,7 +49,7 @@ function HeaderTop({ dictionaire }: HeaderTopProps) {
           />
         </Link>
 
-        <Link href={process.env.FULL_URL + "/en"} prefetch>
+        <Link href={siteURL + "/en"} prefetch>
           <Image
             src="/english.png"
             className="link-effect"
