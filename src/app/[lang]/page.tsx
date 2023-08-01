@@ -71,7 +71,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
 
-      <main>
+      <main className="px-1">
         <section
           id="welcome"
           className="mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
