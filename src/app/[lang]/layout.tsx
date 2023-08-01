@@ -36,6 +36,7 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
   const dictionaire = await getDictionary(lang);
 
   const metadata: Metadata = {
+    manifest: "/manifest.json",
     category: `${dictionaire.category}`,
     title: {
       template: capitalizePersonName(`%s | ${dictionaire.title}`),

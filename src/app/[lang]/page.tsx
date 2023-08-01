@@ -2,7 +2,7 @@ import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 
 import Image from "next/image";
 import Footer from "../components/Footer";
-import MenuLink from "../components/MenuLink";
+import Menu from "../components/Menu";
 import { getDictionary } from "./dictionaries";
 
 export type PageProps = {
@@ -25,54 +25,40 @@ export default async function Home({ params: { lang } }: PageProps) {
     " " +
     dictionaire.professionalSurname;
 
-  const menuKeys: string[] = [];
-  const menuItems: string[] = [];
-
-  for (const menuItem in dictionaire.mainMenu) {
-    menuKeys.push(menuItem);
-    menuItems.push(dictionaire.mainMenu[menuItem]);
-  }
-
   return (
     <>
-      <header className="flex gap-4 flex-row justify-between items-center">
-        <Image
-          className="basis-1/6"
-          src="/logo.png"
-          alt={
-            capitalizeSentence(dictionaire.basicPrefixAlternativeImageText) +
-            " " +
-            capitalizePersonName(professionalFullNameWithTitle)
-          }
-          title={capitalizePersonName(professionalFullNameWithTitle)}
-          width={150}
-          height={150}
-        />
-        <h1 className="basis-2/6 flex flex-col">
-          <span className="text-center">Suemi Shimizu Soler</span>
-          <span className="text-center">
-            Nutricionista funcional - {dictionaire.crnNumber}
-          </span>
-        </h1>
-        <nav className="basis-3/6 flex">
-          <ul className="flex-1 flex flex-row" role="list">
-            {menuItems.map((menuItem, index) => {
-              return (
-                <li
-                  id={menuItem}
-                  key={menuItem}
-                  className="basis-1/5 text-center rounded-full p-1 hover:bg-secondary-600 hover:text-white"
-                >
-                  <MenuLink
-                    menuItemID={menuItem}
-                    href={`#${menuKeys[index]}`}
-                    text={capitalizeSentence(menuItem)}
-                    menuItemsKeys={menuKeys}
-                  />
-                </li>
-              );
-            })}
-          </ul>
+      <header className="sticky top-0 flex flex-col">
+        <section className="flex flex-1">
+          (47) 98846-4329 contato@karolineneves.com Rua Prefeito Frederico Busch
+          Júnior, 124 - Blumenau
+        </section>
+        <nav className="flex flex-1 flex-row items-center">
+          <a
+            className="basis-2/12 flex justify-center items-center"
+            href={process.env.FULL_URL}
+          >
+            <Image
+              className="flex-1"
+              src="/logo.png"
+              alt={
+                capitalizeSentence(
+                  dictionaire.basicPrefixAlternativeImageText
+                ) +
+                " " +
+                capitalizePersonName(professionalFullNameWithTitle)
+              }
+              title={capitalizePersonName(professionalFullNameWithTitle)}
+              width={150}
+              height={150}
+            />
+          </a>
+          <h1 className="basis-4/12 flex flex-col">
+            <span className="text-center">Suemi Shimizu Soler</span>
+            <span className="text-center">
+              Nutricionista funcional - {dictionaire.crnNumber}
+            </span>
+          </h1>
+          <Menu menu={dictionaire.mainMenu} />
         </nav>
       </header>
 
@@ -108,8 +94,8 @@ export default async function Home({ params: { lang } }: PageProps) {
                 capitalizePersonName(professionalFullNameWithTitle)
               }
               title={capitalizePersonName(professionalFullNameWithTitle)}
-              width={800}
-              height={600}
+              width={369}
+              height={324}
             />
 
             <figcaption>

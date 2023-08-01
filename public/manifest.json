@@ -1,0 +1,70 @@
+{
+  "name": "Suemi Shimizu Soler - Nutrição funcional e integrativa",
+  "short_name": "Suemi Shimizu Soler",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/apple-icon1.png",
+      "sizes": "57x57",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon2.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon3.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon4.png",
+      "sizes": "76x76",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon5.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon6.png",
+      "sizes": "114x114",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon7.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon8.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon9.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "/apple-icon10.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "density": "2.0"
+    }
+  ]
+}
