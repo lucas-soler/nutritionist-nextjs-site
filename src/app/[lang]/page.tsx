@@ -32,9 +32,9 @@ export default async function Home({ params: { lang } }: PageProps) {
     <>
       <header className="sticky top-0 z-50 flex flex-col">
         <HeaderTop dictionaire={dictionaire} />
-        <nav className="p-5 flex flex-1 flex-row items-center">
+        <nav className="gap-2 md:gap-0 p-5 flex flex-1 flex-row items-center">
           <a
-            className="basis-2/12 flex justify-end items-center"
+            className="basis-1/2 md:basis-2/12 flex justify-end items-center"
             href={process.env.FULL_URL}
           >
             <Image
@@ -51,7 +51,7 @@ export default async function Home({ params: { lang } }: PageProps) {
               height={250}
             />
           </a>
-          <h1 className="basis-3/12 flex flex-col justify-center">
+          <h1 className="hidden md:flex md:basis-3/12 flex-col justify-center">
             <span className="text-center">Suemi Shimizu Soler</span>
             <span className="text-center">
               Nutricionista funcional - CRN {dictionaire.crnNumber}
@@ -71,7 +71,7 @@ export default async function Home({ params: { lang } }: PageProps) {
       <main>
         <section
           id="welcome"
-          className="flex justify-center items-center aspect-w-16 aspect-h-9"
+          className="mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
         >
           <iframe
             src="https://player.vimeo.com/video/384944723?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"

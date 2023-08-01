@@ -40,7 +40,10 @@ function Menu({ menu }: MenuProps) {
   };
 
   return (
-    <ul className="basis-5/12 flex flex-row justify-center" role="list">
+    <ul
+      className="hidden md:flex basis-5/12 flex-row justify-center"
+      role="list"
+    >
       {menuItems.map((menuItem, index) => (
         <MenuLink
           key={menuProps[index]}
