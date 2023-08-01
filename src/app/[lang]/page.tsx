@@ -2,8 +2,8 @@ import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 
 import Image from "next/image";
 
-import Link from "next/link";
 import Footer from "../components/Footer";
+import HeaderTop from "../components/HeaderTop";
 import Menu from "../components/Menu";
 import WhatsAppButton from "../components/WhatsAppButton";
 import { getDictionary } from "./dictionaries";
@@ -31,49 +31,7 @@ export default async function Home({ params: { lang } }: PageProps) {
   return (
     <>
       <header className="sticky top-0 z-50 flex flex-col">
-        <section className="flex justify-stretch mt-2 ml-2 p-2 flex-1 text-sm font-semibold">
-          <div className="flex-1 flex justify-start gap-3">
-            <a
-              href={`tel:${dictionaire.phoneNumber}`}
-              title={`${capitalizeSentence(
-                dictionaire.callPrefix
-              )} ${capitalizeSentence(dictionaire.professionalName)}`}
-              className="hover:text-primary-700"
-            >
-              {dictionaire.phoneNumber}
-            </a>
-            <a
-              href={`mailto:${process.env.EMAIL}?subject=${dictionaire.emailSubject}&body=${dictionaire.emailBody}`}
-              title={`${capitalizeSentence(
-                dictionaire.emailPrefix
-              )} ${capitalizeSentence(dictionaire.professionalName)}`}
-              className="hover:text-primary-700"
-            >
-              {process.env.EMAIL}
-            </a>
-          </div>
-          <div className="flex-1 flex justify-end items-center gap-3 mr-2">
-            <Link href={process.env.FULL_URL + "/pt"} prefetch>
-              <Image
-                src="/portuguese.png"
-                alt={capitalizeSentence(dictionaire.portugueseLanguage)}
-                title={capitalizeSentence(dictionaire.portugueseLanguage)}
-                width={32}
-                height={32}
-              />
-            </Link>
-
-            <Link href={process.env.FULL_URL + "/en"} prefetch>
-              <Image
-                src="/english.png"
-                alt={capitalizeSentence(dictionaire.englishLanguage)}
-                title={capitalizeSentence(dictionaire.englishLanguage)}
-                width={32}
-                height={32}
-              />
-            </Link>
-          </div>
-        </section>
+        <HeaderTop dictionaire={dictionaire} />
         <nav className="p-5 flex flex-1 flex-row items-center">
           <a
             className="basis-2/12 flex justify-end items-center"
