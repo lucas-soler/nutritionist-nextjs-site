@@ -55,10 +55,10 @@ async function Description({
         </p>
         <blockquote cite="/pt-BR/docs/Web/HTML/Element/blockquote">
           <p>
-            The{" "}
+            The
             <strong>
               HTML <code>&lt;blockquote&gt;</code> Element
-            </strong>{" "}
+            </strong>
             (or
             <em>HTML Block Quotation Element</em>) indicates that the enclosed
             text is an extended quotation.

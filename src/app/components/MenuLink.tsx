@@ -22,8 +22,9 @@ function MenuLink({
   return (
     <li
       id={`menu-item-${menuItemID}`}
-      className={`basis-1/5 text-center rounded-full p-2 duration-300 hover:bg-white hover:text-secondary-700 hover:cursor-pointer ${
-        isActive ? "bg-white text-secondary-700" : ""
+      title={`${capitalizeSentence(text)}`}
+      className={`basis-1/5 text-center rounded-full p-2 duration-300 hover:bg-white hover:text-primary-700 hover:cursor-pointer ${
+        isActive ? "bg-white text-primary-700" : ""
       }`}
     >
       <a href={`#${menuItemID}`} onClick={handleMenuClick}>

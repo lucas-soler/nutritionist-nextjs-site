@@ -12,13 +12,13 @@ export default {
       red: "#ff0000",
       gray: "#8A8B8B",
       primary: {
-        400: "#fad3d2",
-      },
-      secondary: {
         400: "#59aa77",
         500: "#46865e",
         600: "#366547",
         700: "#376B52",
+      },
+      secondary: {
+        400: "#fad3d2",
       },
     },
     extend: {

@@ -3,9 +3,6 @@
   "professionalTitle": "nutricionista",
   "professionalName": "suemi",
   "professionalSurname": "shimizu soler",
-  "phoneNumber": "(47) 99922-0776",
-  "scheduleOn": "agende no",
-  "scheduleApp": "whatsapp",
   "category": "nutrição",
   "title": "suemi shimizu soler - nutrição funcional e integrativa",
   "description": "modulação intestinal, tratamento de disbiose, síndrome do intestino irritável, sifo, sibo, constipação, diarréia e emagrecimento",
@@ -16,5 +13,14 @@
     "about": "sobre",
     "services": "serviços",
     "testimonials": "depoimentos"
-  }
+  },
+  "phoneNumber": "(47) 99922-0776",
+  "callPrefix": "ligar para",
+  "emailPrefix": "enviar email para",
+  "scheduleOn": "agende no",
+  "scheduleApp": "whatsapp",
+  "englishLanguage": "versão em inglês",
+  "portugueseLanguage": "versão em português",
+  "emailSubject": "Oi! Eu gostaria de saber mais sobre as suas consultas!",
+  "emailBody": "Oi Suemi!%0D%0A%0D%0AEu visitei seu site nutrisuemi.com e decidi lhe enviar esse email para saber mais sobre os seus serviços.%0D%0A%0D%0APor favor, entre em contato comigo o mais rápido possível para agendar uma consulta.%0D%0A%0D%0AObrigado!"
 }
