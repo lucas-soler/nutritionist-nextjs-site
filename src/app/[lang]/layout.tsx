@@ -1,6 +1,6 @@
 import "../globals.css";
 
-import { Archivo_Black, Josefin_Sans, Open_Sans } from "next/font/google";
+import { Archivo_Black, Josefin_Sans, Montserrat } from "next/font/google";
 
 import { capitalizePersonName } from "@/utils/utils";
 import { Metadata } from "next";
@@ -21,8 +21,8 @@ const archivoBlack = Archivo_Black({
   subsets: ["latin"],
 });
 
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -145,7 +145,7 @@ export default function Root({ children, params }: Props) {
   return (
     <html
       lang={params.lang}
-      className={`${archivoBlack.variable} ${openSans.variable} ${josefinSans.variable} ${openSans.variable}`}
+      className={`${archivoBlack.variable} ${montserrat.variable} ${josefinSans.variable} `}
     >
       <body>{children}</body>
     </html>

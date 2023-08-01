@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: var(--font-open-sans);
+    font-family: var(--font-montserrat);
   }
 
   h1 {
@@ -22,10 +22,9 @@
   }
 
   body {
-    color: theme(colors.secondary.600);
-    border: 1px solid red;
+    color: colors.gray;
     max-width: 80rem;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -34,12 +33,12 @@
 
   header {
     flex: 1;
-    border: 1px solid red;
   }
 
   nav {
     font-weight: 600;
     background: theme(colors.primary.400);
+    color: theme(colors.secondary.600);
   }
 
   @media screen(sm) {

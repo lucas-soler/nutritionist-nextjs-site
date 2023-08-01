@@ -27,10 +27,9 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="sticky top-0 flex flex-col">
-        <section className="flex flex-1">
-          (47) 98846-4329 contato@karolineneves.com Rua Prefeito Frederico Busch
-          Júnior, 124 - Blumenau
+      <header className="sticky top-0 z-50 flex flex-col gap-2">
+        <section className="flex flex-1 bg-white text-sm font-semibold">
+          {dictionaire.phoneNumber} {process.env.EMAIL}
         </section>
         <nav className="flex flex-1 flex-row items-center">
           <a

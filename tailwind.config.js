@@ -10,6 +10,7 @@ export default {
     colors: {
       white: "#fff",
       red: "#ff0000",
+      gray: "#8A8B8B",
       primary: {
         400: "#fad3d2",
       },
