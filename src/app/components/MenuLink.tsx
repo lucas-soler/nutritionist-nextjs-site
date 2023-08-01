@@ -22,8 +22,8 @@ function MenuLink({
   return (
     <li
       id={`menu-item-${menuItemID}`}
-      className={`basis-1/5 text-center rounded-full p-2 duration-300 hover:bg-secondary-500 hover:text-white ${
-        isActive ? "bg-secondary-600 text-white" : ""
+      className={`basis-1/5 text-center rounded-full p-2 duration-300 hover:bg-white hover:text-secondary-700 hover:cursor-pointer ${
+        isActive ? "bg-white text-secondary-700" : ""
       }`}
     >
       <a href={`#${menuItemID}`} onClick={handleMenuClick}>

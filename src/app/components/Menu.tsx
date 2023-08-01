@@ -40,7 +40,7 @@ function Menu({ menu }: MenuProps) {
   };
 
   return (
-    <ul className="basis-6/12 flex flex-row" role="list">
+    <ul className="basis-5/12 flex flex-row" role="list">
       {menuItems.map((menuItem, index) => (
         <MenuLink
           key={menuProps[index]}

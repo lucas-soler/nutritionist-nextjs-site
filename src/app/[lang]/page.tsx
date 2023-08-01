@@ -1,8 +1,10 @@
 import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 
 import Image from "next/image";
+
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
+import WhatsAppButton from "../components/WhatsAppButton";
 import { getDictionary } from "./dictionaries";
 
 export type PageProps = {
@@ -27,17 +29,16 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="sticky top-0 z-50 flex flex-col gap-2">
-        <section className="flex flex-1 bg-white text-sm font-semibold">
+      <header className="sticky top-0 z-50 flex flex-col">
+        <section className="flex mt-2 p-2 flex-1 text-sm font-semibold">
           {dictionaire.phoneNumber} {process.env.EMAIL}
         </section>
-        <nav className="flex flex-1 flex-row items-center">
+        <nav className="p-5 flex flex-1 flex-row items-center">
           <a
-            className="basis-2/12 flex justify-center items-center"
+            className="basis-2/12 flex justify-end items-center"
             href={process.env.FULL_URL}
           >
             <Image
-              className="flex-1"
               src="/logo.png"
               alt={
                 capitalizeSentence(
@@ -47,21 +48,30 @@ export default async function Home({ params: { lang } }: PageProps) {
                 capitalizePersonName(professionalFullNameWithTitle)
               }
               title={capitalizePersonName(professionalFullNameWithTitle)}
-              width={150}
-              height={150}
+              width={250}
+              height={250}
             />
           </a>
-          <h1 className="basis-4/12 flex flex-col">
+          <h1 className="basis-3/12 flex flex-col">
             <span className="text-center">Suemi Shimizu Soler</span>
             <span className="text-center">
-              Nutricionista funcional - {dictionaire.crnNumber}
+              Nutricionista funcional - CRN {dictionaire.crnNumber}
             </span>
           </h1>
           <Menu menu={dictionaire.mainMenu} />
+          <WhatsAppButton
+            text={
+              capitalizeSentence(dictionaire.scheduleOn) +
+              " " +
+              capitalizeSentence(dictionaire.scheduleApp)
+            }
+          />
         </nav>
       </header>
 
       <main>
+        <br />
+        <br />
         <section
           id="welcome"
           className="flex flex-col justify-center items-center"
