@@ -1,5 +1,18 @@
 {
+  "crn_number": 102706,
+  "professionalTitle": "nutritionist",
+  "professionalName": "suemi",
+  "professionalSurname": "shimizu soler",
   "category": "nutrition",
-  "title": "Suemi Shimizu Soler - Functional and Integrative Nutrition",
-  "description": "Intestinal modulation, treatment of dysbiosis, irritable bowel syndrome, SIFO, SIBO, constipation, diarrhea, and weight loss. Consultations worldwide."
+  "title": "suemi shimizu soler - functional and integrative nutrition",
+  "description": "intestinal modulation, treatment of dysbiosis, irritable bowel syndrome, sifo, sibo, constipation, diarrhea, and weight loss.",
+  "consultationsScope": "consultations worldwide!",
+  "basicPrefixAlternativeImageText": "a image of",
+  "mainMenu": {
+    "welcome": "welcome",
+    "about": "about me",
+    "services": "services",
+    "testimonials": "testimonials",
+    "contact": "contact"
+  }
 }

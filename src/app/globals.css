@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: var(--font-open-sans);
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    font-family: var(--font-josefin-sans);
+    font-weight: 700;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-archivo-black);
+  }
+
+  body {
+    color: theme(colors.secondary.600);
+    border: 1px solid red;
+    max-width: 80rem;
+    padding: 2rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto !important;
+  }
+
+  header {
+    background: theme(colors.primary.400);
+  }
+
+  nav {
+    font-weight: 600;
+  }
+
+  @media screen(sm) {
+    /* ... */
+  }
+}

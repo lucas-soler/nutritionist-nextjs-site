@@ -1,3 +1,8 @@
+import "../globals.css";
+
+import { Archivo_Black, Josefin_Sans, Open_Sans } from "next/font/google";
+
+import { capitalizePersonName } from "@/utils/utils";
 import { Metadata } from "next";
 import { ReactNode } from "react";
 import { getDictionary } from "./dictionaries";
@@ -10,20 +15,37 @@ type Props = {
   };
 };
 
+const archivoBlack = Archivo_Black({
+  variable: "--font-archivo-black",
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
+  subsets: ["latin"],
+});
+
+const josefinSans = Josefin_Sans({
+  variable: "--font-josefin-sans",
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+});
+
 export async function generateMetadata({ params: { lang } }: PageProps) {
   const dictionaire = await getDictionary(lang);
 
   const metadata: Metadata = {
     category: `${dictionaire.category}`,
     title: {
-      template: `%s | ${dictionaire.title}`,
-      default: `${dictionaire.title}`,
+      template: capitalizePersonName(`%s | ${dictionaire.title}`),
+      default: capitalizePersonName(`${dictionaire.title}`),
     },
     description: `${dictionaire.description}`,
-    applicationName: `${dictionaire.title}`,
+    applicationName: capitalizePersonName(`${dictionaire.title}`),
     authors: [
       {
-        name: `${process.env.DEVELOPERS_NAME}`,
+        name: capitalizePersonName(`${process.env.DEVELOPERS_NAME}`),
         url: `${process.env.DEVELOPERS_SITE}`,
       },
     ],
@@ -36,8 +58,8 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
     generator: "Next.js",
     referrer: "origin-when-cross-origin",
     colorScheme: "light",
-    creator: `${process.env.DEVELOPERS_NAME}`,
-    publisher: `${process.env.DEVELOPERS_NAME}`,
+    creator: capitalizePersonName(`${process.env.DEVELOPERS_NAME}`),
+    publisher: capitalizePersonName(`${process.env.DEVELOPERS_NAME}`),
     formatDetection: {
       email: true,
       address: true,
@@ -53,18 +75,18 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
       },
     },
     openGraph: {
-      title: `${dictionaire.title}`,
+      title: capitalizePersonName(`${dictionaire.title}`),
       description: `${dictionaire.description}`,
       url: "https://nutrisuemisoler.com",
-      siteName: `${dictionaire.title}`,
+      siteName: capitalizePersonName(`${dictionaire.title}`),
       images: [
         {
-          url: `${process.env.FULL_URL}/suemi.jpg`,
+          url: `${process.env.FULL_URL}/the-nutritionist-suemi.jpg`,
           width: 800,
           height: 600,
         },
         {
-          url: `${process.env.FULL_URL}/suemi.jpg`,
+          url: `${process.env.FULL_URL}/the-nutritionist-suemi.jpg`,
           width: 1800,
           height: 1600,
           alt: "My custom alt",
@@ -75,11 +97,11 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
     },
     twitter: {
       card: "app",
-      title: `${dictionaire.title}`,
+      title: capitalizePersonName(`${dictionaire.title}`),
       description: "",
       creator: "@nextjs",
       images: {
-        url: `${process.env.FULL_URL}/suemi.jpg`,
+        url: `${process.env.FULL_URL}/the-nutritionist-suemi.jpg`,
         alt: "Nutricionista Suemi Soler",
       },
       app: {
@@ -120,7 +142,10 @@ export async function generateStaticParams() {
 
 export default function Root({ children, params }: Props) {
   return (
-    <html lang={params.lang}>
+    <html
+      lang={params.lang}
+      className={`${archivoBlack.variable} ${openSans.variable} ${josefinSans.variable} ${openSans.variable}`}
+    >
       <body>{children}</body>
     </html>
   );
