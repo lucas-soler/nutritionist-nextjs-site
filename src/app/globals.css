@@ -50,6 +50,10 @@
     animation: pulse-hover 1.1s infinite;
   }
 
+  .link-effect:hover {
+    transform: scale(1.2);
+  }
+
   @keyframes pulse {
     0% {
       transform: scale(0.95);
@@ -82,6 +86,11 @@
       transform: scale(1);
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
+  }
+
+  iframe {
+    max-width: 100%;
+    height: auto;
   }
 
   @media screen(sm) {

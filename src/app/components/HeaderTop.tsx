@@ -36,10 +36,11 @@ function HeaderTop({ dictionaire }: HeaderTopProps) {
           {dictionaire.emailAccount}
         </a>
       </div>
-      <div className="flex-1 flex justify-end items-center gap-3 mr-2">
+      <div className="flex justify-end items-center gap-3 mr-2">
         <Link href={process.env.FULL_URL + "/pt"} prefetch>
           <Image
             src="/portuguese.png"
+            className="link-effect"
             alt={capitalizeSentence(dictionaire.portugueseLanguage)}
             title={capitalizeSentence(dictionaire.portugueseLanguage)}
             width={32}
@@ -50,6 +51,7 @@ function HeaderTop({ dictionaire }: HeaderTopProps) {
         <Link href={process.env.FULL_URL + "/en"} prefetch>
           <Image
             src="/english.png"
+            className="link-effect"
             alt={capitalizeSentence(dictionaire.englishLanguage)}
             title={capitalizeSentence(dictionaire.englishLanguage)}
             width={32}

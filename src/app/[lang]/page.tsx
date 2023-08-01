@@ -69,18 +69,12 @@ export default async function Home({ params: { lang } }: PageProps) {
       </header>
 
       <main>
-        <br />
-        <br />
         <section
           id="welcome"
-          className="flex flex-col justify-center items-center"
+          className="flex justify-center items-center aspect-w-16 aspect-h-9"
         >
-          <h2>Bem-vindo ao Site do Nutricionista</h2>
-          <p>Algumas inhtmlFormações introdutórias e chamadas para ação.</p>
           <iframe
             src="https://player.vimeo.com/video/384944723?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
-            width="640"
-            height="360"
             allow="autoplay; picture-in-picture"
           ></iframe>
         </section>
