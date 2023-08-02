@@ -97,7 +97,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             <ServicesList
               services={dictionaire.servicesContent.split("\n")}
               fullPhoneNumber={dictionaire.fullPhoneNumber}
-              servicesMessageText={dictionaire.initialMessageText}
+              servicesMessageText={dictionaire.servicesMessageText}
             />
             <figure className="flex-1 flex flex-col gap-4">
               <Image
@@ -115,7 +115,7 @@ export default async function Home({ params: { lang } }: PageProps) {
                 className="m-auto"
               />
 
-              <figcaption className="text-center">
+              <figcaption className="text-center font-bold ">
                 {capitalizePersonName(professionalFullNameWithTitle)}
               </figcaption>
             </figure>
