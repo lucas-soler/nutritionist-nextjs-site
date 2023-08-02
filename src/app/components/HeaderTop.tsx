@@ -107,7 +107,10 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
                     key={`hamburguer-${menuProps[index]}`}
                     className="border-b border-gray-400 my-8 uppercase"
                   >
-                    <a href={`#${menuProps[index]}`}>
+                    <a
+                      href={`#${menuProps[index]}`}
+                      onClick={() => setIsNavOpen(false)}
+                    >
                       {capitalizeSentence(menuItem)}
                     </a>
                   </li>
