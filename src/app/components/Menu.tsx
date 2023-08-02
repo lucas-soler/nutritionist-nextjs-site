@@ -41,7 +41,7 @@ function Menu({ menu }: MenuProps) {
 
   return (
     <ul
-      className="hidden md:flex basis-5/12 flex-row justify-center"
+      className="hidden lg:flex basis-5/12 flex-row justify-center"
       role="list"
     >
       {menuItems.map((menuItem, index) => (

@@ -32,12 +32,13 @@ export default async function Home({ params: { lang } }: PageProps) {
     <>
       <header className="sticky top-0 z-50 flex flex-col">
         <HeaderTop
+          menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
           siteURL={`${process.env.FULL_URL}`}
         />
-        <nav className="gap-2 md:gap-0 p-5 flex flex-1 flex-row items-center">
+        <nav className="gap-3 lg:gap-0 justify-between lg:justify-center p-5 flex flex-1 flex-row items-center">
           <a
-            className="basis-1/2 md:basis-2/12 flex justify-end items-center"
+            className="basis-1/2 lg:basis-2/12 flex justify-center items-center"
             href={process.env.FULL_URL}
           >
             <Image
@@ -54,7 +55,7 @@ export default async function Home({ params: { lang } }: PageProps) {
               height={250}
             />
           </a>
-          <h1 className="hidden md:flex md:basis-3/12 flex-col justify-center">
+          <h1 className="hidden lg:flex lg:basis-3/12 flex-col justify-center">
             <span className="text-center">Suemi Shimizu Soler</span>
             <span className="text-center">
               Nutricionista funcional - CRN {dictionaire.crnNumber}
@@ -79,6 +80,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           <iframe
             src="https://player.vimeo.com/video/384944723?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
             allow="autoplay; picture-in-picture"
+            allowFullScreen
           ></iframe>
         </section>
         <section id="about">

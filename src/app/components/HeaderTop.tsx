@@ -4,15 +4,27 @@ import { capitalizeSentence } from "@/utils/utils";
 import { EnvelopeSimple, Phone } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 interface HeaderTopProps {
+  menu: { [key: string]: string };
   siteURL: string;
   dictionaire: {
     [key: string]: string;
   };
 }
 
-function HeaderTop({ siteURL, dictionaire }: HeaderTopProps) {
+function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
+  const menuProps: string[] = [];
+  const menuItems: string[] = [];
+
+  for (const menuItemPropName in menu) {
+    menuProps.push(menuItemPropName);
+    menuItems.push(menu[menuItemPropName]);
+  }
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   return (
     <section className="flex justify-stretch mt-2 ml-2 p-2 flex-1 text-sm font-semibold">
       <div className="flex-1 flex justify-start items-center gap-3">
@@ -59,6 +71,51 @@ function HeaderTop({ siteURL, dictionaire }: HeaderTopProps) {
             height={32}
           />
         </Link>
+
+        <section className="MOBILE-MENU flex lg:hidden">
+          <div
+            className="HAMBURGER-ICON space-y-2"
+            onClick={() => setIsNavOpen((prev) => !prev)}
+          >
+            <span className="block h-0.5 w-8 bg-primary-600"></span>
+            <span className="block h-0.5 w-8 bg-primary-600"></span>
+            <span className="block h-0.5 w-8 bg-primary-600"></span>
+          </div>
+
+          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+            <div
+              className="absolute top-0 right-0 px-8 py-8"
+              onClick={() => setIsNavOpen(false)}
+            >
+              <svg
+                className="h-8 w-8 text-gray-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+            <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              {menuItems.map((menuItem, index) => {
+                return (
+                  <li
+                    key={`hamburguer-${menuProps[index]}`}
+                    className="border-b border-gray-400 my-8 uppercase"
+                  >
+                    <a href={`#${menuProps[index]}`}>
+                      {capitalizeSentence(menuItem)}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </section>
       </div>
     </section>
   );
