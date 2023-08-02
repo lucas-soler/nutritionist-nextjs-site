@@ -75,7 +75,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
 
-      <main className="flex flex-col px-1 gap-5">
+      <main className="flex flex-col px-1 gap-2 lg:gap-5">
         <section
           id="welcome"
           className="flex-1 lg:py-72 mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
