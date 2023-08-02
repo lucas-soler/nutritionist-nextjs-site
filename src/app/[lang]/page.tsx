@@ -68,8 +68,8 @@ export default async function Home({ params: { lang } }: PageProps) {
               " " +
               capitalizeSentence(dictionaire.scheduleApp)
             }
-            messageAppLink={dictionaire.messageAppLink}
-            initialMessageText={dictionaire.initialMessage}
+            fullPhoneNumber={dictionaire.fullPhoneNumber}
+            initialMessageText={dictionaire.initialMessageText}
           />
         </nav>
       </header>
