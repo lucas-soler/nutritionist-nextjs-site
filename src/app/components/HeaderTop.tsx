@@ -28,28 +28,6 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
   return (
     <section className="flex justify-stretch mt-2 ml-2 p-2 flex-1 text-sm font-semibold">
       <div className="flex-1 flex justify-start items-center gap-3">
-        <a
-          href={`tel:${dictionaire.phoneNumber}`}
-          title={`${capitalizeSentence(
-            dictionaire.callPrefix
-          )} ${capitalizeSentence(dictionaire.professionalName)}`}
-          className="flex flex-row items-center gap-1 hover:text-primary-700"
-        >
-          <Phone size={32} weight="light" />
-          <span className="hidden md:inline">{dictionaire.phoneNumber}</span>
-        </a>
-        <a
-          href={`mailto:${dictionaire.emailAccount}?subject=${dictionaire.emailSubject}&body=${dictionaire.emailBody}`}
-          title={`${capitalizeSentence(
-            dictionaire.emailPrefix
-          )} ${capitalizeSentence(dictionaire.professionalName)}`}
-          className="flex flex-row items-center gap-1 hover:text-primary-700"
-        >
-          <EnvelopeSimple size={32} weight="light" />
-          <span className="hidden md:inline">{dictionaire.emailAccount}</span>
-        </a>
-      </div>
-      <div className="flex justify-end items-center gap-3 mr-2">
         <Link href={siteURL + "/pt"} prefetch>
           <Image
             src="/portuguese.svg"
@@ -71,7 +49,28 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
             height={32}
           />
         </Link>
-
+      </div>
+      <div className="flex justify-end items-center gap-3 mr-2">
+        <a
+          href={`tel:${dictionaire.phoneNumber}`}
+          title={`${capitalizeSentence(
+            dictionaire.callPrefix
+          )} ${capitalizeSentence(dictionaire.professionalName)}`}
+          className="flex flex-row items-center gap-1 hover:text-primary-700"
+        >
+          <Phone size={32} weight="light" />
+          <span className="hidden md:inline">{dictionaire.phoneNumber}</span>
+        </a>
+        <a
+          href={`mailto:${dictionaire.emailAccount}?subject=${dictionaire.emailSubject}&body=${dictionaire.emailBody}`}
+          title={`${capitalizeSentence(
+            dictionaire.emailPrefix
+          )} ${capitalizeSentence(dictionaire.professionalName)}`}
+          className="flex flex-row items-center gap-1 hover:text-primary-700 mr-5 lg:mr-0"
+        >
+          <EnvelopeSimple size={32} weight="light" />
+          <span className="hidden md:inline">{dictionaire.emailAccount}</span>
+        </a>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
