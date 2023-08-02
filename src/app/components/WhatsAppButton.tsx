@@ -17,7 +17,7 @@ function WhatsAppButton({
   const handleClick = () => {
     window.open(
       `https://wa.me/${fullPhoneNumber}?text=${encodeURIComponent(
-        initialMessageText
+        capitalizeSentence(initialMessageText)
       )}`,
       "_blank"
     );
