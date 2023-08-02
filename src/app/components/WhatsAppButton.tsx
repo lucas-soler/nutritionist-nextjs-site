@@ -5,18 +5,20 @@ import { WhatsappLogo } from "@phosphor-icons/react";
 
 interface WhatsAppButtonProps {
   text: string;
-  messageAppLink: string;
+  fullPhoneNumber: string;
   initialMessageText: string;
 }
 
 function WhatsAppButton({
   text,
-  messageAppLink,
+  fullPhoneNumber,
   initialMessageText,
 }: WhatsAppButtonProps) {
   const handleClick = () => {
     window.open(
-      `${messageAppLink}?text=${encodeURIComponent(initialMessageText)}`,
+      `https://wa.me/${fullPhoneNumber}?text=${encodeURIComponent(
+        initialMessageText
+      )}`,
       "_blank"
     );
   };
