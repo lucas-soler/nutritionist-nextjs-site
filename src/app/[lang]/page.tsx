@@ -115,7 +115,7 @@ export default async function Home({ params: { lang } }: PageProps) {
                 className="m-auto"
               />
 
-              <figcaption className="text-center font-bold ">
+              <figcaption className="text-center font-bold">
                 {capitalizePersonName(professionalFullNameWithTitle)}
               </figcaption>
             </figure>

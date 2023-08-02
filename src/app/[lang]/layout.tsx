@@ -145,7 +145,7 @@ export default function Root({ children, params }: Props) {
   return (
     <html
       lang={params.lang}
-      className={`${archivoBlack.variable} ${montserrat.variable} ${josefinSans.variable} `}
+      className={`${archivoBlack.variable} ${montserrat.variable} ${josefinSans.variable} scroll-smooth`}
     >
       <body>{children}</body>
     </html>
