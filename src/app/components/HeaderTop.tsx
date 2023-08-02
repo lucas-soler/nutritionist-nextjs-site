@@ -52,7 +52,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
       <div className="flex justify-end items-center gap-3 mr-2">
         <Link href={siteURL + "/pt"} prefetch>
           <Image
-            src="/portuguese.png"
+            src="/portuguese.svg"
             className="link-effect"
             alt={capitalizeSentence(dictionaire.portugueseLanguage)}
             title={capitalizeSentence(dictionaire.portugueseLanguage)}
@@ -63,7 +63,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
 
         <Link href={siteURL + "/en"} prefetch>
           <Image
-            src="/english.png"
+            src="/english.svg"
             className="link-effect"
             alt={capitalizeSentence(dictionaire.englishLanguage)}
             title={capitalizeSentence(dictionaire.englishLanguage)}
