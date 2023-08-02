@@ -15,7 +15,10 @@ function WhatsAppButton({
   initialMessageText,
 }: WhatsAppButtonProps) {
   const handleClick = () => {
-    window.open(messageAppLink, "_blank");
+    window.open(
+      `${messageAppLink}?text=${encodeURIComponent(initialMessageText)}`,
+      "_blank"
+    );
   };
 
   return (
