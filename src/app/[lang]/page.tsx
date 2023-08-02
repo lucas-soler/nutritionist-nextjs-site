@@ -5,6 +5,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import HeaderTop from "../components/HeaderTop";
 import Menu from "../components/Menu";
+import ServicesList from "../components/ServicesList";
 import WhatsAppButton from "../components/WhatsAppButton";
 import { getDictionary } from "./dictionaries";
 
@@ -93,38 +94,11 @@ export default async function Home({ params: { lang } }: PageProps) {
             {capitalizeSentence(dictionaire.mainMenu.services)}
           </h2>
           <div className="flex-1 flex w-full lg:w-2/3 flex-col lg:flex-row">
-            <section className="flex-1 flex flex-col gap-2">
-              {dictionaire.servicesContent
-                .split("\n")
-                .map((sentence: string, index: number) => {
-                  let elementStyle;
-                  switch (index) {
-                    case 0:
-                      elementStyle = `flex flex-1 bg-salmon justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
-                      break;
-                    case 1:
-                      elementStyle = `flex flex-1 bg-purple justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
-                      break;
-                    case 2:
-                      elementStyle = `flex flex-1 bg-moss justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
-                      break;
-                    case 3:
-                      elementStyle = `flex flex-1 bg-brown justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
-                      break;
-                    case 4:
-                      elementStyle = `flex flex-1 bg-orange justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
-                      break;
-                  }
-                  return (
-                    <p
-                      key={`services-sentence-${index}`}
-                      className={elementStyle}
-                    >
-                      {capitalizeSentence(sentence)}
-                    </p>
-                  );
-                })}
-            </section>
+            <ServicesList
+              services={dictionaire.servicesContent.split("\n")}
+              fullPhoneNumber={dictionaire.fullPhoneNumber}
+              servicesMessageText={dictionaire.initialMessageText}
+            />
             <figure className="flex-1 flex flex-col gap-4">
               <Image
                 src="/the-nutritionist-suemi.jpg"
