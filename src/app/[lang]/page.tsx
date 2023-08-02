@@ -68,6 +68,7 @@ export default async function Home({ params: { lang } }: PageProps) {
               " " +
               capitalizeSentence(dictionaire.scheduleApp)
             }
+            phoneNumber={dictionaire.fullPhoneNumber}
           />
         </nav>
       </header>

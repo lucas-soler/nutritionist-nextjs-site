@@ -5,11 +5,20 @@ import { WhatsappLogo } from "@phosphor-icons/react";
 
 interface WhatsAppButtonProps {
   text: string;
+  phoneNumber: number;
 }
 
-function WhatsAppButton({ text }: WhatsAppButtonProps) {
+function WhatsAppButton({ text, phoneNumber }: WhatsAppButtonProps) {
+  const handleClick = () => {
+    window.open(
+      `https://api.whatsapp.com/send?phone=${phoneNumber}&text=Hello`,
+      "_blank"
+    );
+  };
+
   return (
     <button
+      onClick={handleClick}
       className="basis-1/2 p-2 lg:basis-2/12 flex flex-row shrink-0 bg-white text-primary-700 rounded-full justify-center items-center gap-1 animated-button"
       title={`${capitalizeSentence(text)}`}
     >
