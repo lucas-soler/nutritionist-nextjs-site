@@ -36,9 +36,9 @@ export default async function Home({ params: { lang } }: PageProps) {
           dictionaire={dictionaire}
           siteURL={`${process.env.FULL_URL}`}
         />
-        <nav className="gap-3 lg:gap-0 justify-between lg:justify-center p-5 flex flex-1 flex-row items-center">
+        <nav className="gap-5 lg:gap-0 justify-between lg:justify-center p-5 flex flex-1 flex-row items-center">
           <a
-            className="basis-1/2 lg:basis-2/12 flex justify-center items-center"
+            className="basis-3/5 lg:basis-2/12 flex justify-center items-center"
             href={process.env.FULL_URL}
           >
             <Image
