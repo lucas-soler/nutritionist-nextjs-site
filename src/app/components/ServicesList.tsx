@@ -1,3 +1,5 @@
+"use client";
+
 import { capitalizeSentence } from "@/utils/utils";
 
 interface ServicesListProps {
@@ -28,7 +30,7 @@ function ServicesList({
         let elementStyle;
         switch (index) {
           case 0:
-            elementStyle = `flex flex-1 bg-salmon justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
+            elementStyle = `flex flex-1 bg-salmon justify-center items-center rounded-lg font-bold text-white p-5 hover:cursor-pointer hover:opacity-75`;
             break;
           case 1:
             elementStyle = `flex flex-1 bg-purple justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
