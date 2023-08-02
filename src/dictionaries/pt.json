@@ -10,8 +10,8 @@
   "basicPrefixAlternativeImageText": "uma imagem de",
   "mainMenu": {
     "welcome": "início",
-    "about": "sobre",
     "services": "serviços",
+    "about": "sobre",
     "testimonials": "depoimentos"
   },
   "fullPhoneNumber": "554732098511",
@@ -25,5 +25,7 @@
   "englishLanguage": "versão em inglês",
   "portugueseLanguage": "versão em português",
   "emailSubject": "Oi! Eu gostaria de saber mais sobre as suas consultas!",
-  "emailBody": "Oi Suemi!%0D%0A%0D%0AEu visitei seu site nutrisuemi.com e decidi lhe enviar esse email para saber mais sobre os seus serviços.%0D%0A%0D%0APor favor, entre em contato comigo o mais rápido possível para agendar uma consulta.%0D%0A%0D%0AObrigado!"
+  "emailBody": "Oi Suemi!%0D%0A%0D%0AEu visitei seu site nutrisuemi.com e decidi lhe enviar esse email para saber mais sobre os seus serviços.%0D%0A%0D%0APor favor, entre em contato comigo o mais rápido possível para agendar uma consulta.%0D%0A%0D%0AObrigado!",
+  "servicesContent": "reeducação alimentar\nemagrecimento\nintolerância e alergias alimentares\nestética\nqualidade de vida",
+  "aboutContent": "atuo como nutricionista há cerca de 15 anos. nesse período, atuei principalmente na promoção da saúde ideal através da prevenção de doenças por meio da nutrição.\najudei centenas de pessoas a se sentirem realmente melhor através da sua alimentação e também ajudei na cura de problemas crônicos de saúde.\nsou especialista em modulação intestinal, tratamento de disbiose, síndrome do intestino irritável, sifo, sibo, constipação, diarréia e emagrecimento."
 }

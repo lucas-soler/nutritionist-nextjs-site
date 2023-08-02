@@ -36,7 +36,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           dictionaire={dictionaire}
           siteURL={`${process.env.FULL_URL}`}
         />
-        <nav className="gap-5 lg:gap-0 justify-between lg:justify-center p-5 flex flex-1 flex-row items-center">
+        <nav className="gap-5 lg:gap-0 justify-between lg:justify-center p-2 flex flex-1 flex-row items-center">
           <a
             className="basis-3/5 lg:basis-2/12 flex justify-center items-center"
             href={process.env.FULL_URL}
@@ -74,45 +74,83 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
 
-      <main className="px-1">
+      <main className="flex flex-col px-1 gap-5">
         <section
           id="welcome"
-          className="mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
+          className="flex-1 lg:py-72 mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
         >
           <iframe
-            src="https://player.vimeo.com/video/384944723?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
+            src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
             allow="autoplay; picture-in-picture"
             allowFullScreen
           ></iframe>
         </section>
-        <section id="about">
-          <h2>Sobre o Nutricionista</h2>
-          <p>
-            InhtmlFormações sobre a htmlFormação e experiência do nutricionista,
-            sua abordagem e filosofia de trabalho.
-          </p>
+        <section
+          id="services"
+          className="flex-1 flex flex-col justify-center items-center p-7 gap-4"
+        >
+          <h2 className="flex-1 w-full lg:w-2/3">
+            {capitalizeSentence(dictionaire.mainMenu.services)}
+          </h2>
+          <div className="flex-1 flex w-full lg:w-2/3 flex-col lg:flex-row">
+            <section className="flex-1 flex flex-col gap-2">
+              {dictionaire.servicesContent
+                .split("\n")
+                .map((sentence: string, index: number) => {
+                  let elementStyle;
+                  switch (index) {
+                    case 0:
+                      elementStyle = `flex flex-1 bg-salmon justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
+                      break;
+                    case 1:
+                      elementStyle = `flex flex-1 bg-purple justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
+                      break;
+                    case 2:
+                      elementStyle = `flex flex-1 bg-moss justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
+                      break;
+                    case 3:
+                      elementStyle = `flex flex-1 bg-brown justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
+                      break;
+                    case 4:
+                      elementStyle = `flex flex-1 bg-orange justify-center items-center rounded-lg font-bold text-white p-7 hover:cursor-pointer hover:opacity-75`;
+                      break;
+                  }
+                  return (
+                    <p
+                      key={`services-sentence-${index}`}
+                      className={elementStyle}
+                    >
+                      {capitalizeSentence(sentence)}
+                    </p>
+                  );
+                })}
+            </section>
+            <figure className="flex-1 flex flex-col gap-4">
+              <Image
+                src="/the-nutritionist-suemi.jpg"
+                alt={
+                  capitalizeSentence(
+                    dictionaire.basicPrefixAlternativeImageText
+                  ) +
+                  " " +
+                  capitalizePersonName(professionalFullNameWithTitle)
+                }
+                title={capitalizePersonName(professionalFullNameWithTitle)}
+                width={369}
+                height={324}
+                className="m-auto"
+              />
 
-          <figure>
-            <Image
-              src="/the-nutritionist-suemi.jpg"
-              alt={
-                capitalizeSentence(
-                  dictionaire.basicPrefixAlternativeImageText
-                ) +
-                " " +
-                capitalizePersonName(professionalFullNameWithTitle)
-              }
-              title={capitalizePersonName(professionalFullNameWithTitle)}
-              width={369}
-              height={324}
-            />
-
-            <figcaption>
-              {capitalizePersonName(professionalFullNameWithTitle)}
-            </figcaption>
-          </figure>
+              <figcaption className="text-center">
+                {capitalizePersonName(professionalFullNameWithTitle)}
+              </figcaption>
+            </figure>
+          </div>
         </section>
-        <section id="services">
+        <section
+          id="about"
+          className="flex-1 flex flex-col justify-center items-center"
+        >
           <h2>Serviços Oferecidos</h2>
           <ul>
             <li className="flex-1">Plano alimentar personalizado</li>
@@ -122,7 +160,10 @@ export default async function Home({ params: { lang } }: PageProps) {
             <li className="flex-1">Entre outros</li>
           </ul>
         </section>
-        <section id="testimonials">
+        <section
+          id="testimonials"
+          className="flex-1 flex flex-col justify-center items-center"
+        >
           <h2>Serviços Oferecidos</h2>
           <ul>
             <li className="flex-1">Plano alimentar personalizado</li>
@@ -131,13 +172,6 @@ export default async function Home({ params: { lang } }: PageProps) {
             <li className="flex-1">Educação alimentar</li>
             <li className="flex-1">Entre outros</li>
           </ul>
-        </section>
-        <section id="contact">
-          <h2>Entre em Contato</h2>
-          <p>
-            Deixe seus dados abaixo para que possamos entrar em contato com
-            você:
-          </p>
         </section>
       </main>
 

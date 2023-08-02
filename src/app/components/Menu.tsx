@@ -31,10 +31,8 @@ function Menu({ menu }: MenuProps) {
   const handleChangeMenuItemStates = (menuItemID: string): void => {
     const newMenuItemStates: MenuItemStates = { ...menuItemStates };
 
-    for (const menuItemState in menuItemStates) {
-      newMenuItemStates[menuItemState] =
-        menuItemID === menuItemState ? true : false;
-    }
+    for (const menuItemState in menuItemStates)
+      newMenuItemStates[menuItemState] = menuItemID === menuItemState;
 
     setMenuItemStates(newMenuItemStates);
   };

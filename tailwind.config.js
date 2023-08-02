@@ -8,9 +8,14 @@ export default {
   ],
   theme: {
     colors: {
+      salmon: "#D7796F",
+      purple: "#9E6284",
+      moss: "#778A57",
+      brown: "#9D865C",
+      orange: "#E2A344",
+      black: "#000",
       white: "#fff",
       red: "#ff0000",
-      gray: "#8A8B8B",
       primary: {
         400: "#59aa77",
         500: "#46865e",
@@ -19,6 +24,10 @@ export default {
       },
       secondary: {
         400: "#fad3d2",
+      },
+      terciary: {
+        400: "#8A8B8B",
+        600: "#7c828d",
       },
     },
     extend: {

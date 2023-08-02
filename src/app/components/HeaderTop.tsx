@@ -76,9 +76,9 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
             className="HAMBURGER-ICON space-y-2 hover:cursor-pointer"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
-            <span className="block h-0.5 w-8 bg-primary-600"></span>
-            <span className="block h-0.5 w-8 bg-primary-600"></span>
-            <span className="block h-0.5 w-8 bg-primary-600"></span>
+            <span className="block h-0.5 w-8 bg-black"></span>
+            <span className="block h-0.5 w-8 bg-black"></span>
+            <span className="block h-0.5 w-8 bg-black"></span>
           </div>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
@@ -104,7 +104,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
                 return (
                   <li
                     key={`hamburguer-${menuProps[index]}`}
-                    className="border-b border-gray-400 my-8 uppercase"
+                    className="border-b border-gray-600 my-8 uppercase"
                   >
                     <a
                       href={`#${menuProps[index]}`}

@@ -1,5 +1,19 @@
-export const capitalizeSentence = (sentence: string) =>
-  sentence.trim().charAt(0).toUpperCase() + sentence.trim().slice(1);
+export const capitalizeSentence = (wholeSentence: string) => {
+  const sentences = wholeSentence.trim().split(".");
+
+  const fullSentence = [];
+
+  for (let sentence of sentences) {
+    let trimmedSentence = sentence.trim();
+    if (trimmedSentence) {
+      fullSentence.push(
+        trimmedSentence.charAt(0).toUpperCase() + trimmedSentence.slice(1)
+      );
+    }
+  }
+
+  return fullSentence.join(". ");
+};
 
 export const capitalizePersonName = (sentence: string) => {
   const words = sentence.trim().split(" ");

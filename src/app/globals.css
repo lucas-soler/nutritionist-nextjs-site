@@ -13,16 +13,8 @@
     font-weight: 600;
   }
 
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-archivo-black);
-  }
-
   body {
-    color: colors.gray;
+    color: colors.terciary.400;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -38,6 +30,15 @@
     font-weight: 600;
     background: theme(colors.primary.700);
     color: theme(colors.white);
+  }
+
+  main {
+    color: theme(colors.terciary.600);
+  }
+
+  main > section > h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
   }
 
   .hideMenuNav {
