@@ -73,7 +73,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
         </a>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="HAMBURGER-ICON space-y-2 hover:cursor-pointer"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
             <span className="block h-0.5 w-8 bg-primary-600"></span>
