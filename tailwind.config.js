@@ -8,11 +8,26 @@ export default {
   ],
   theme: {
     colors: {
-      salmon: "#D7796F",
-      purple: "#9E6284",
-      moss: "#778A57",
-      brown: "#9D865C",
-      orange: "#E2A344",
+      salmon: {
+        400: "#fa968b",
+        600: "#d7796f",
+      },
+      purple: {
+        400: "#e092be",
+        600: "#9e6284",
+      },
+      moss: {
+        400: "#9eb477",
+        600: "#778a57",
+      },
+      brown: {
+        400: "#c9ae7d",
+        600: "#9d865c",
+      },
+      orange: {
+        400: "#fabd61",
+        600: "#e2a344",
+      },
       black: "#000",
       white: "#fff",
       red: "#ff0000",

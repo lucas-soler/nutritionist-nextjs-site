@@ -7,12 +7,14 @@ interface WhatsAppButtonProps {
   text: string;
   fullPhoneNumber: string;
   initialMessageText: string;
+  backgroundColor?: "white" | "green";
 }
 
 function WhatsAppButton({
   text,
   fullPhoneNumber,
   initialMessageText,
+  backgroundColor = "white",
 }: WhatsAppButtonProps) {
   const handleClick = () => {
     window.open(
@@ -23,14 +25,21 @@ function WhatsAppButton({
     );
   };
 
+  let style =
+    "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-white text-primary-700 text-sm rounded-full justify-center items-center animated-button";
+
+  if (backgroundColor === "green")
+    style =
+      "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-primary-600 text-white lg:text-2xl rounded-full justify-center items-center animated-button-green";
+
   return (
     <button
       onClick={handleClick}
-      className="basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-white text-primary-700 rounded-full justify-center items-center animated-button"
+      className={style}
       title={`${capitalizeSentence(text)}`}
     >
       <WhatsappLogo size={30} />
-      <span className="font-bold text-sm">{capitalizeSentence(text)}</span>
+      <span className="font-bold">{capitalizeSentence(text)}</span>
     </button>
   );
 }

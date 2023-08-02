@@ -114,10 +114,15 @@ export default async function Home({ params: { lang } }: PageProps) {
                 height={324}
                 className="m-auto"
               />
-
               <figcaption className="text-center font-bold">
                 {capitalizePersonName(professionalFullNameWithTitle)}
               </figcaption>
+              <WhatsAppButton
+                text={capitalizeSentence(dictionaire.scheduleText)}
+                fullPhoneNumber={dictionaire.fullPhoneNumber}
+                initialMessageText={dictionaire.initialMessageText}
+                backgroundColor="green"
+              />
             </figure>
           </div>
         </section>
