@@ -88,12 +88,12 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="services"
-          className="flex-1 flex flex-col justify-center items-center p-7 gap-4"
+          className="flex-1 flex flex-col justify-center items-center p-2 gap-4"
         >
-          <h2 className="flex-1 w-full lg:w-2/3">
+          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
             {capitalizeSentence(dictionaire.mainMenu.services)}
           </h2>
-          <div className="flex-1 flex w-full lg:w-2/3 flex-col lg:flex-row">
+          <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
             <ServicesList
               services={dictionaire.servicesContent.split("\n")}
               fullPhoneNumber={dictionaire.fullPhoneNumber}
