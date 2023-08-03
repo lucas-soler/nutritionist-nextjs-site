@@ -7,6 +7,7 @@ import HeaderTop from "../components/HeaderTop";
 import Menu from "../components/Menu";
 import Service, { ServiceObject } from "../components/Service";
 import ServicesList from "../components/ServicesList";
+import Testimonials from "../components/Testimonials";
 import WhatsAppButton from "../components/WhatsAppButton";
 import { getDictionary } from "./dictionaries";
 
@@ -76,7 +77,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
 
-      <main className="flex flex-col px-1 gap-6 lg:gap-32">
+      <main className="flex flex-col px-1 gap-6 lg:gap-16">
         <section
           id="welcome"
           className="flex-1 lg:py-72 mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
@@ -131,6 +132,17 @@ export default async function Home({ params: { lang } }: PageProps) {
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">About</h2>
           <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left">
             About text here
+            <br />
+            About text here
+            <br />
+            About text here
+            <br />
+            About text here
+            <br />
+            About text here
+            <br />
+            About text here
+            <br />
           </p>
         </section>
         <section
@@ -140,9 +152,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             Testimonials
           </h2>
-          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left">
-            Testimonials
-          </p>
+          <Testimonials />
         </section>
         {dictionaire.services.map((service: ServiceObject, index: number) => {
           const orientation = index % 2 === 0 ? "right" : "left";

@@ -43,6 +43,7 @@ export default {
       terciary: {
         400: "#8A8B8B",
         600: "#7c828d",
+        900:"#262626"
       },
     },
     extend: {

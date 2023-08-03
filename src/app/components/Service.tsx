@@ -88,9 +88,6 @@ function ServiceImage({ serviceID, serviceName }: ServiceImageProps) {
         height={425}
         className="m-auto"
       />
-      <figcaption className="text-center font-bold">
-        {capitalizePersonName(serviceName)}
-      </figcaption>
     </figure>
   );
 }
