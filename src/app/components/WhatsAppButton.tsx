@@ -8,6 +8,7 @@ interface WhatsAppButtonProps {
   fullPhoneNumber: string;
   initialMessageText: string;
   backgroundColor?: "white" | "green";
+  hasIcon?: boolean;
 }
 
 function WhatsAppButton({
@@ -15,6 +16,7 @@ function WhatsAppButton({
   fullPhoneNumber,
   initialMessageText,
   backgroundColor = "white",
+  hasIcon = true,
 }: WhatsAppButtonProps) {
   const handleClick = () => {
     window.open(
@@ -38,7 +40,7 @@ function WhatsAppButton({
       className={style}
       title={`${capitalizeSentence(text)}`}
     >
-      <WhatsappLogo size={30} />
+      {hasIcon ? <WhatsappLogo size={30} /> : ""}
       <span className="font-bold">{capitalizeSentence(text)}</span>
     </button>
   );

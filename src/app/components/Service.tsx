@@ -46,6 +46,7 @@ function Service({
               service.name
             )}`}
             backgroundColor="green"
+            hasIcon={false}
           />
         </section>
         {orientation === "left" ? (

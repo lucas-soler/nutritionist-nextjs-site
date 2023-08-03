@@ -1,7 +1,6 @@
 "use client";
 
 import { capitalizeSentence } from "@/utils/utils";
-import Link from "next/link";
 import { useState } from "react";
 import { ServiceObject } from "./Service";
 
@@ -39,9 +38,7 @@ function ServicesList({ services }: ServicesListProps) {
             className={elementStyle}
             onClick={() => setIsNavOpen(true)}
           >
-            <Link href={`#${service.id}`}>
-              {capitalizeSentence(service.name)}
-            </Link>
+            <a href={`#${service.id}`}>{capitalizeSentence(service.name)}</a>
           </p>
         );
       })}

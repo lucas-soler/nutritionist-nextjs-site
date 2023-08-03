@@ -119,6 +119,7 @@ export default async function Home({ params: { lang } }: PageProps) {
                 fullPhoneNumber={dictionaire.fullPhoneNumber}
                 initialMessageText={dictionaire.initialMessageText}
                 backgroundColor="green"
+                hasIcon={false}
               />
             </figure>
           </div>
