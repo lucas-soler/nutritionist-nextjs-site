@@ -1,7 +1,6 @@
 "use client";
 
 import { capitalizeSentence } from "@/utils/utils";
-import { useState } from "react";
 import { ServiceObject } from "./Service";
 
 interface ServicesListProps {
@@ -9,7 +8,9 @@ interface ServicesListProps {
 }
 
 function ServicesList({ services }: ServicesListProps) {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const handleClick = (serviceID: string) => {
+    window.location.href = `#${serviceID}`;
+  };
 
   return (
     <section className="flex-1 flex flex-col gap-2">
@@ -36,9 +37,9 @@ function ServicesList({ services }: ServicesListProps) {
           <p
             key={`services-service-${index}`}
             className={elementStyle}
-            onClick={() => setIsNavOpen(true)}
+            onClick={() => handleClick(service.id)}
           >
-            <a href={`#${service.id}`}>{capitalizeSentence(service.name)}</a>
+            {capitalizeSentence(service.name)}
           </p>
         );
       })}
