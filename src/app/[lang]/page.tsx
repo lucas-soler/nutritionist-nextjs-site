@@ -76,7 +76,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
 
-      <main className="flex flex-col px-1 gap-2 lg:gap-32">
+      <main className="flex flex-col px-1 gap-6 lg:gap-32">
         <section
           id="welcome"
           className="flex-1 lg:py-72 mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
@@ -89,7 +89,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="services"
-          className="flex-1 flex flex-col justify-center items-center px-2 gap-4"
+          className="flex-1 flex flex-col justify-center items-center px-2 gap-4 scroll-mt-64"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
             {capitalizeSentence(dictionaire.mainMenu.services)}
@@ -126,29 +126,23 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col justify-center items-center"
+          className="flex-1 flex flex-col justify-center items-center scroll-mt-64"
         >
-          <h2>Serviços Oferecidos</h2>
-          <ul>
-            <li className="flex-1">Plano alimentar personalizado</li>
-            <li className="flex-1">Acompanhamento nutricional</li>
-            <li className="flex-1">Orientação para dietas específicas</li>
-            <li className="flex-1">Educação alimentar</li>
-            <li className="flex-1">Entre outros</li>
-          </ul>
+          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">About</h2>
+          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left">
+            About text here
+          </p>
         </section>
         <section
           id="testimonials"
-          className="flex-1 flex flex-col justify-center items-center"
+          className="flex-1 flex flex-col justify-center items-center scroll-mt-64"
         >
-          <h2>Serviços Oferecidos</h2>
-          <ul>
-            <li className="flex-1">Plano alimentar personalizado</li>
-            <li className="flex-1">Acompanhamento nutricional</li>
-            <li className="flex-1">Orientação para dietas específicas</li>
-            <li className="flex-1">Educação alimentar</li>
-            <li className="flex-1">Entre outros</li>
-          </ul>
+          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
+            Testimonials
+          </h2>
+          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left">
+            Testimonials
+          </p>
         </section>
         {dictionaire.services.map((service: ServiceObject, index: number) => {
           const orientation = index % 2 === 0 ? "right" : "left";
