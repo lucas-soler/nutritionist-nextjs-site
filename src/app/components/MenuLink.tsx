@@ -17,8 +17,9 @@ function MenuLink({
   isActive,
   changeMenuItemsState,
 }: MenuLinkProps) {
-  const handleMenuClick = () => {
+  const handleMenuClick = (href: string) => {
     changeMenuItemsState(menuItemID);
+    window.location.href = href;
   };
 
   return (
@@ -28,10 +29,9 @@ function MenuLink({
       className={`basis-1/5 text-center rounded-full p-2 duration-300 hover:bg-white hover:text-primary-700 hover:cursor-pointer ${
         isActive ? "bg-white text-primary-700" : ""
       }`}
+      onClick={() => handleMenuClick(href)}
     >
-      <a href={href} onClick={handleMenuClick}>
-        {capitalizeSentence(text)}
-      </a>
+      {capitalizeSentence(text)}
     </li>
   );
 }

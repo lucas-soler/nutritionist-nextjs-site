@@ -43,7 +43,7 @@ function Menu({ menu }: MenuProps) {
       role="list"
     >
       {menuItems.map((menuItem, index) => {
-        const href = index === 0 ? "/" : `#${menuProps[index]}`;
+        const href = index === 0 ? "#" : `#${menuProps[index]}`;
 
         return (
           <MenuLink
