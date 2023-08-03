@@ -1,10 +1,12 @@
 "use client";
 
 import { capitalizeSentence } from "@/utils/utils";
+import Link from "next/link";
 import { useState } from "react";
+import { ServiceObject } from "./Service";
 
 interface ServicesListProps {
-  services: string[];
+  services: ServiceObject[];
 }
 
 function ServicesList({ services }: ServicesListProps) {
@@ -12,7 +14,7 @@ function ServicesList({ services }: ServicesListProps) {
 
   return (
     <section className="flex-1 flex flex-col gap-2">
-      {services.map((service: string, index: number) => {
+      {services.map((service: ServiceObject, index: number) => {
         let elementStyle;
         switch (index) {
           case 0:
@@ -37,7 +39,9 @@ function ServicesList({ services }: ServicesListProps) {
             className={elementStyle}
             onClick={() => setIsNavOpen(true)}
           >
-            {capitalizeSentence(service)}
+            <Link href={`#${service.id}`}>
+              {capitalizeSentence(service.name)}
+            </Link>
           </p>
         );
       })}

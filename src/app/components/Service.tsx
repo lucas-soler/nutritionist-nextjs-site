@@ -25,11 +25,12 @@ function Service({
   return (
     <section
       id={service.id}
-      className="flex-1 flex flex-col justify-center items-center p-2 gap-4"
+      className="flex-1 flex flex-col justify-center items-center p-2 gap-16"
     >
-      <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
-        {capitalizeSentence("nutritional reeducation")}
+      <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
+        {capitalizeSentence(service.name)}
       </h2>
+
       <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-4 lg:gap-16">
         {orientation === "right" ? (
           <ServiceImage serviceID={service.id} serviceName={service.name} />
@@ -47,12 +48,12 @@ function Service({
             backgroundColor="green"
           />
         </section>
+        {orientation === "left" ? (
+          <ServiceImage serviceID={service.id} serviceName={service.name} />
+        ) : (
+          ""
+        )}
       </div>
-      {orientation === "left" ? (
-        <ServiceImage serviceID={service.id} serviceName={service.name} />
-      ) : (
-        ""
-      )}
     </section>
   );
 }
