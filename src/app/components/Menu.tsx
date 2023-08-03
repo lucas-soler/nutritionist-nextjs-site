@@ -42,15 +42,20 @@ function Menu({ menu }: MenuProps) {
       className="hidden lg:flex basis-5/12 flex-row justify-center"
       role="list"
     >
-      {menuItems.map((menuItem, index) => (
-        <MenuLink
-          key={menuProps[index]}
-          menuItemID={menuProps[index]}
-          text={capitalizeSentence(menuItem)}
-          isActive={menuItemStates[menuProps[index]]}
-          changeMenuItemsState={handleChangeMenuItemStates}
-        />
-      ))}
+      {menuItems.map((menuItem, index) => {
+        const href = index === 0 ? "/" : `#${menuProps[index]}`;
+
+        return (
+          <MenuLink
+            key={menuProps[index]}
+            menuItemID={menuProps[index]}
+            text={capitalizeSentence(menuItem)}
+            href={href}
+            isActive={menuItemStates[menuProps[index]]}
+            changeMenuItemsState={handleChangeMenuItemStates}
+          />
+        );
+      })}
     </ul>
   );
 }

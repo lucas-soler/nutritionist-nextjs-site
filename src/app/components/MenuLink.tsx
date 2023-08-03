@@ -5,6 +5,7 @@ import { capitalizeSentence } from "@/utils/utils";
 interface MenuLinkProps {
   menuItemID: string;
   text: string;
+  href: string;
   isActive: boolean;
   changeMenuItemsState: (menuItemID: string) => void;
 }
@@ -12,6 +13,7 @@ interface MenuLinkProps {
 function MenuLink({
   menuItemID,
   text,
+  href,
   isActive,
   changeMenuItemsState,
 }: MenuLinkProps) {
@@ -27,7 +29,7 @@ function MenuLink({
         isActive ? "bg-white text-primary-700" : ""
       }`}
     >
-      <a href={`#${menuItemID}`} onClick={handleMenuClick}>
+      <a href={href} onClick={handleMenuClick}>
         {capitalizeSentence(text)}
       </a>
     </li>
