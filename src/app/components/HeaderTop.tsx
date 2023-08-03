@@ -112,15 +112,14 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               {menuItems.map((menuItem, index) => {
+                const href = index === 0 ? "#" : `#${menuProps[index]}`;
+
                 return (
                   <li
                     key={`hamburguer-${menuProps[index]}`}
                     className="border-b border-gray-600 my-8 uppercase"
                   >
-                    <a
-                      href={`#${menuProps[index]}`}
-                      onClick={() => setIsNavOpen(false)}
-                    >
+                    <a href={`#${href}`} onClick={() => setIsNavOpen(false)}>
                       {capitalizeSentence(menuItem)}
                     </a>
                   </li>
