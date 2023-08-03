@@ -10,12 +10,14 @@ export interface ServiceObject {
 }
 
 interface ServiceProps {
+  orientation: "right" | "left";
   service: ServiceObject;
   servicesMessageText: string;
   fullPhoneNumber: string;
 }
 
 function Service({
+  orientation,
   service,
   servicesMessageText,
   fullPhoneNumber,
@@ -28,20 +30,12 @@ function Service({
       <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
         {capitalizeSentence("nutritional reeducation")}
       </h2>
+      {orientation === "right" ? (
+        <ServiceImage serviceID={service.id} serviceName={service.name} />
+      ) : (
+        ""
+      )}
       <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-4 lg:gap-16">
-        <figure className="flex-1 flex flex-col gap-4">
-          <Image
-            src={`/${service.id}.jpg`}
-            alt={service.name}
-            title={service.name}
-            width={626}
-            height={425}
-            className="m-auto"
-          />
-          <figcaption className="text-center font-bold">
-            {capitalizePersonName(service.name)}
-          </figcaption>
-        </figure>
         <section className="flex-1 flex justify-between flex-col gap-2">
           <p>${capitalizeSentence(service.name)}</p>
           <WhatsAppButton
@@ -54,7 +48,35 @@ function Service({
           />
         </section>
       </div>
+      {orientation === "left" ? (
+        <ServiceImage serviceID={service.id} serviceName={service.name} />
+      ) : (
+        ""
+      )}
     </section>
+  );
+}
+
+interface ServiceImageProps {
+  serviceID: string;
+  serviceName: string;
+}
+
+function ServiceImage({ serviceID, serviceName }: ServiceImageProps) {
+  return (
+    <figure className="flex-1 flex flex-col gap-4">
+      <Image
+        src={`/${serviceID}.jpg`}
+        alt={serviceName}
+        title={serviceName}
+        width={626}
+        height={425}
+        className="m-auto"
+      />
+      <figcaption className="text-center font-bold">
+        {capitalizePersonName(serviceName)}
+      </figcaption>
+    </figure>
   );
 }
 

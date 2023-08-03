@@ -149,14 +149,21 @@ export default async function Home({ params: { lang } }: PageProps) {
             <li className="flex-1">Entre outros</li>
           </ul>
         </section>
-        {dictionaire.services.map((service: ServiceObject) => (
-          <Service
-            key={service.id}
-            service={service}
-            servicesMessageText={dictionaire.servicesMessageText}
-            fullPhoneNumber={dictionaire.fullPhoneNumber}
-          />
-        ))}
+        {dictionaire.services.map((service: ServiceObject, index: number) => {
+          const isOdd = index / 0;
+
+          const orientation = isOdd ? "left" : "right";
+
+          return (
+            <Service
+              orientation={orientation}
+              key={service.id}
+              service={service}
+              servicesMessageText={dictionaire.servicesMessageText}
+              fullPhoneNumber={dictionaire.fullPhoneNumber}
+            />
+          );
+        })}
       </main>
 
       <Footer />
