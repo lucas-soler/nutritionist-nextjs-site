@@ -1,7 +1,7 @@
 "use client";
 
 import { capitalizeSentence } from "@/utils/utils";
-import { EnvelopeSimple, Phone } from "@phosphor-icons/react";
+import { EnvelopeSimple, InstagramLogo, Phone } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -51,6 +51,17 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
         </Link>
       </div>
       <div className="flex justify-end items-center gap-3 mr-2">
+        <a
+          href={dictionaire.instagramAccountURL}
+          target="_blank"
+          title={`${capitalizeSentence(
+            dictionaire.instagramLinkText
+          )} ${capitalizeSentence(dictionaire.professionalName)}`}
+          className="flex flex-row items-center gap-1 hover:text-primary-700"
+        >
+          <InstagramLogo size={32} />
+          <span className="hidden md:inline">Instagram</span>
+        </a>
         <a
           href={`tel:${dictionaire.phoneNumber}`}
           title={`${capitalizeSentence(

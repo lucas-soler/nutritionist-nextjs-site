@@ -41,6 +41,12 @@
     font-weight: 700;
   }
 
+  footer {
+    background: theme(colors.primary.700);
+    color: theme(colors.white);
+    padding: 2rem;
+  }
+
   .hideModal {
     display: none;
   }
