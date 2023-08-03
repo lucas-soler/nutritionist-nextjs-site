@@ -81,7 +81,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
             <span className="block h-0.5 w-8 bg-black"></span>
           </div>
 
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+          <div className={isNavOpen ? "showModal" : "hideModal"}>
             <div
               className="absolute top-0 right-0 px-8 py-8"
               onClick={() => setIsNavOpen(false)}

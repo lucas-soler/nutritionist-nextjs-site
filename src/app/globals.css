@@ -41,10 +41,10 @@
     font-weight: 700;
   }
 
-  .hideMenuNav {
+  .hideModal {
     display: none;
   }
-  .showMenuNav {
+  .showModal {
     display: block;
     position: absolute;
     width: 100%;

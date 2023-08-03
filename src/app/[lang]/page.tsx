@@ -5,6 +5,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import HeaderTop from "../components/HeaderTop";
 import Menu from "../components/Menu";
+import Service, { ServiceObject } from "../components/Service";
 import ServicesList from "../components/ServicesList";
 import WhatsAppButton from "../components/WhatsAppButton";
 import { getDictionary } from "./dictionaries";
@@ -31,7 +32,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="sticky top-0 z-50 flex flex-col">
+      <header className="sticky top-0 z-40 flex flex-col">
         <HeaderTop
           menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
@@ -75,7 +76,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
 
-      <main className="flex flex-col px-1 gap-2 lg:gap-5">
+      <main className="flex flex-col px-1 gap-2 lg:gap-16">
         <section
           id="welcome"
           className="flex-1 lg:py-72 mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
@@ -94,11 +95,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             {capitalizeSentence(dictionaire.mainMenu.services)}
           </h2>
           <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
-            <ServicesList
-              services={dictionaire.servicesContent.split("\n")}
-              fullPhoneNumber={dictionaire.fullPhoneNumber}
-              servicesMessageText={dictionaire.servicesMessageText}
-            />
+            <ServicesList services={dictionaire.servicesContent.split("\n")} />
             <figure className="flex-1 flex flex-col gap-4">
               <Image
                 src="/the-nutritionist-suemi.jpg"
@@ -152,6 +149,14 @@ export default async function Home({ params: { lang } }: PageProps) {
             <li className="flex-1">Entre outros</li>
           </ul>
         </section>
+        {dictionaire.services.map((service: ServiceObject) => (
+          <Service
+            key={service.id}
+            service={service}
+            servicesMessageText={dictionaire.servicesMessageText}
+            fullPhoneNumber={dictionaire.fullPhoneNumber}
+          />
+        ))}
       </main>
 
       <Footer />

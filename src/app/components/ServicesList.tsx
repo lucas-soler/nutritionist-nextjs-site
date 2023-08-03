@@ -1,28 +1,14 @@
 "use client";
 
 import { capitalizeSentence } from "@/utils/utils";
+import { useState } from "react";
 
 interface ServicesListProps {
   services: string[];
-  fullPhoneNumber: string;
-  servicesMessageText: string;
 }
 
-function ServicesList({
-  services,
-  fullPhoneNumber,
-  servicesMessageText,
-}: ServicesListProps) {
-  const handleClick = (serviceName: string) => {
-    window.open(
-      `https://wa.me/${fullPhoneNumber}?text=${encodeURIComponent(
-        capitalizeSentence(servicesMessageText) +
-          " " +
-          serviceName.toUpperCase()
-      )}`,
-      "_blank"
-    );
-  };
+function ServicesList({ services }: ServicesListProps) {
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <section className="flex-1 flex flex-col gap-2">
@@ -49,7 +35,7 @@ function ServicesList({
           <p
             key={`services-service-${index}`}
             className={elementStyle}
-            onClick={() => handleClick(service)}
+            onClick={() => setIsNavOpen(true)}
           >
             {capitalizeSentence(service)}
           </p>
