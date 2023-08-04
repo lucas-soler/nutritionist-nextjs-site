@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 function Testimonials() {
@@ -13,8 +15,8 @@ function Testimonials() {
       interval={6100}
     >
       <div>
-        <img src="/shirley.png" />
-        <div className="myCarousel">
+        <Image src="/shirley.png" alt={""} width={400} height={400} />
+        <div className="my-carousel">
           <h3>Shirley Fultz</h3>
           <h4>Designer</h4>
           <p>
@@ -25,8 +27,8 @@ function Testimonials() {
       </div>
 
       <div>
-        <img src="/daniel.png" />
-        <div className="myCarousel">
+        <Image src="/daniel.png" alt={""} width={400} height={400} />
+        <div className="my-carousel">
           <h3>Daniel Keystone</h3>
           <h4>Designer</h4>
           <p>
@@ -37,8 +39,8 @@ function Testimonials() {
       </div>
 
       <div>
-        <img src="/theo.png" />
-        <div className="myCarousel">
+        <Image src="/theo.png" alt={""} width={400} height={400} />
+        <div className="my-carousel">
           <h3>Theo Sorel</h3>
           <h4>Designer</h4>
           <p>

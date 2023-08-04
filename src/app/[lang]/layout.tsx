@@ -1,4 +1,3 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../globals.css";
 
 import { Archivo_Black, Josefin_Sans, Montserrat } from "next/font/google";
