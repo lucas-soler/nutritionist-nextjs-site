@@ -51,7 +51,18 @@ function Service({
           ""
         )}
         <section className="flex-1 flex justify-between flex-col gap-2">
-          <p>{capitalizeSentence(service.name)}</p>
+          <p>
+            {capitalizeSentence(service.name)}
+            <br />
+            {capitalizeSentence(service.name)}
+            <br />
+            {capitalizeSentence(service.name)}
+            <br />
+            {capitalizeSentence(service.name)}
+            <br />
+            {capitalizeSentence(service.name)}
+            <br />
+          </p>
           <WhatsAppButton
             text={capitalizeSentence(service.scheduleText)}
             fullPhoneNumber={fullPhoneNumber}

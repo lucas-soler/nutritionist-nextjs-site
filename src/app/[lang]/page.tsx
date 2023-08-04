@@ -129,7 +129,9 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="about"
           className="flex-1 flex flex-col justify-center items-center scroll-mt-56 2xl:scroll-mt-64"
         >
-          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">About</h2>
+          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
+            {capitalizeSentence(dictionaire.mainMenu.about)}
+          </h2>
           <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left">
             About text here
             <br />
@@ -150,7 +152,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           className="flex-1 flex flex-col justify-center items-center scroll-mt-56 2xl:scroll-mt-64 gap-6 lg:gap-10"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
-            Testimonials
+            {capitalizeSentence(dictionaire.mainMenu.testimonials)}
           </h2>
           <Testimonials />
         </section>
