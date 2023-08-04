@@ -30,7 +30,7 @@
   "portugueseLanguage": "versão em português",
   "emailSubject": "Oi! Eu gostaria de saber mais sobre as suas consultas!",
   "emailBody": "Oi Suemi!%0D%0A%0D%0AEu visitei seu site nutrisuemi.com e decidi lhe enviar esse email para saber mais sobre os seus serviços.%0D%0A%0D%0APor favor, entre em contato comigo o mais rápido possível para agendar uma consulta.%0D%0A%0D%0AObrigado!",
-  "aboutContent": "atuo como nutricionista há cerca de 15 anos. nesse período, atuei principalmente na promoção da saúde ideal através da prevenção de doenças por meio da nutrição.\najudei centenas de pessoas a se sentirem realmente melhor através da sua alimentação e também ajudei na cura de problemas crônicos de saúde.\nsou especialista em modulação intestinal, tratamento de disbiose, síndrome do intestino irritável, sifo, sibo, constipação, diarréia e emagrecimento.",
+  "aboutContent": "atuo como nutricionista há cerca de 15 anos. nesse período, atuei principalmente na promoção da saúde ideal através da prevenção de doenças por meio da nutrição.<br/>ajudei centenas de pessoas a se sentirem realmente melhor através da sua alimentação e também ajudei na cura de problemas crônicos de saúde.<br/>sou especialista em modulação intestinal, tratamento de disbiose, síndrome do intestino irritável, sifo, sibo, constipação, diarréia e emagrecimento.",
   "services": [
     {
       "id": "nutritional-reeducation",
@@ -69,19 +69,19 @@
       "photo": "shirley.png",
       "alternative_image_text": "depoimento de Ana Maria",
       "name": "Ana Maria",
-      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!",
+      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!"
     },
     {
       "photo": "theo.png",
       "alternative_image_text": "depoimento de Ana Maria",
       "name": "Lucas Soler",
-      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!",
+      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!"
     },
     {
       "photo": "daniel.png",
       "alternative_image_text": "depoimento de Ana Maria",
       "name": "Daniel Larusso",
-      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!",
+      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!"
     }
   ]
 }

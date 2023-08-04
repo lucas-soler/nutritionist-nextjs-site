@@ -133,18 +133,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             {capitalizeSentence(dictionaire.mainMenu.about)}
           </h2>
           <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left">
-            About text here
-            <br />
-            About text here
-            <br />
-            About text here
-            <br />
-            About text here
-            <br />
-            About text here
-            <br />
-            About text here
-            <br />
+            {capitalizeSentence(dictionaire.aboutContent)}
           </p>
         </section>
         <section

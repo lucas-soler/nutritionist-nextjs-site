@@ -50,7 +50,7 @@ function Service({
         ) : (
           ""
         )}
-        <section className="flex-1 flex justify-between flex-col gap-2">
+        <section className="flex-1 flex justify-between flex-col gap-6">
           <p>
             {capitalizeSentence(service.name)}
             <br />
