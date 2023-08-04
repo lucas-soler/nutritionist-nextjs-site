@@ -32,7 +32,7 @@ export default async function Home({ params: { lang } }: PageProps) {
     dictionaire.professionalSurname;
 
   const aboutCapitalized = capitalizeSentence(dictionaire.aboutContent);
-  const aboutSentences = aboutCapitalized.split("<br/>");
+  const aboutSentences = aboutCapitalized.split("|");
 
   return (
     <>
@@ -130,16 +130,16 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 2xl:scroll-mt-64"
+          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 2xl:scroll-mt-64 px-2 gap-4"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
           </h2>
-          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left">
+          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left gap-4">
             {aboutSentences.map((phrase) => {
               return (
                 <>
-                  {phrase}
+                  <span>{phrase}</span>
                   <br />
                 </>
               );

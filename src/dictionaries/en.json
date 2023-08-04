@@ -30,7 +30,7 @@
   "portugueseLanguage": "portuguese version",
   "emailSubject": "Hello! I would like to know more about your consultations!",
   "emailBody": "Hi Suemi!%0D%0A%0D%0AI have visited your site nutrisuemi.com and decided to email you to learn more about your services.%0D%0A%0D%0APlease get in touch with me as soon as possible to schedule a consultation.%0D%0A%0D%0ARegards!",
-  "aboutContent": "i have been working as a nutritionist for about 15 years. during this period, my main focus has been on promoting optimal health through disease prevention via nutrition.<br/>i have assisted hundreds of individuals in truly improving their well-being through dietary adjustments and have also played a role in curing chronic health issues.<br/> i am a specialist in intestinal modulation, treating dysbiosis, irritable bowel syndrome, SIBO, SIFO, constipation, diarrhea, and weight loss.",
+  "aboutContent": "i have been working as a nutritionist for about 15 years. during this period, my main focus has been on promoting optimal health through disease prevention via nutrition.|i have assisted hundreds of individuals in truly improving their well-being through dietary adjustments and have also played a role in curing chronic health issues.|i am a specialist in intestinal modulation, treating dysbiosis, irritable bowel syndrome, SIBO, SIFO, constipation, diarrhea, and weight loss.",
   "services": [
     {
       "id": "nutritional-reeducation",

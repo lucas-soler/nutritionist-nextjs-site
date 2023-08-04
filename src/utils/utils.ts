@@ -7,7 +7,7 @@ export const capitalizeSentence = (wholeSentence: string) => {
     let trimmedSentence = sentence.trim();
     if (trimmedSentence) {
       fullSentence.push(
-        trimmedSentence.charAt(0).toUpperCase() + trimmedSentence.slice(1)
+        trimmedSentence.charAt(1).toUpperCase() + trimmedSentence.slice(1)
       );
     }
   }
