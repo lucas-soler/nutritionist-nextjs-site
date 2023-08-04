@@ -154,7 +154,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.testimonials)}
           </h2>
-          <Testimonials />
+          <Testimonials testimonials={dictionaire.testimonials} />
         </section>
         {dictionaire.services.map((service: ServiceObject, index: number) => {
           const orientation = index % 2 === 0 ? "right" : "left";
