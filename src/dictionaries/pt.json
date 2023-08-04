@@ -62,5 +62,26 @@
       "description": "esta é um breve descrição sobre qualidade de vida",
       "scheduleText": "melhore minha qualidade de vida! 🏋️"
     }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "photo": "shirley.png",
+      "alternative_image_text": "depoimento de Ana Maria",
+      "name": "Ana Maria",
+      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!",
+    },
+    {
+      "photo": "theo.png",
+      "alternative_image_text": "depoimento de Ana Maria",
+      "name": "Lucas Soler",
+      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!",
+    },
+    {
+      "photo": "daniel.png",
+      "alternative_image_text": "depoimento de Ana Maria",
+      "name": "Daniel Larusso",
+      "description": "o tratamento com a Suemi foi maravilhoso! até hoje sinto os benefícios!",
+    }
   ]
 }

@@ -62,5 +62,28 @@
       "description": "this is a short description of life quality",
       "scheduleText": "improve my life quality! 🏋️"
     }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "photo": "shirley.png",
+      "alternative_image_text": "testimonial of Ana Maria",
+      "name": "Ana Maria",
+      "description": "the treatment with Suemi was wonderful! i still feel the benefits to this day!",
+    },
+    {
+      "id": 2,
+      "photo": "theo.png",
+      "alternative_image_text": "testimonial of Lucas Soler",
+      "name": "Lucas Soler",
+      "description": "the treatment with Suemi was wonderful! i still feel the benefits to this day!",
+    },
+    {
+      "id": 3,
+      "photo": "daniel.png",
+      "alternative_image_text": "testimonial of Daniel Larusso",
+      "name": "Daniel Larusso",
+      "description": "the treatment with Suemi was wonderful! i still feel the benefits to this day!",
+    }
   ]
 }
