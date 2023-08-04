@@ -5,10 +5,16 @@ export const capitalizeSentence = (wholeSentence: string) => {
 
   for (let sentence of sentences) {
     let trimmedSentence = sentence.trim();
+
+    let isThereParagraphs = trimmedSentence.search("|");
+
     if (trimmedSentence) {
-      fullSentence.push(
-        trimmedSentence.charAt(1).toUpperCase() + trimmedSentence.slice(1)
-      );
+      let sentenceToPush =
+        trimmedSentence.charAt(1).toUpperCase() + trimmedSentence.slice(2);
+
+      if (isThereParagraphs >= 0) trimmedSentence.slice(0) + sentenceToPush;
+
+      fullSentence.push(sentenceToPush);
     }
   }
 
