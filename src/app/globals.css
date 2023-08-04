@@ -167,9 +167,9 @@
   }
 
   .carousel-root {
-    width: 64%;
+    outline: 0;
+    width: 93%;
     margin: auto;
-    margin-top: 3%;
   }
 
   .carousel .slide {
@@ -179,22 +179,22 @@
   }
 
   .carousel .slide img {
-    width: 139px;
+    width: 24%;
     border-radius: 50%;
   }
 
   .myCarousel {
     background: #fafafa;
-    margin-top: -6%;
-    width: 54%;
+    margin-top: -9%;
+    width: 88%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 6%;
-    padding-bottom: 8%;
+    padding-top: 8%;
+    padding-bottom: 12.5%;
     padding-left: 5%;
     padding-right: 5%;
     border: 1px solid #ddd;
-    height: 286px;
+    height: 269px;
   }
 
   .carousel .control-dots {
@@ -262,32 +262,8 @@
   }
 
   @media only screen and (max-width: 934px) {
-    .carousel-root {
-      outline: 0;
-      width: 93%;
-      margin: auto;
-    }
-
     .carousel.carousel-slider .control-arrow {
       display: none;
-    }
-    .myCarousel {
-      background: #fafafa;
-      margin-top: -9%;
-      width: 88%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 8%;
-      padding-bottom: 12.5%;
-      padding-left: 5%;
-      padding-right: 5%;
-      border: 1px solid #ddd;
-      height: 269px;
-    }
-
-    .carousel .slide img {
-      width: 24%;
-      border-radius: 50%;
     }
   }
 }
