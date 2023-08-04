@@ -266,7 +266,11 @@
 
     @media only screen and (min-width: 1024px) {
       .carousel .slide img {
-        width: 15% !important;
+        width: 10% !important;
+      }
+
+      .my-carousel {
+        margin-top: -5%;
       }
     }
   }
