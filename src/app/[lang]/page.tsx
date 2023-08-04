@@ -135,11 +135,11 @@ export default async function Home({ params: { lang } }: PageProps) {
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
           </h2>
-          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left gap-2">
+          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left gap-1 lg:gap-4">
             {aboutSentences.map((phrase) => {
               return (
                 <>
-                  <span>{phrase}</span>
+                  <span className="text-justify">{phrase}</span>
                   <br />
                 </>
               );
