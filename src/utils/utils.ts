@@ -6,13 +6,18 @@ export const capitalizeSentence = (wholeSentence: string) => {
   for (let sentence of sentences) {
     let trimmedSentence = sentence.trim();
 
-    let isThereParagraphs = trimmedSentence.search("|");
-
     if (trimmedSentence) {
-      let sentenceToPush =
-        trimmedSentence.charAt(1).toUpperCase() + trimmedSentence.slice(2);
+      let sentenceToPush;
 
-      if (isThereParagraphs >= 0) trimmedSentence.slice(0) + sentenceToPush;
+      if (trimmedSentence.includes("|")) {
+        sentenceToPush =
+          trimmedSentence.charAt(0) +
+          trimmedSentence.charAt(1).toUpperCase() +
+          trimmedSentence.slice(2);
+      } else {
+        sentenceToPush =
+          trimmedSentence.charAt(0).toUpperCase() + trimmedSentence.slice(1);
+      }
 
       fullSentence.push(sentenceToPush);
     }
