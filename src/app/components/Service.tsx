@@ -2,11 +2,11 @@ import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 import Image, { StaticImageData } from "next/image";
 import WhatsAppButton from "./WhatsAppButton";
 
-import Aesthetics from "../../../public/aesthetics.png";
-import FoodIntolerence from "../../../public/food-intolerence.png";
-import LifeQuality from "../../../public/life-quality.png";
-import NutritionalReeducation from "../../../public/nutritional-reeducation.png";
-import WeightLoss from "../../../public/weight-loss.png";
+import Aesthetics from "../../../public/aesthetics.jpg";
+import FoodIntolerence from "../../../public/food-intolerance.jpg";
+import LifeQuality from "../../../public/life-quality.jpg";
+import NutritionalReeducation from "../../../public/nutritional-reeducation.jpg";
+import WeightLoss from "../../../public/weight-loss.jpg";
 
 export interface ServiceObject {
   code: number;
