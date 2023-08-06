@@ -1,6 +1,7 @@
 import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 
 import Image from "next/image";
+import Logo from "/logo.png";
 
 import Footer from "../components/Footer";
 import HeaderTop from "../components/HeaderTop";
@@ -48,7 +49,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             href={process.env.FULL_URL}
           >
             <Image
-              src="/logo.png"
+              src={Logo}
               alt={
                 capitalizeSentence(
                   dictionaire.basicPrefixAlternativeImageText
@@ -57,8 +58,6 @@ export default async function Home({ params: { lang } }: PageProps) {
                 capitalizePersonName(professionalFullNameWithTitle)
               }
               title={capitalizePersonName(professionalFullNameWithTitle)}
-              width={250}
-              height={250}
             />
           </a>
           <h1 className="hidden lg:flex lg:basis-3/12 flex-col justify-center">
@@ -169,6 +168,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           );
         })}
       </main>
+      <div className="sticky bottom-0 right-0 z-50 rounded-full bg-primary-700 w-20 h-20"></div>
 
       <Footer />
     </>
