@@ -2,6 +2,7 @@ import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 
 import Image from "next/image";
 import Logo from "/logo.png";
+import TheNutritionistImage from "/the-nutritionist-suemi.jpg";
 
 import Footer from "../components/Footer";
 import HeaderTop from "../components/HeaderTop";
@@ -101,7 +102,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             <ServicesList services={dictionaire.services} />
             <figure className="flex-1 flex flex-col gap-4">
               <Image
-                src="/the-nutritionist-suemi.jpg"
+                src={TheNutritionistImage}
                 alt={
                   capitalizeSentence(
                     dictionaire.basicPrefixAlternativeImageText
@@ -110,8 +111,6 @@ export default async function Home({ params: { lang } }: PageProps) {
                   capitalizePersonName(professionalFullNameWithTitle)
                 }
                 title={capitalizePersonName(professionalFullNameWithTitle)}
-                width={369}
-                height={324}
                 className="m-auto"
               />
               <figcaption className="text-center font-bold">
