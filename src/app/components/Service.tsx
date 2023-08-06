@@ -1,13 +1,12 @@
 import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 import Image, { StaticImageData } from "next/image";
 import WhatsAppButton from "./WhatsAppButton";
-import Aesthetics from "/aesthetics.png";
-import FoodIntolerence from "/food-intolerence.png";
-import {
-  default as LifeQuality,
-  default as NutritionalReeducation,
-} from "/life-quality.png";
-import WeightLoss from "/weight-loss.png";
+
+import Aesthetics from "../../../public/aesthetics.png";
+import FoodIntolerence from "../../../public/food-intolerence.png";
+import LifeQuality from "../../../public/life-quality.png";
+import NutritionalReeducation from "../../../public/nutritional-reeducation.png";
+import WeightLoss from "../../../public/weight-loss.png";
 
 export interface ServiceObject {
   code: number;
