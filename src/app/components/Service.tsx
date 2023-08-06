@@ -1,8 +1,16 @@
 import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import WhatsAppButton from "./WhatsAppButton";
+import Aesthetics from "/aesthetics.png";
+import FoodIntolerence from "/food-intolerence.png";
+import {
+  default as LifeQuality,
+  default as NutritionalReeducation,
+} from "/life-quality.png";
+import WeightLoss from "/weight-loss.png";
 
 export interface ServiceObject {
+  code: number;
   id: string;
   name: string;
   description: string;
@@ -22,6 +30,26 @@ function Service({
   servicesMessageText,
   fullPhoneNumber,
 }: ServiceProps) {
+  let image: StaticImageData = NutritionalReeducation;
+
+  switch (service.code) {
+    case 0:
+      image = NutritionalReeducation;
+      break;
+    case 1:
+      image = WeightLoss;
+      break;
+    case 2:
+      image = FoodIntolerence;
+      break;
+    case 3:
+      image = Aesthetics;
+      break;
+    case 4:
+      image = LifeQuality;
+      break;
+  }
+
   return (
     <section
       id={service.id}
@@ -34,11 +62,9 @@ function Service({
       <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-4 lg:gap-16">
         <figure className="lg:hidden flex-1 flex flex-col gap-4">
           <Image
-            src={`/${service.id}.jpg`}
+            src={image}
             alt={service.name}
             title={service.name}
-            width={626}
-            height={425}
             className="m-auto"
           />
           <figcaption className="text-center font-bold">

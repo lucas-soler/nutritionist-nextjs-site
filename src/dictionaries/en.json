@@ -33,30 +33,35 @@
   "aboutContent": "i have been working as a nutritionist for about 15 years. during this period, my main focus has been on promoting optimal health through disease prevention via nutrition.|i have assisted hundreds of individuals in truly improving their well-being through dietary adjustments and have also played a role in curing chronic health issues.|i am a specialist in intestinal modulation, treating dysbiosis, irritable bowel syndrome, SIBO, SIFO, constipation, diarrhea, and weight loss.",
   "services": [
     {
+      "code": 0,
       "id": "nutritional-reeducation",
       "name": "nutritional reeducation",
       "description": "this is a short description of nutritional reeducation",
       "scheduleText": "want to reeducate! 🤓"
     },
     {
+      "code": 1,
       "id": "weight-loss",
       "name": "weight loss",
       "description": "this is a short description of weight loss",
       "scheduleText": "let's drop the weight! 💪"
     },
     {
+      "code": 2,
       "id": "food-intolerance",
       "name": "food intolerance and allergies",
       "description": "this is a short description of food intolerance and allergies",
       "scheduleText": "help me! 😵‍💫"
     },
     {
+      "code": 3,
       "id": "aesthetics",
       "name": "aesthetics",
       "description": "this is a short description of aesthetics",
       "scheduleText": "want to look better!💄💇‍♀️"
     },
     {
+      "code": 4,
       "id": "life-quality",
       "name": "life quality",
       "description": "this is a short description of life quality",

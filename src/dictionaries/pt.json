@@ -33,30 +33,35 @@
   "aboutContent": "atuo como nutricionista há cerca de 15 anos. nesse período, atuei principalmente na promoção da saúde ideal através da prevenção de doenças por meio da nutrição.|ajudei centenas de pessoas a se sentirem realmente melhor através da sua alimentação e também ajudei na cura de problemas crônicos de saúde.|sou especialista em modulação intestinal, tratamento de disbiose, síndrome do intestino irritável, sifo, sibo, constipação, diarréia e emagrecimento.",
   "services": [
     {
+      "code": 0,
       "id": "nutritional-reeducation",
       "name": "reeducação alimentar",
       "description": "esta é um breve descrição de reeducação nutricional",
       "scheduleText": "quero me reeducar! 🤓"
     },
     {
+      "code": 1,
       "id": "weight-loss",
       "name": "perda de peso",
       "description": "esta é um breve descrição sobre perda de peso",
       "scheduleText": "vamos perder peso! 💪"
     },
     {
+      "code": 2,
       "id": "food-intolerance",
       "name": "intolerâncias alimentares e alergias",
       "description": "esta é um breve descrição sobre intolerâncias alimentares e alergias",
       "scheduleText": "me ajuda! 😵‍💫"
     },
     {
+      "code": 3,
       "id": "aesthetics",
       "name": "estética",
       "description": "esta é um breve descrição sobre estética",
       "scheduleText": "quero melhorar minha aparência!💄💇‍♀️"
     },
     {
+      "code": 4,
       "id": "life-quality",
       "name": "qualidade de vida",
       "description": "esta é um breve descrição sobre qualidade de vida",
