@@ -34,6 +34,7 @@ function Testimonials({ testimonials }: TestimonialsProps) {
               alt={`${testimonial.alternative_image_text}`}
               width={400}
               height={400}
+              quality={100}
             />
             <div className="my-carousel">
               <h3>{testimonial.name}</h3>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Logo from "../../../public/logo.png";
 import TheNutritionistImage from "../../../public/the-nutritionist-suemi.png";
 
+import BackButton from "../components/BackButton";
 import Footer from "../components/Footer";
 import HeaderTop from "../components/HeaderTop";
 import Menu from "../components/Menu";
@@ -59,6 +60,7 @@ export default async function Home({ params: { lang } }: PageProps) {
                 capitalizePersonName(professionalFullNameWithTitle)
               }
               title={capitalizePersonName(professionalFullNameWithTitle)}
+              quality={100}
             />
           </a>
           <h1 className="hidden lg:flex lg:basis-3/12 flex-col justify-center">
@@ -112,6 +114,8 @@ export default async function Home({ params: { lang } }: PageProps) {
                 }
                 title={capitalizePersonName(professionalFullNameWithTitle)}
                 className="m-auto"
+                height={300}
+                quality={100}
               />
               <figcaption className="text-center font-bold">
                 {capitalizePersonName(professionalFullNameWithTitle)}
@@ -167,9 +171,8 @@ export default async function Home({ params: { lang } }: PageProps) {
           );
         })}
       </main>
-      <div className="sticky bottom-0 right-0 z-50 rounded-full bg-primary-700 w-20 h-20"></div>
-
       <Footer />
+      <BackButton />
     </>
   );
 }

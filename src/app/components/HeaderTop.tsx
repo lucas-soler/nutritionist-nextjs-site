@@ -35,7 +35,8 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
             alt={capitalizeSentence(dictionaire.portugueseLanguage)}
             title={capitalizeSentence(dictionaire.portugueseLanguage)}
             width={32}
-            height={32}
+            height={32} 
+            quality={100}
           />
         </Link>
 
@@ -47,6 +48,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
             title={capitalizeSentence(dictionaire.englishLanguage)}
             width={32}
             height={32}
+            quality={100}
           />
         </Link>
       </div>
