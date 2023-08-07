@@ -142,6 +142,8 @@ export async function generateStaticParams() {
 }
 
 export default function Root({ children, params }: Props) {
+  
+
   return (
     <html
       lang={params.lang}
