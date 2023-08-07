@@ -2,7 +2,7 @@ import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 
 import Image from "next/image";
 import Logo from "../../../public/logo.png";
-import TheNutritionistImage from "../../../public/the-nutritionist-suemi.jpg";
+import TheNutritionistImage from "../../../public/the-nutritionist-suemi.png";
 
 import Footer from "../components/Footer";
 import HeaderTop from "../components/HeaderTop";

@@ -82,12 +82,12 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
       siteName: capitalizePersonName(`${dictionaire.title}`),
       images: [
         {
-          url: `${process.env.FULL_URL}/the-nutritionist-suemi.jpg`,
+          url: `${process.env.FULL_URL}/the-nutritionist-suemi.png`,
           width: 800,
           height: 600,
         },
         {
-          url: `${process.env.FULL_URL}/the-nutritionist-suemi.jpg`,
+          url: `${process.env.FULL_URL}/the-nutritionist-suemi.png`,
           width: 1800,
           height: 1600,
           alt: "My custom alt",
@@ -102,7 +102,7 @@ export async function generateMetadata({ params: { lang } }: PageProps) {
       description: "",
       creator: "@nextjs",
       images: {
-        url: `${process.env.FULL_URL}/the-nutritionist-suemi.jpg`,
+        url: `${process.env.FULL_URL}/the-nutritionist-suemi.png`,
         alt: "Nutricionista Suemi Soler",
       },
       app: {
