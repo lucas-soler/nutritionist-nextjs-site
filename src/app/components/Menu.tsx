@@ -1,6 +1,5 @@
 "use client";
 
-import { capitalizeSentence } from "@/utils/utils";
 import { useState } from "react";
 import MenuLink from "./MenuLink";
 
@@ -49,7 +48,7 @@ function Menu({ menu }: MenuProps) {
           <MenuLink
             key={menuProps[index]}
             menuItemID={menuProps[index]}
-            text={capitalizeSentence(menuItem)}
+            text={menuItem}
             href={href}
             isActive={menuItemStates[menuProps[index]]}
             changeMenuItemsState={handleChangeMenuItemStates}

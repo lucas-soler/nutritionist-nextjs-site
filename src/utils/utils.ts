@@ -38,3 +38,12 @@ export const capitalizePersonName = (sentence: string) => {
 
   return fullName.join(" ");
 };
+
+export function capitalizeWord(word: string): string {
+  const wordArray = word.split("");
+  wordArray[0] = wordArray[0].toLocaleUpperCase();
+
+  const capitalizedWord = wordArray.join("");
+
+  return capitalizedWord;
+}

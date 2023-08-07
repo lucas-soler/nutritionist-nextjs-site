@@ -1,6 +1,6 @@
 "use client";
 
-import { capitalizeSentence } from "@/utils/utils";
+import { capitalizeSentence, capitalizeWord } from "@/utils/utils";
 import { EnvelopeSimple, InstagramLogo, Phone } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,7 +35,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
             alt={capitalizeSentence(dictionaire.portugueseLanguage)}
             title={capitalizeSentence(dictionaire.portugueseLanguage)}
             width={32}
-            height={32} 
+            height={32}
             quality={100}
           />
         </Link>
@@ -115,14 +115,13 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               {menuItems.map((menuItem, index) => {
                 const href = index === 0 ? "#" : `#${menuProps[index]}`;
-
                 return (
                   <li
                     key={`hamburguer-${menuProps[index]}`}
                     className="border-b border-gray-600 my-8 uppercase"
                   >
                     <a href={`${href}`} onClick={() => setIsNavOpen(false)}>
-                      {capitalizeSentence(menuItem)}
+                      {capitalizeWord(menuItem)}
                     </a>
                   </li>
                 );

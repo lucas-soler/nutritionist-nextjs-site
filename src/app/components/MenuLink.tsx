@@ -1,6 +1,6 @@
 "use client";
 
-import { capitalizeSentence } from "@/utils/utils";
+import { capitalizeSentence, capitalizeWord } from "@/utils/utils";
 
 interface MenuLinkProps {
   menuItemID: string;
@@ -31,7 +31,7 @@ function MenuLink({
       }`}
       onClick={() => handleMenuClick(href)}
     >
-      {capitalizeSentence(text)}
+      {capitalizeWord(text)}
     </li>
   );
 }

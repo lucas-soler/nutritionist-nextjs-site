@@ -147,11 +147,13 @@ export default async function Home({ params: { lang } }: PageProps) {
             {aboutSentences.map((phrase) => {
               return (
                 <>
-                  <span className="text-justify">{phrase}</span>
+                  <span className="xl:w-1/3 xl:gap-4">{phrase}</span>
+                  <br />
                   <br />
                 </>
               );
             })}
+            .
           </p>
         </section>
         <section

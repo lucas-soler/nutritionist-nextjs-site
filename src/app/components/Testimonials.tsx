@@ -1,6 +1,5 @@
 "use client";
 
-import { capitalizeSentence } from "@/utils/utils";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -38,7 +37,7 @@ function Testimonials({ testimonials }: TestimonialsProps) {
             />
             <div className="my-carousel">
               <h3>{testimonial.name}</h3>
-              <p>{capitalizeSentence(testimonial.description)}</p>
+              <p>{testimonial.description}</p>
             </div>
           </div>
         );
