@@ -149,7 +149,6 @@ export default async function Home({ params: { lang } }: PageProps) {
                 <>
                   <span className="xl:w-1/3 xl:gap-4">{phrase}</span>
                   <br />
-                  <br />
                 </>
               );
             })}
