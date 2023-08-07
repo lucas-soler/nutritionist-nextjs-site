@@ -64,13 +64,15 @@ export default async function Home({ params: { lang } }: PageProps) {
                 capitalizePersonName(professionalFullNameWithTitle)
               }
               title={capitalizePersonName(professionalFullNameWithTitle)}
+              className="h-36 sm:h-40 md:h-72 lg:h-32 xl:h-36 2xl:h-52"
               quality={100}
             />
           </a>
           <h1 className="hidden lg:flex lg:basis-3/12 flex-col justify-center">
             <span className="text-center">Suemi Shimizu Soler</span>
             <span className="text-center">
-              Nutricionista funcional - CRN {dictionaire.crnNumber}
+              {capitalizePersonName(dictionaire.speciality)} - CRN{" "}
+              {dictionaire.crnNumber}
             </span>
           </h1>
           <Menu menu={dictionaire.mainMenu} />
