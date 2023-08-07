@@ -1,7 +1,9 @@
 import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 
 import Image from "next/image";
+import LogoEN from "../../../public/logo-en.png";
 import Logo from "../../../public/logo.png";
+
 import TheNutritionistImage from "../../../public/the-nutritionist-suemi.png";
 
 import BackButton from "../components/BackButton";
@@ -16,12 +18,12 @@ import { getDictionary } from "./dictionaries";
 
 export type PageProps = {
   params: {
-    lang: string;
+    lang: "en" | "pt";
   };
 };
 
 export type ComponentProps = {
-  lang: string;
+  lang: "en" | "pt";
 };
 
 export default async function Home({ params: { lang } }: PageProps) {
@@ -37,6 +39,8 @@ export default async function Home({ params: { lang } }: PageProps) {
   const aboutCapitalized = capitalizeSentence(dictionaire.aboutContent);
   const aboutSentences = aboutCapitalized.split("|");
 
+  const logo = lang === "en" ? LogoEN : Logo;
+
   return (
     <>
       <header className="sticky top-0 z-40 flex flex-col">
@@ -51,7 +55,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             href={process.env.FULL_URL}
           >
             <Image
-              src={Logo}
+              src={logo}
               alt={
                 capitalizeSentence(
                   dictionaire.basicPrefixAlternativeImageText
