@@ -20,7 +20,7 @@ function Footer({ dictionaire }: FooterProps) {
   };
 
   return (
-    <footer className="flex flex-row top-16 pb-4">
+    <footer className="flex flex-col gap-6 sm:flex-row sm:gap-0 top-16 pb-4">
       <section className="flex flex-col flex-1 items-left">
         <h2>{capitalizeSentence(dictionaire.consultationHeader)}</h2>
         <article className="mt-3">
@@ -52,7 +52,7 @@ function Footer({ dictionaire }: FooterProps) {
           </a>
         </article>
       </section>
-      <section className="flex flex-1 justify-end">
+      <section className="flex flex-1 justify-start sm:justify-end">
         <span>
           © {new Date().getFullYear()} {dictionaire.rights}
         </span>
