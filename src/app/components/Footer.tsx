@@ -20,11 +20,8 @@ function Footer({ dictionaire }: FooterProps) {
   };
 
   return (
-    <footer className="flex flex-row justify-between relative top-16 pb-4">
-      <section className="flex-1">
-        © {new Date().getFullYear()} {dictionaire.rights}
-      </section>
-      <section className="flex flex-col flex-1 justify-self-start">
+    <footer className="flex flex-row top-16 pb-4">
+      <section className="flex flex-col flex-1 items-left">
         <h2>{capitalizeSentence(dictionaire.consultationHeader)}</h2>
         <article className="mt-3">
           <a
@@ -54,6 +51,11 @@ function Footer({ dictionaire }: FooterProps) {
             <span>{dictionaire.emailAccount}</span>
           </a>
         </article>
+      </section>
+      <section className="flex flex-1 justify-end">
+        <span>
+          © {new Date().getFullYear()} {dictionaire.rights}
+        </span>
       </section>
     </footer>
   );

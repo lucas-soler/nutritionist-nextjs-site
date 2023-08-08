@@ -45,6 +45,7 @@
     background: theme(colors.primary.700);
     color: theme(colors.white);
     padding: 2rem;
+    margin-top: 2rem;
   }
 
   footer > section > h2 {
