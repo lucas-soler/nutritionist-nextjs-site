@@ -16,6 +16,7 @@
     "testimonials": "testimonials"
   },
   "fullPhoneNumber": "554732098511",
+  "whatsAppPhoneNumber": "+55 47 32098511",
   "initialMessageText": "hi! i have visited your site and i would like to schedule a consultation as soon as possible",
   "servicesMessageText": "hi! i have visited your site and i would like to schedule a consultation as soon as possible. i am interested in the service ",
   "instagramAccountURL": "https://www.instagram.com/nutrisuemi/",
@@ -91,5 +92,7 @@
       "name": "Daniel Larusso",
       "description": "The treatment with Suemi was wonderful! I still feel the benefits to this day!"
     }
-  ]
+  ],
+  "rights": "Suemi Soler Nutritionist. All rights reserved.",
+  "consultationHeader": "appoint your consultation"
 }

@@ -47,6 +47,23 @@
     padding: 2rem;
   }
 
+  footer > section > h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  footer > section > article > a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  footer > section > article > button {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
   .hideModal {
     display: none;
   }

@@ -178,7 +178,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           );
         })}
       </main>
-      <Footer />
+      <Footer dictionaire={dictionaire} />
       <BackButton />
     </>
   );
