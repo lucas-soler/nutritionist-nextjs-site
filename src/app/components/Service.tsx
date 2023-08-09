@@ -64,7 +64,7 @@ function Service({
             src={image}
             alt={service.name}
             title={service.name}
-            className="m-auto" 
+            className="m-auto"
             quality={100}
           />
           <figcaption className="text-center font-bold">
@@ -78,8 +78,6 @@ function Service({
         )}
         <section className="flex-1 flex justify-between flex-col gap-6">
           <p>
-            {capitalizeSentence(service.name)}
-            <br />
             {capitalizeSentence(service.name)}
             <br />
             {capitalizeSentence(service.name)}
@@ -123,7 +121,7 @@ function ServiceImage({ serviceID, serviceName }: ServiceImageProps) {
         title={serviceName}
         width={626}
         height={425}
-        className="m-auto" 
+        className="m-auto"
         quality={100}
       />
     </figure>
