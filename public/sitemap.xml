@@ -1,0 +1,21 @@
+ <!-- public/sitemap.xml -->
+   <xml version="1.0" encoding="UTF-8">
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     <url>
+       <loc>http://www.nutrisuemi.com/</loc>
+       <lastmod>2021-08-10</lastmod>
+     </url>
+     <url>
+       <loc>http://www.nutrisuemi.com/#services</loc>
+       <lastmod>2021-08-10</lastmod>
+     </url>
+      <url>
+       <loc>http://www.nutrisuemi.com/#about</loc>
+       <lastmod>2021-08-10</lastmod>
+     </url>
+      <url>
+       <loc>http://www.nutrisuemi.com/#testimonials</loc>
+       <lastmod>2021-08-10</lastmod>
+     </url>
+   </urlset>
+   </xml>
