@@ -10,7 +10,7 @@
   "consultationsScope": "consultas para o mundo todo!",
   "basicPrefixAlternativeImageText": "uma imagem de",
   "mainMenu": {
-    "welcome": "início",
+    "worldwide": "mundo 🌎",
     "services": "serviços",
     "about": "sobre",
     "testimonials": "depoimentos"
@@ -27,24 +27,24 @@
   "emailPrefix": "enviar email para",
   "scheduleOn": "agende no",
   "scheduleApp": "whatsapp",
-  "scheduleText": "quero agende uma consulta",
+  "scheduleText": "quero agendar uma consulta",
   "englishLanguage": "versão em inglês",
   "portugueseLanguage": "versão em português",
   "emailSubject": "Oi! Eu gostaria de saber mais sobre as suas consultas!",
   "emailBody": "Oi Suemi!%0D%0A%0D%0AEu visitei seu site nutrisuemi.com e decidi lhe enviar esse email para saber mais sobre os seus serviços.%0D%0A%0D%0APor favor, entre em contato comigo o mais rápido possível para agendar uma consulta.%0D%0A%0D%0AObrigado!",
-  "aboutContent": "nutricionista funcional integrativa com 13 anos de experiência, formada em Nutrição no ano de 2010 pela Universidade Regional de Blumenau (FURB), com cursos de especialização na área de Nutrição funcional (Exames laboratoriais - Gabriel de Carvalho) e especialização em Modulação.|o foco do meu trabalho é DESINFLAMAR e tratar a CAUSA dos seus sintomas e te ajudar a alcançar o seu potencial máximo de saúde física e mental através de uma alimentação realista, gostosa e saudável. vou te ajudar a identificar a raiz dos seus problemas gastrointestinais para você se libertar da barriga inchada, gases e dores intestinais.|sou apaixonada de ver o poder que a Nutrição tem em transformar a vida das pessoas e devolver a sua vitalidade e qualidade de vida.",
+  "aboutContent": "nutricionista funcional integrativa com 13 anos de experiência, formada em Nutrição no ano de 2010 pela Universidade Regional de Blumenau (FURB), com cursos de especialização na área de Nutrição Funcional e Modulação Intestinal e Microbiota.|o foco do meu trabalho é DESINFLAMAR e tratar a CAUSA dos seus sintomas e te ajudar a alcançar o seu potencial máximo de saúde física e mental através de uma alimentação realista, gostosa e saudável.|vou te ajudar a identificar a raiz dos seus problemas gastrointestinais para você se libertar da barriga inchada, gases e dores intestinais. sou apaixonada pelo poder que a Nutrição tem em transformar a vida das pessoas, devolvendo a sua vitalidade e qualidade de vida.",
   "services": [
     {
       "code": 0,
       "id": "nutritional-reeducation",
-      "name": "reeducação alimentar",
+      "name": "modulação intestinal e síndrome do intestino irritável",
       "description": "esta é um breve descrição de reeducação nutricional",
       "scheduleText": "quero me reeducar! 🤓"
     },
     {
       "code": 1,
       "id": "weight-loss",
-      "name": "perda de peso",
+      "name": "emagrecimento definitivo e melhora da composição corporal",
       "description": "esta é um breve descrição sobre perda de peso",
       "scheduleText": "vamos perder peso! 💪"
     },
@@ -58,14 +58,14 @@
     {
       "code": 3,
       "id": "aesthetics",
-      "name": "estética",
+      "name": "doenças auto imunes",
       "description": "esta é um breve descrição sobre estética",
       "scheduleText": "quero melhorar minha aparência!💄💇‍♀️"
     },
     {
       "code": 4,
       "id": "life-quality",
-      "name": "qualidade de vida",
+      "name": "qualidade de vida e reeducação alimentar",
       "description": "esta é um breve descrição sobre qualidade de vida",
       "scheduleText": "melhore minha qualidade de vida! 🏋️"
     }

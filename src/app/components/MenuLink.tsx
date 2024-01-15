@@ -26,9 +26,7 @@ function MenuLink({
     <li
       id={`menu-item-${menuItemID}`}
       title={`${capitalizeSentence(text)}`}
-      className={`basis-1/5 text-center rounded-full p-2 duration-300 hover:bg-white hover:text-primary-700 hover:cursor-pointer ${
-        isActive ? "bg-white text-primary-700" : ""
-      }`}
+      className={`flex basis-1/5 justify-center items-end p-2 duration-300 hover:text-primary-500 hover:cursor-pointer`}
       onClick={() => handleMenuClick(href)}
     >
       {capitalizeWord(text)}

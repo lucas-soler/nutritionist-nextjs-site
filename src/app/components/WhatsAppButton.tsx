@@ -32,7 +32,7 @@ function WhatsAppButton({
 
   if (backgroundColor === "green")
     style =
-      "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-primary-500 text-white lg:text-2xl rounded-full justify-center items-center animated-button-green";
+      "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-primary-700 text-white text-sm rounded-full justify-center items-center animated-button-green";
 
   return (
     <button

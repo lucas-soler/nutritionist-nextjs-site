@@ -28,8 +28,8 @@
 
   nav {
     font-weight: 600;
-    background: theme(colors.primary.700);
-    color: theme(colors.white);
+    background: theme(colors.white);
+    color: theme(colors.primary.700);
   }
 
   main {
@@ -100,7 +100,7 @@
   }
 
   .animated-button-green:hover {
-    animation: pulse-green 1.1s infinite;
+    animation: pulse-hover-green 1.1s infinite;
   }
 
   .link-effect:hover {

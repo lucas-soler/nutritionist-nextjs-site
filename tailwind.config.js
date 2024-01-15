@@ -7,6 +7,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      title: ['"Montserrat"', "sans-serif"],
+    },
     colors: {
       salmon: {
         400: "#fa968b",
@@ -35,7 +38,7 @@ export default {
         400: "#59aa77",
         500: "#46865e",
         600: "#366547",
-        700: "#386C54",
+        700: "#556F59",
       },
       secondary: {
         400: "#fad3d2",

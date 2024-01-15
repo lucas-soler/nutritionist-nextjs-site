@@ -26,7 +26,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <section className="flex justify-stretch mt-2 ml-2 p-2 flex-1 text-sm font-semibold">
+    <section className="flex justify-stretch mt-2 ml-2 p-2 flex-1 text-sm font-semibol">
       <div className="flex-1 flex justify-start items-center gap-3">
         <Link href={siteURL + "/pt"} prefetch>
           <Image

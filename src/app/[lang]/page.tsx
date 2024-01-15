@@ -43,13 +43,14 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="sticky top-0 z-40 flex flex-col">
+      <header className="top-0 z-40 flex flex-col">
         <HeaderTop
           menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
           siteURL={`${process.env.FULL_URL}`}
         />
         <nav className="gap-5 lg:gap-0 justify-between lg:justify-center p-2 flex flex-1 flex-row items-center">
+          {/*
           <a
             className="basis-3/5 lg:basis-2/12 flex justify-center items-center"
             href={process.env.FULL_URL}
@@ -68,7 +69,8 @@ export default async function Home({ params: { lang } }: PageProps) {
               quality={100}
             />
           </a>
-          <h1 className="hidden lg:flex lg:basis-3/12 flex-col justify-center">
+            */}
+          <h1 className="font-title hidden lg:flex lg:basis-3/12 flex-col justify-center font-light">
             <span className="text-center">Suemi Shimizu Soler</span>
             <span className="text-center">
               {capitalizePersonName(dictionaire.speciality)} - CRN{" "}
@@ -84,14 +86,15 @@ export default async function Home({ params: { lang } }: PageProps) {
             }
             fullPhoneNumber={dictionaire.fullPhoneNumber}
             initialMessageText={dictionaire.initialMessageText}
+            backgroundColor="green"
           />
         </nav>
       </header>
 
-      <main className="flex flex-col px-1 gap-6 lg:gap-16">
+      <main className="flex flex-col gap-6 lg:gap-16">
         <section
           id="welcome"
-          className="flex-1 lg:py-72 mt-2 flex justify-center items-center aspect-w-16 aspect-h-9"
+          className="flex flex-1 lg:py-64 mt-8 justify-center items-center aspect-w-3 aspect-h-2 bg-primary-700"
         >
           <iframe
             src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
@@ -104,7 +107,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           className="flex-1 flex flex-col justify-center items-center px-2 gap-4 scroll-mt-56 2xl:scroll-mt-64"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
-            {capitalizeSentence(dictionaire.mainMenu.services)} teste
+            {capitalizeSentence(dictionaire.mainMenu.services)}
           </h2>
           <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
             <ServicesList services={dictionaire.services} />
@@ -138,12 +141,12 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 2xl:scroll-mt-64 px-2 gap-4"
+          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 2xl:scroll-mt-64 px-2 gap-4 bg-primary-700"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
           </h2>
-          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row text-left gap-1 lg:gap-4">
+          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-1 lg:gap-4">
             {aboutSentences.map((phrase) => {
               return (
                 <>
