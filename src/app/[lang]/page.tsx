@@ -50,7 +50,6 @@ export default async function Home({ params: { lang } }: PageProps) {
           siteURL={`${process.env.FULL_URL}`}
         />
         <nav className="gap-5 lg:gap-0 justify-between lg:justify-center p-2 flex flex-1 flex-row items-center">
-          {/*
           <a
             className="basis-3/5 lg:basis-2/12 flex justify-center items-center"
             href={process.env.FULL_URL}
@@ -69,7 +68,7 @@ export default async function Home({ params: { lang } }: PageProps) {
               quality={100}
             />
           </a>
-            */}
+
           <h1 className="font-title hidden lg:flex lg:basis-3/12 flex-col justify-center font-light">
             <span className="text-center">Suemi Shimizu Soler</span>
             <span className="text-center">
@@ -91,7 +90,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
 
-      <main className="flex flex-col gap-6 lg:gap-16">
+      <main className="flex px-4 flex-col gap-6 lg:gap-16">
         <section
           id="welcome"
           className="flex flex-1 lg:py-64 mt-8 justify-center items-center aspect-w-3 aspect-h-2 bg-primary-700"

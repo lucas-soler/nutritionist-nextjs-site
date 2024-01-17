@@ -50,7 +50,7 @@ function Menu({ menu }: MenuProps) {
       <li
         id={`menu-item-home`}
         title={`home`}
-        className={`flex justify-center items-center basis-1/6 p-2 hover:cursor-pointer`}
+        className={`flex lg:hidden xl:flex justify-center items-center basis-1/6 p-2 hover:cursor-pointer`}
         onClick={handleBackHome}
       >
         <House size={25} color="#556F59" weight="fill" />
