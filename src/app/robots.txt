@@ -1,4 +1,4 @@
-User-agent: *
-Disallow:
-
+User-Agent: *
+Allow: /
+Disallow: 
 Sitemap: https://nutrisuemi.com/sitemap.xml
