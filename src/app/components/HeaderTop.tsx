@@ -27,7 +27,7 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
 
   return (
     <section className="flex justify-stretch mt-2 ml-2 p-2 flex-1 text-sm font-semibol">
-      <div className="flex-1 flex justify-start items-center gap-3">
+      <div className="flex justify-start items-center gap-3">
         <Link href={siteURL + "/pt"} prefetch>
           <Image
             src="/portuguese.svg"
@@ -52,7 +52,8 @@ function HeaderTop({ menu, siteURL, dictionaire }: HeaderTopProps) {
           />
         </Link>
       </div>
-      <div className="flex justify-end items-center gap-3 mr-2">
+
+      <div className="flex flex-1 justify-end items-center gap-3 mr-2">
         <a
           href={dictionaire.instagramAccountURL}
           target="_blank"

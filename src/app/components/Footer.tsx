@@ -1,6 +1,6 @@
 "use client";
 
-import { capitalizeSentence } from "@/utils/utils";
+import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 import { EnvelopeSimple, Phone, WhatsappLogo } from "@phosphor-icons/react";
 
 interface FooterProps {
@@ -52,10 +52,17 @@ function Footer({ dictionaire }: FooterProps) {
           </a>
         </article>
       </section>
-      <section className="flex flex-1 justify-start sm:justify-end">
-        <span>
+      <section className="flex flex-1 flex-col items-start lg:flex-initial lg:items-center justify-between">
+        <h1 className="flex flex-col lg:items-center">
+          <span>Suemi Shimizu Soler</span>
+          <span>
+            {capitalizePersonName(dictionaire.speciality)} - CRN{" "}
+            {dictionaire.crnNumber}
+          </span>
+        </h1>
+        <span className="mt-6">
           © {new Date().getFullYear()} {dictionaire.rights}
-        </span>
+        </span>{" "}
       </section>
     </footer>
   );

@@ -49,11 +49,8 @@ export default async function Home({ params: { lang } }: PageProps) {
           dictionaire={dictionaire}
           siteURL={`${process.env.FULL_URL}`}
         />
-        <nav className="gap-5 lg:gap-0 justify-between lg:justify-center p-2 flex flex-1 flex-row items-center">
-          <a
-            className="basis-3/5 lg:basis-2/12 flex justify-center items-center"
-            href={process.env.FULL_URL}
-          >
+        <nav className="gap-5 lg:gap-0 justify-between p-2 flex flex-1 flex-row items-center self-center w-full xl:w-3/4 2xl:w-2/3">
+          <a className="flex w-1/5" href={process.env.FULL_URL}>
             <Image
               src={logo}
               alt={
@@ -63,19 +60,12 @@ export default async function Home({ params: { lang } }: PageProps) {
                 " " +
                 capitalizePersonName(professionalFullNameWithTitle)
               }
+              width={230}
               title={capitalizePersonName(professionalFullNameWithTitle)}
-              className="h-36 sm:h-40 md:h-72 lg:h-32 xl:h-36 2xl:h-52"
               quality={100}
             />
           </a>
 
-          <h1 className="font-title hidden lg:flex lg:basis-3/12 flex-col justify-center font-light">
-            <span className="text-center">Suemi Shimizu Soler</span>
-            <span className="text-center">
-              {capitalizePersonName(dictionaire.speciality)} - CRN{" "}
-              {dictionaire.crnNumber}
-            </span>
-          </h1>
           <Menu menu={dictionaire.mainMenu} />
           <WhatsAppButton
             text={
@@ -90,7 +80,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
 
-      <main className="flex px-4 flex-col gap-6 lg:gap-16">
+      <main className="flex flex-col gap-6 lg:gap-16">
         <section
           id="welcome"
           className="flex flex-1 lg:py-64 mt-8 justify-center items-center aspect-w-3 aspect-h-2 bg-primary-700"
