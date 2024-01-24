@@ -1,6 +1,5 @@
 "use client";
 
-import { House } from "@phosphor-icons/react";
 import { useState } from "react";
 import MenuLink from "./MenuLink";
 
@@ -43,16 +42,7 @@ function Menu({ menu }: MenuProps) {
   }
 
   return (
-    <ul className="hidden lg:flex w-3/5 flex-row" role="list">
-      <li
-        id={`menu-item-home`}
-        title={`home`}
-        className={`flex flex-1 lg:hidden xl:flex justify-center items-center p-2 hover:cursor-pointer`}
-        onClick={handleBackHome}
-      >
-        <House size={25} color="#556F59" weight="fill" />
-      </li>
-
+    <ul className="hidden lg:flex w-3/5 flex-row" role="list" id="welcome">
       {menuItems.map((menuItem, index) => {
         const href = index === 0 ? "#" : `#${menuProps[index]}`;
 

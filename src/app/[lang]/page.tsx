@@ -49,7 +49,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           dictionaire={dictionaire}
           siteURL={`${process.env.FULL_URL}`}
         />
-        <nav className="gap-5 lg:gap-0 justify-between p-2 flex flex-1 flex-row items-center self-center w-full xl:w-3/4 2xl:w-2/3">
+        <nav className="gap-5 lg:gap-0 justify-between p-2 flex flex-1 flex-row items-center self-center w-full xl:w-11/12 2xl:w-9/12">
           <a className="flex w-1/5" href={process.env.FULL_URL}>
             <Image
               src={logo}
@@ -68,23 +68,15 @@ export default async function Home({ params: { lang } }: PageProps) {
 
           <Menu menu={dictionaire.mainMenu} />
           <WhatsAppButton
-            text={
-              capitalizeSentence(dictionaire.scheduleOn) +
-              " " +
-              capitalizeSentence(dictionaire.scheduleApp)
-            }
+            text={capitalizeSentence(dictionaire.scheduleConsultation)}
             fullPhoneNumber={dictionaire.fullPhoneNumber}
             initialMessageText={dictionaire.initialMessageText}
             backgroundColor="green"
           />
         </nav>
       </header>
-
       <main className="flex flex-col gap-6 lg:gap-16">
-        <section
-          id="welcome"
-          className="flex flex-1 lg:py-64 mt-8 justify-center items-center aspect-w-3 aspect-h-2 bg-primary-700"
-        >
+        <section className="flex flex-1 lg:py-64 mt-8 justify-center items-center aspect-w-3 aspect-h-2 bg-primary-700">
           <iframe
             src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
             allow="autoplay; picture-in-picture"
@@ -93,7 +85,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="services"
-          className="flex-1 flex flex-col justify-center items-center px-2 gap-4 scroll-mt-56 2xl:scroll-mt-64"
+          className="flex-1 flex flex-col justify-center items-center px-2 gap-4 scroll-mt-12"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
             {capitalizeSentence(dictionaire.mainMenu.services)}
@@ -130,7 +122,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 2xl:scroll-mt-64 px-2 gap-4 bg-primary-700"
+          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 px-2 gap-4 bg-primary-700"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
@@ -149,7 +141,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="testimonials"
-          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 2xl:scroll-mt-64 gap-6 lg:gap-10"
+          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 gap-6 lg:gap-10"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.testimonials)}
