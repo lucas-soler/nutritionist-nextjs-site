@@ -38,56 +38,64 @@
       "code": 0,
       "id": "intestinal-modulation",
       "name": "modulação intestinal",
-      "description": "esta é um breve descrição de reeducação nutricional e síndrome do intestino irritável",
+      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
+      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
       "scheduleText": "quero me curar! 🤕"
     },
     {
       "code": 1,
       "id": "weight-loss",
       "name": "emagrecimento definitivo",
-      "description": "esta é um breve descrição sobre perda de peso",
+      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
+      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
       "scheduleText": "vamos perder peso! 🤩"
     },
     {
       "code": 2,
       "id": "food-intolerance",
       "name": "intolerâncias alimentares e alergias",
-      "description": "esta é um breve descrição sobre intolerâncias alimentares e alergias",
+      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
+      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
       "scheduleText": "me ajuda! 😵‍💫"
     },
     {
       "code": 3,
       "id": "autoimmune-diseases",
       "name": "doenças autoimunes",
-      "description": "esta é um breve descrição sobre doenças auto imunes",
+      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
+      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
       "scheduleText": "quero me curar! 😷"
     },
     {
       "code": 4,
       "id": "hypertrophy",
       "name": "hipertrofia e ganho de massa magra",
-      "description": "esta é um breve descrição sobre hipertrofia e ganho de massa magra",
+      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
+      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
       "scheduleText": "bora ficar fortona! 💪"
     },
     {
       "code": 5,
       "id": "aesthetics",
       "name": "estética",
-      "description": "esta é um breve descrição sobre estética",
+      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
+      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
       "scheduleText": "quero ficar mais bonita do que nunca!💄💇‍♀️"
     },
     {
       "code": 6,
       "id": "life-quality",
       "name": "qualidade de vida",
-      "description": "esta é um breve descrição sobre qualidade de vida",
+      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
+      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
       "scheduleText": "me ajuda a viver melhor ✨🥰"
     },
     {
       "code": 7,
       "id": "nutritional-education",
       "name": "reeducação alimentar",
-      "description": "esta é um breve descrição sobre reeducação alimentar",
+      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
+      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
       "scheduleText": "quero me reeducar! 🤓"
     }
   ],

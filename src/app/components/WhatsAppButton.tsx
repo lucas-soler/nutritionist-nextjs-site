@@ -28,16 +28,16 @@ function WhatsAppButton({
   };
 
   let style =
-    "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-white text-primary-700 text-sm rounded-full justify-center items-center animated-button";
+    "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-white text-primary-700 rounded-full justify-center items-center animated-button";
 
   if (backgroundColor === "green")
     style =
-      "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-primary-700 text-white text-sm rounded-full justify-center items-center animated-button-green";
+      "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-primary-700 text-white rounded-full justify-center items-center animated-button-green";
 
   return (
     <button
       onClick={handleClick}
-      className={style}
+      className={hasIcon ? style + " text-sm" : style + " text-xl"}
       title={`${capitalizeSentence(text)}`}
     >
       {hasIcon ? <WhatsappLogo size={30} className="ml-1" /> : ""}

@@ -12,7 +12,8 @@ export interface ServiceObject {
   code: number;
   id: string;
   name: string;
-  description: string;
+  description1: string;
+  description2: string;
   scheduleText: string;
 }
 
@@ -64,7 +65,7 @@ function Service({
             src={image}
             alt={service.name}
             title={service.name}
-            className="m-auto"
+            className="m-auto rounded-4xl"
             quality={100}
           />
           <figcaption className="text-center font-bold">
@@ -77,15 +78,11 @@ function Service({
           ""
         )}
         <section className="flex-1 flex justify-between flex-col gap-6">
-          <p>
-            {capitalizeSentence(service.name)}
-            <br />
-            {capitalizeSentence(service.name)}
-            <br />
-            {capitalizeSentence(service.name)}
-            <br />
-            {capitalizeSentence(service.name)}
-            <br />
+          <p className="text-justify">
+            {capitalizeSentence(service.description1)}
+          </p>
+          <p className="text-justify">
+            {capitalizeSentence(service.description2)}
           </p>
           <WhatsAppButton
             text={capitalizeSentence(service.scheduleText)}
@@ -121,7 +118,7 @@ function ServiceImage({ serviceID, serviceName }: ServiceImageProps) {
         title={serviceName}
         width={626}
         height={425}
-        className="m-auto"
+        className="m-auto rounded-4xl"
         quality={100}
       />
     </figure>
