@@ -43,7 +43,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="top-0 gap-6 z-40 flex flex-col bg-gradient-to-t from-primary-600 pb-36 lg:pb-24">
+      <header className="top-0 gap-6 z-40 flex flex-col bg-gradient-to-t from-primary-600 pb-24">
         <HeaderTop
           menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
