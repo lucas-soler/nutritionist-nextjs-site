@@ -199,7 +199,7 @@
 
     .my-carousel {
       background: #fafafa;
-      margin-top: -9%;
+      margin-top: -5%;
       width: 88%;
       margin-left: auto;
       margin-right: auto;
@@ -207,7 +207,6 @@
       padding-bottom: 12.5%;
       padding-left: 5%;
       padding-right: 5%;
-      border: 1px solid #ddd;
       height: 269px;
     }
 

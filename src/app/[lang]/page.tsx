@@ -43,7 +43,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="top-0 gap-6 z-40 flex flex-col bg-gradient-to-t from-primary-600 pb-10">
+      <header className="top-0 gap-6 z-40 flex flex-col lg:bg-gradient-to-t lg:from-primary-600 lg:pb-14">
         <HeaderTop
           menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
@@ -75,8 +75,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             backgroundColor="green"
           />
         </section>
-        <section className="flex flex-1 lg:py-64 justify-center items-center aspect-w-3 aspect-h-2 ">
-          <br />
+        <section className="flex flex-1 lg:py-64 justify-center items-center aspect-w-3 aspect-h-2">
           <iframe
             src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
             allow="autoplay; picture-in-picture"
@@ -87,7 +86,7 @@ export default async function Home({ params: { lang } }: PageProps) {
       <main className="flex flex-col gap-6 mt-6 lg:gap-20 lg:mt-16">
         <section
           id="services"
-          className="flex-1 flex flex-col justify-center items-center px-2 gap-4 scroll-mt-12"
+          className="flex-1 flex flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
             {capitalizeSentence(dictionaire.mainMenu.services)}
@@ -124,7 +123,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 px-2 gap-4 bg-primary-700"
+          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 gap-4 bg-primary-700"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}

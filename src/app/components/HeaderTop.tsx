@@ -41,7 +41,7 @@ function HeaderTop({
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <section className="flex lg:justify-between mt-6 lg:mt-2 ml-2 p-2 flex-1 text-sm font-semibol">
+    <section className="flex lg:justify-between mt-6 lg:mt-2 ml-2 p-2 flex-1 text-sm font-semibold">
       <a className="flex lg:hidden flex-1" href={process.env.FULL_URL}>
         <Image
           src={logo}
@@ -91,7 +91,7 @@ function HeaderTop({
             )} ${capitalizeSentence(dictionaire.professionalName)}`}
             className="flex flex-row items-center gap-1 hover:text-primary-700"
           >
-            <InstagramLogo size={32} />
+            <InstagramLogo size={32} color="gray" />
             <span className="hidden md:inline">Instagram</span>
           </a>
           <a
@@ -101,7 +101,7 @@ function HeaderTop({
             )} ${capitalizeSentence(dictionaire.professionalName)}`}
             className="flex flex-row items-center gap-1 hover:text-primary-700"
           >
-            <Phone size={32} weight="light" />
+            <Phone size={32} color="gray" />
             <span className="hidden md:inline">{dictionaire.phoneNumber}</span>
           </a>
           <a
@@ -111,7 +111,7 @@ function HeaderTop({
             )} ${capitalizeSentence(dictionaire.professionalName)}`}
             className="flex flex-row items-center gap-1 hover:text-primary-700 lg:mr-0"
           >
-            <EnvelopeSimple size={32} weight="light" />
+            <EnvelopeSimple size={32} color="gray" />
             <span className="hidden lg:inline">{dictionaire.emailAccount}</span>
           </a>
         </section>
