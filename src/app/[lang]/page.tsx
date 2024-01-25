@@ -43,7 +43,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="top-0 z-40 flex flex-col bg-gradient-to-t from-primary-700 pb-24">
+      <header className="top-0 gap-6 z-40 flex flex-col bg-gradient-to-t from-primary-600 pb-36 lg:pb-24">
         <HeaderTop
           menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
@@ -75,14 +75,13 @@ export default async function Home({ params: { lang } }: PageProps) {
             backgroundColor="green"
           />
         </section>
-        <section className="flex flex-1 lg:py-64 mt-6 justify-center items-center aspect-w-3 aspect-h-2 ">
+        <section className="flex flex-1 lg:py-64 justify-center items-center aspect-w-3 aspect-h-2 ">
           <br />
           <iframe
             src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
             allow="autoplay; picture-in-picture"
             allowFullScreen
           ></iframe>
-          <br />
         </section>
       </header>
       <main className="flex flex-col gap-6 mt-6 lg:gap-20 lg:mt-16">
