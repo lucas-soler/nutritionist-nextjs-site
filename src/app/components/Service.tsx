@@ -5,9 +5,9 @@ import IntestinalModulation from "../../../public/intestinal-modulation.jpg";
 import WeightLoss from "../../../public/weight-loss.jpg";
 import WhatsAppButton from "./WhatsAppButton";
 
-import AutoImmuneDisease from "../../../public/autoimmune-disease.jpg";
-import Hyperthrophy from "../../../public/hyperthrophy.jpg";
-import NutritionalReeducation from "../../../public/nutritional-reeducation.jpg";
+import AutoImmuneDisease from "../../../public/autoimmune-diseases.jpg";
+import Hypertrophy from "../../../public/hypertrophy.jpg";
+import NutritionalReeducation from "../../../public/nutritional-education.jpg";
 
 import Aesthetics from "../../../public/aesthetics.jpg";
 import LifeQuality from "../../../public/life-quality.jpg";
@@ -50,7 +50,7 @@ function Service({
       image = AutoImmuneDisease;
       break;
     case 4:
-      image = Hyperthrophy;
+      image = Hypertrophy;
       break;
     case 5:
       image = Aesthetics;
