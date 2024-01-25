@@ -36,38 +36,59 @@
   "services": [
     {
       "code": 0,
-      "id": "nutritional-reeducation",
-      "name": "nutritional reeducation",
-      "description": "this is a short description of nutritional reeducation",
-      "scheduleText": "want to reeducate! 🤓"
+      "id": "intestinal-modulation",
+      "name": "intestinal modulation",
+      "description": "this is a short description about intestinal modulation",
+      "scheduleText": "wanna heal! 🤕"
     },
     {
       "code": 1,
       "id": "weight-loss",
-      "name": "weight loss",
-      "description": "this is a short description of weight loss",
-      "scheduleText": "let's drop the weight! 💪"
+      "name": "permanent weight loss",
+      "description": "this is a short description about permanent weight loss",
+      "scheduleText": "let's get thin forever! 🤩"
     },
     {
       "code": 2,
       "id": "food-intolerance",
       "name": "food intolerance and allergies",
-      "description": "this is a short description of food intolerance and allergies",
+      "description": "this is a short text about food intolerance and allergies",
       "scheduleText": "help me! 😵‍💫"
     },
     {
       "code": 3,
-      "id": "aesthetics",
-      "name": "aesthetics",
-      "description": "this is a short description of aesthetics",
-      "scheduleText": "want to look better!💄💇‍♀️"
+      "id": "autoimmune-diseases",
+      "name": "autoimmune diseases",
+      "description": "this is a short text about autoimmune diseases",
+      "scheduleText": "wanna heal! 😷"
     },
     {
       "code": 4,
+      "id": "hypertrophy",
+      "name": "hyperthrophy and lean mass gain",
+      "description": "this is a short description about hyperthrophy and lean mass gain",
+      "scheduleText": "enhance my muscles! 💪"
+    },
+    {
+      "code": 5,
+      "id": "aesthetics",
+      "name": "aesthetics",
+      "description": "this is a short description about aesthetics",
+      "scheduleText": "wanna be more beautiful than ever 💄💇‍♀️"
+    },
+    {
+      "code": 6,
       "id": "life-quality",
       "name": "life quality",
-      "description": "this is a short description of life quality",
-      "scheduleText": "improve my life quality! 🏋️"
+      "description": "this is a short description about life quality",
+      "scheduleText": "help me to live better ✨🥰"
+    },
+    {
+      "code": 7,
+      "id": "nutritional-education",
+      "name": "nutritional education",
+      "description": "this is a short description about nutritional education",
+      "scheduleText": "wanna reeducate 🤓"
     }
   ],
   "testimonials": [

@@ -42,6 +42,7 @@ export default {
       },
       secondary: {
         400: "#fad3d2",
+        600: "#f7938f",
       },
       terciary: {
         400: "#8A8B8B",

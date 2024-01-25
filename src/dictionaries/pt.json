@@ -36,17 +36,17 @@
   "services": [
     {
       "code": 0,
-      "id": "nutritional-reeducation",
-      "name": "modulação intestinal e síndrome do intestino irritável",
-      "description": "esta é um breve descrição de reeducação nutricional",
-      "scheduleText": "quero me reeducar! 🤓"
+      "id": "intestinal-modulation",
+      "name": "modulação intestinal",
+      "description": "esta é um breve descrição de reeducação nutricional e síndrome do intestino irritável",
+      "scheduleText": "quero me curar! 🤕"
     },
     {
       "code": 1,
       "id": "weight-loss",
-      "name": "emagrecimento definitivo e melhora da composição corporal",
+      "name": "emagrecimento definitivo",
       "description": "esta é um breve descrição sobre perda de peso",
-      "scheduleText": "vamos perder peso! 💪"
+      "scheduleText": "vamos perder peso! 🤩"
     },
     {
       "code": 2,
@@ -57,17 +57,38 @@
     },
     {
       "code": 3,
-      "id": "aesthetics",
-      "name": "doenças auto imunes",
-      "description": "esta é um breve descrição sobre estética",
-      "scheduleText": "quero melhorar minha aparência!💄💇‍♀️"
+      "id": "autoimmune-diseases",
+      "name": "doenças autoimunes",
+      "description": "esta é um breve descrição sobre doenças auto imunes",
+      "scheduleText": "quero me curar! 😷"
     },
     {
       "code": 4,
+      "id": "hypertrophy",
+      "name": "hipertrofia e ganho de massa magra",
+      "description": "esta é um breve descrição sobre hipertrofia e ganho de massa magra",
+      "scheduleText": "bora ficar fortona! 💪"
+    },
+    {
+      "code": 5,
+      "id": "aesthetics",
+      "name": "estética",
+      "description": "esta é um breve descrição sobre estética",
+      "scheduleText": "quero ficar mais bonita do que nunca!💄💇‍♀️"
+    },
+    {
+      "code": 6,
       "id": "life-quality",
-      "name": "qualidade de vida e reeducação alimentar",
+      "name": "qualidade de vida",
       "description": "esta é um breve descrição sobre qualidade de vida",
-      "scheduleText": "melhore minha qualidade de vida! 🏋️"
+      "scheduleText": "me ajuda a viver melhor ✨🥰"
+    },
+    {
+      "code": 7,
+      "id": "nutritional-education",
+      "name": "reeducação alimentar",
+      "description": "esta é um breve descrição sobre reeducação alimentar",
+      "scheduleText": "quero me reeducar! 🤓"
     }
   ],
   "testimonials": [
