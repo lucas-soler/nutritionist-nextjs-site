@@ -19,29 +19,29 @@ function ServicesList({ services }: ServicesListProps) {
           "text-center justify-center items-center align-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r";
         switch (index) {
           case 0:
-            elementStyle = `bg-salmon from-salmon-600 to-salmon-400`;
+            elementStyle += ` bg-salmon from-salmon-600 to-salmon-400`;
             break;
           case 1:
-            elementStyle = `bg-purple bg-gradient-to-r from-purple-600 to-purple-400`;
+            elementStyle += ` bg-purple from-purple-600 to-purple-400`;
             break;
           case 2:
-            elementStyle = `bg-moss bg-gradient-to-r from-moss-600 to-moss-400`;
+            elementStyle += ` bg-moss from-moss-600 to-moss-400`;
             break;
           case 3:
-            elementStyle = `bg-brown bg-gradient-to-r from-brown-600 to-brown-400`;
+            elementStyle += ` bg-brown from-brown-600 to-brown-400`;
             break;
           case 4:
-            elementStyle = `bg-orange bg-gradient-to-r from-orange-600 to-orange-400`;
+            elementStyle += ` bg-orange from-orange-600 to-orange-400`;
             break;
 
           case 5:
-            elementStyle = `bg-brown bg-gradient-to-r from-moss-600 to-moss-400`;
+            elementStyle += ` bg-brown from-moss-600 to-moss-400`;
             break;
           case 6:
-            elementStyle = `bg-orange bg-gradient-to-r from-purple-600 to-purple-400`;
+            elementStyle += ` bg-orange from-purple-600 to-purple-400`;
             break;
           case 7:
-            elementStyle = `bg-brown bg-gradient-to-r from-salmon-600 to-salmon-400`;
+            elementStyle += ` bg-brown from-salmon-600 to-salmon-400`;
             break;
         }
         return (
