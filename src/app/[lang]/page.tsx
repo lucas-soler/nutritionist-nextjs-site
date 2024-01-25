@@ -77,7 +77,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </nav>
       </header>
       <main className="flex flex-col gap-6 lg:gap-16">
-        <section className="flex flex-1 lg:py-64 mt-4 justify-center items-center aspect-w-3 aspect-h-2 bg-primary-700">
+        <section className="flex flex-1 lg:py-64 mt-6 justify-center items-center aspect-w-3 aspect-h-2 bg-primary-700">
           <iframe
             src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
             allow="autoplay; picture-in-picture"
