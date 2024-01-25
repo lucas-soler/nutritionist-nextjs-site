@@ -41,7 +41,7 @@ function HeaderTop({
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <section className="flex lg:justify-between mt-2 ml-2 p-2 flex-1 text-sm font-semibol">
+    <section className="flex lg:justify-between mt-6 lg:mt-2 ml-2 p-2 flex-1 text-sm font-semibol">
       <a className="flex lg:hidden flex-1" href={process.env.FULL_URL}>
         <Image
           src={logo}

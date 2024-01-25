@@ -50,7 +50,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           siteURL={`${process.env.FULL_URL}`}
           professionalFullNameWithTitle={professionalFullNameWithTitle}
         />
-        <section className="hidden lg:flex gap-5 mt-6 lg:gap-0 justify-between p-2 flex-1 flex-row items-center self-center w-full xl:w-11/12 2xl:w-9/12">
+        <section className="hidden lg:flex gap-5 mt-4 lg:gap-0 justify-between p-2 flex-1 flex-row items-center self-center w-full xl:w-11/12 2xl:w-9/12">
           <a className="flex w-1/5" href={process.env.FULL_URL}>
             <Image
               src={logo}
