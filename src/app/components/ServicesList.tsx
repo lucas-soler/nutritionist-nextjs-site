@@ -15,32 +15,33 @@ function ServicesList({ services }: ServicesListProps) {
   return (
     <section className="flex-1 flex flex-col gap-2">
       {services.map((service: ServiceObject, index: number) => {
-        let elementStyle;
+        let elementStyle =
+          "text-center justify-center items-center align-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r";
         switch (index) {
           case 0:
-            elementStyle = `flex flex-1 bg-salmon text-center justify-center items-center align-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r from-salmon-600 to-salmon-400`;
+            elementStyle = `bg-salmon from-salmon-600 to-salmon-400`;
             break;
           case 1:
-            elementStyle = `flex flex-1 bg-purple text-center justify-center items-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r from-purple-600 to-purple-400`;
+            elementStyle = `bg-purple bg-gradient-to-r from-purple-600 to-purple-400`;
             break;
           case 2:
-            elementStyle = `flex flex-1 bg-moss text-center justify-center items-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r from-moss-600 to-moss-400`;
+            elementStyle = `bg-moss bg-gradient-to-r from-moss-600 to-moss-400`;
             break;
           case 3:
-            elementStyle = `flex flex-1 bg-brown text-center justify-center items-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r from-brown-600 to-brown-400`;
+            elementStyle = `bg-brown bg-gradient-to-r from-brown-600 to-brown-400`;
             break;
           case 4:
-            elementStyle = `flex flex-1 bg-orange text-center justify-center items-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r from-orange-600 to-orange-400`;
+            elementStyle = `bg-orange bg-gradient-to-r from-orange-600 to-orange-400`;
             break;
 
           case 5:
-            elementStyle = `flex flex-1 bg-brown text-center justify-center items-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r from-moss-600 to-moss-400`;
+            elementStyle = `bg-brown bg-gradient-to-r from-moss-600 to-moss-400`;
             break;
           case 6:
-            elementStyle = `flex flex-1 bg-orange text-center justify-center items-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r from-purple-600 to-purple-400`;
+            elementStyle = `bg-orange bg-gradient-to-r from-purple-600 to-purple-400`;
             break;
           case 7:
-            elementStyle = `flex flex-1 bg-brown text-center justify-center items-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r from-salmon-600 to-salmon-400`;
+            elementStyle = `bg-brown bg-gradient-to-r from-salmon-600 to-salmon-400`;
             break;
         }
         return (
