@@ -50,7 +50,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           siteURL={`${process.env.FULL_URL}`}
           professionalFullNameWithTitle={professionalFullNameWithTitle}
         />
-        <section className="hidden lg:flex gap-5 lg:gap-0 justify-between p-2 flex-1 flex-row items-center self-center w-full xl:w-11/12 2xl:w-9/12">
+        <section className="hidden lg:flex gap-5 mt-6 lg:gap-0 justify-between p-2 flex-1 flex-row items-center self-center w-full xl:w-11/12 2xl:w-9/12">
           <a className="flex w-1/5" href={process.env.FULL_URL}>
             <Image
               src={logo}
@@ -75,7 +75,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             backgroundColor="green"
           />
         </section>
-        <section className="flex flex-1 lg:py-64 mt-12 justify-center items-center aspect-w-3 aspect-h-2 ">
+        <section className="flex flex-1 lg:py-64 mt-6 justify-center items-center aspect-w-3 aspect-h-2 ">
           <br />
           <iframe
             src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
@@ -85,7 +85,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           <br />
         </section>
       </header>
-      <main className="flex flex-col gap-6 lg:gap-16 mt-6">
+      <main className="flex flex-col gap-6 mt-6 lg:gap-20 lg:mt-16">
         <section
           id="services"
           className="flex-1 flex flex-col justify-center items-center px-2 gap-4 scroll-mt-12"
