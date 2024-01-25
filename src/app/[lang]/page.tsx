@@ -123,7 +123,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 gap-4 bg-primary-700"
+          className="flex-1 flex flex-col p-4 justify-center items-center scroll-mt-56 gap-4 bg-primary-700"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
@@ -142,7 +142,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="testimonials"
-          className="flex-1 flex flex-col justify-center items-center scroll-mt-56 gap-6 lg:gap-10"
+          className="flex-1 flex flex-col p-4 justify-center items-center scroll-mt-56 gap-6 lg:gap-10"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.testimonials)}
