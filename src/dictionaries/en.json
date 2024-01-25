@@ -54,48 +54,48 @@
       "code": 2,
       "id": "food-intolerance",
       "name": "food intolerance and allergies",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "treating food intolerances and allergies is crucial for preserving health and well-being. ignoring these conditions can lead to uncomfortable symptoms, from gastrointestinal disorders to severe reactions such as anaphylaxis. by diagnosing and managing food intolerances appropriately, it is possible to avoid long-term complications, promote healthy digestion, and ensure proper nutrient absorption, contributing to an improved quality of life.",
+      "description2": "furthermore, treating food allergies is vital to prevent potentially dangerous allergic reactions. an immune system response to certain foods can result in symptoms ranging from mild to severe, affecting not only the digestive system but also breathing and the skin. careful management of food allergies not only protects against immediate risks but also preserves long-term health, allowing individuals to enjoy a safe and nutritious diet.",
       "scheduleText": "help me! 😵‍💫"
     },
     {
       "code": 3,
       "id": "autoimmune-diseases",
       "name": "autoimmune diseases",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "nutrition plays a crucial role in the treatment of autoimmune diseases, directly influencing the immune system's response. a balanced diet rich in nutrients can help modulate inflammation in the body, a central component in autoimmune diseases. foods that provide antioxidants, omega-3 fatty acids, and probiotics, for example, can have positive effects on regulating the immune response, aiding in the management of autoimmune conditions.",
+      "description2": "furthermore, nutrition plays a crucial role in maintaining overall health and improving the quality of life for individuals with autoimmune diseases. a proper diet can help strengthen the immune system, reduce fatigue associated with these conditions, and promote recovery. personalized nutritional support, tailored to individual needs, is essential to provide necessary nutrients and contribute to the effective management of autoimmune diseases.",
       "scheduleText": "wanna heal! 😷"
     },
     {
       "code": 4,
       "id": "hypertrophy",
       "name": "hyperthrophy and lean mass gain",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
-      "scheduleText": "enhance my muscles! 💪"
+      "description1": "the importance of nutrition in the pursuit of muscle hypertrophy is undeniable. diet plays a crucial role in providing the necessary nutrients to sustain muscle growth. a balanced diet, with an emphasis on appropriate intake of proteins, carbohydrates, and fats, forms the essential nutritional foundation to promote healthy muscular development.",
+      "description2": "furthermore, the proper timing of meals in relation to training and maintaining adequate hydration are important factors to optimize results. by recognizing the relationship between nutrition and hypertrophy, individuals can create dietary strategies that cater to the specific needs of the body during the training process, contributing to more effective progress in the quest for muscle gains.",
+      "scheduletext": "enhance my muscles! 💪"
     },
     {
       "code": 5,
       "id": "aesthetics",
       "name": "aesthetics",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "nutrition plays a central role in the pursuit of aesthetics, directly influencing various aspects related to health and physical appearance. a balanced diet not only provides essential nutrients to maintain the health of the skin, hair, and nails but also plays a fundamental role in regulating body weight. adequate intake of vitamins, minerals, and antioxidants contributes to skin vitality and the prevention of premature aging, essential elements for achieving a healthier aesthetic.",
+      "description2": "furthermore, nutrition plays a significant role in overall energy and well-being, affecting mood and the ability to engage in physical activities that can contribute to body aesthetics. by recognizing the intrinsic relationship between nutrition and aesthetics, dietary choices become a crucial component in supporting overall health and striving for a physical appearance that reflects internal balance.",
       "scheduleText": "wanna be more beautiful than ever 💄💇‍♀️"
     },
     {
       "code": 6,
       "id": "life-quality",
       "name": "life quality",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "the importance of nutrition goes beyond the mere acquisition of essential nutrients; it is a fundamental pillar for quality of life. a balanced diet provides the body with the necessary elements for efficient functioning, directly impacting energy, vitality, and physical resilience. additionally, nutrition plays an essential role in preventing chronic diseases, contributing to longevity and well-being throughout life.",
+      "description2": "beyond physical benefits, nutrition also plays a vital role in supporting mental health. nutrient-rich foods have the potential to influence mood, cognition, and even the quality of sleep. by prioritizing healthy dietary choices, individuals can promote a balance between body and mind, contributing to a higher and more sustainable quality of life.",
       "scheduleText": "help me to live better ✨🥰"
     },
     {
       "code": 7,
       "id": "nutritional-education",
       "name": "nutritional education",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "the importance of dietary reeducation lies in promoting healthy and sustainable eating habits. instead of adopting temporary diets, dietary reeducation encourages a behavioral shift towards a balanced and long-term approach to food. by understanding the quality of food, appropriate portions, and the importance of a nutritious variety, individuals can cultivate more mindful eating choices, resulting in lasting health benefits.",
+      "description2": "furthermore, dietary reeducation contributes to a healthier relationship with food, helping overcome harmful eating patterns. by learning to recognize hunger and satiety cues, as well as understanding individual nutritional needs, people can develop a more balanced and positive approach to eating, promoting not only weight loss but overall well-being.",
       "scheduleText": "wanna reeducate 🤓"
     }
   ],

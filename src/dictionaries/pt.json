@@ -54,48 +54,48 @@
       "code": 2,
       "id": "food-intolerance",
       "name": "intolerâncias alimentares e alergias",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "tratar intolerâncias e alergias alimentares é crucial para preservar a saúde e o bem-estar. ignorar essas condições pode levar a sintomas desconfortáveis, desde distúrbios gastrointestinais até reações graves, como anafilaxia. ao diagnosticar e gerenciar adequadamente as intolerâncias alimentares, é possível evitar complicações a longo prazo, promover uma digestão saudável e garantir a absorção adequada de nutrientes, contribuindo para uma qualidade de vida melhor.",
+      "description2": "além disso, tratar alergias alimentares é vital para prevenir reações alérgicas potencialmente perigosas. uma resposta imunológica desregulada a certos alimentos pode resultar em sintomas que variam de leves a severos, podendo afetar não apenas o sistema digestivo, mas também a respiração e a pele. a gestão cuidadosa das alergias alimentares não apenas protege contra riscos imediatos, mas também preserva a saúde a longo prazo, permitindo que as pessoas desfrutem de uma dieta segura e nutritiva.",
       "scheduleText": "me ajuda! 😵‍💫"
     },
     {
       "code": 3,
       "id": "autoimmune-diseases",
       "name": "doenças autoimunes",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "a nutrição desempenha um papel fundamental no tratamento de doenças autoimunes, influenciando diretamente a resposta do sistema imunológico. uma dieta equilibrada e rica em nutrientes pode ajudar a modular a inflamação no corpo, um componente central nas doenças autoimunes. alimentos que fornecem antioxidantes, ácidos graxos ômega-3 e probióticos, por exemplo, podem ter efeitos positivos na regulação da resposta imunológica, auxiliando na gestão de condições autoimunes.",
+      "description2": "além disso, a nutrição desempenha um papel crucial na manutenção da saúde geral e na melhoria da qualidade de vida de pessoas com doenças autoimunes. uma dieta adequada pode ajudar a fortalecer o sistema imunológico, reduzir a fadiga associada a essas condições e promover a recuperação. o suporte nutricional personalizado, adaptado às necessidades individuais, é essencial para fornecer os nutrientes necessários e contribuir para o manejo eficaz de doenças autoimunes.",
       "scheduleText": "quero me curar! 😷"
     },
     {
       "code": 4,
       "id": "hypertrophy",
       "name": "hipertrofia e ganho de massa magra",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "a importância da nutrição na busca por hipertrofia muscular é inegável. a alimentação desempenha um papel crucial no fornecimento dos nutrientes necessários para sustentar o crescimento muscular. uma dieta equilibrada, com ênfase na ingestão apropriada de proteínas, carboidratos e gorduras, fornece a base nutricional essencial para favorecer o desenvolvimento muscular de maneira saudável.",
+      "description2": "além disso, o timing adequado das refeições em relação ao treino e a manutenção de uma hidratação adequada são fatores importantes para otimizar os resultados. ao reconhecer a relação entre a nutrição e a hipertrofia, os indivíduos podem criar estratégias alimentares que atendam às necessidades específicas do corpo durante o processo de treinamento, contribuindo para um progresso mais eficaz na busca por ganhos musculares.",
       "scheduleText": "bora ficar fortona! 💪"
     },
     {
       "code": 5,
       "id": "aesthetics",
       "name": "estética",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "a nutrição desempenha um papel central na busca pela estética, influenciando diretamente diversos aspectos relacionados à saúde e aparência física. uma alimentação equilibrada não apenas fornece os nutrientes essenciais para manter a saúde da pele, cabelos e unhas, mas também desempenha um papel fundamental na regulação do peso corporal. a ingestão adequada de vitaminas, minerais e antioxidantes contribui para a vitalidade da pele e a prevenção do envelhecimento precoce, elementos essenciais para alcançar uma estética mais saudável.",
+      "description2": "além disso, a nutrição desempenha um papel importante na energia e no bem-estar geral, afetando a disposição e a capacidade de se envolver em atividades físicas que podem contribuir para a estética corporal. ao reconhecer a relação intrínseca entre a nutrição e a estética, as escolhas alimentares tornam-se um componente crucial no suporte à saúde global e na busca por uma aparência física que reflete o equilíbrio interno.",
       "scheduleText": "quero ficar mais bonita do que nunca!💄💇‍♀️"
     },
     {
       "code": 6,
       "id": "life-quality",
       "name": "qualidade de vida",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "a importância da nutrição transcende a mera obtenção de nutrientes essenciais; ela é um pilar fundamental para a qualidade de vida. uma dieta equilibrada fornece ao corpo os elementos necessários para o funcionamento eficiente, impactando diretamente a energia, a vitalidade e a resistência física. além disso, a nutrição desempenha um papel essencial na prevenção de doenças crônicas, contribuindo para a longevidade e o bem-estar ao longo da vida.",
+      "description2": "além dos benefícios físicos, a nutrição também desempenha um papel vital no suporte à saúde mental. alimentos nutritivos têm o potencial de influenciar o humor, a cognição e até mesmo a qualidade do sono. ao priorizar escolhas alimentares saudáveis, as pessoas podem promover um equilíbrio entre o corpo e a mente, contribuindo para uma qualidade de vida mais elevada e sustentável.",
       "scheduleText": "me ajuda a viver melhor ✨🥰"
     },
     {
       "code": 7,
       "id": "nutritional-education",
       "name": "reeducação alimentar",
-      "description1": "a modulação intestinal é essencial para o bom funcionamento do nosso sistema digestivo. ao mantermos um equilíbrio saudável de bactérias no intestino, promovemos uma digestão eficiente e absorção adequada de nutrientes. essa harmonia intestinal não apenas melhora a saúde gastrointestinal, mas também beneficia outros aspectos da nossa saúde, incluindo o sistema imunológico.",
-      "description2": "ao cuidarmos da modulação intestinal, podemos reduzir o risco de desconfortos digestivos, como inchaço e irregularidades intestinais. além disso, uma microbiota intestinal equilibrada tem sido associada a níveis mais altos de energia, melhora do humor e até mesmo uma pele mais saudável. ao fazer escolhas saudáveis para o nosso sistema digestivo, estamos investindo no bem-estar geral do nosso corpo.",
+      "description1": "a importância da reeducação alimentar reside na promoção de hábitos saudáveis e sustentáveis relacionados à alimentação. em vez de adotar dietas temporárias, a reeducação alimentar incentiva a mudança de comportamento em relação à comida, visando uma abordagem equilibrada e a longo prazo. ao compreender a qualidade dos alimentos, as porções adequadas e a importância de uma variedade nutritiva, as pessoas podem cultivar escolhas alimentares mais conscientes, resultando em benefícios duradouros para a saúde.",
+      "description2": "além disso, a reeducação alimentar contribui para uma relação mais saudável com a comida, ajudando a superar padrões alimentares prejudiciais. ao aprender a reconhecer sinais de fome e saciedade, bem como a entender as necessidades nutricionais individuais, as pessoas podem desenvolver uma abordagem mais equilibrada e positiva em relação à alimentação, promovendo não apenas a perda de peso, mas também o bem-estar geral.",
       "scheduleText": "quero me reeducar! 🤓"
     }
   ],
