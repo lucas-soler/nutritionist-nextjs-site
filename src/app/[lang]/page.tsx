@@ -43,14 +43,14 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="top-0 z-40 flex flex-col">
+      <header className="top-0 z-40 flex flex-col bg-gradient-to-t from-primary-700 pb-24">
         <HeaderTop
           menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
           siteURL={`${process.env.FULL_URL}`}
           professionalFullNameWithTitle={professionalFullNameWithTitle}
         />
-        <nav className="hidden lg:flex gap-5 lg:gap-0 justify-between p-2 flex-1 flex-row items-center self-center w-full xl:w-11/12 2xl:w-9/12">
+        <section className="hidden lg:flex gap-5 lg:gap-0 justify-between p-2 flex-1 flex-row items-center self-center w-full xl:w-11/12 2xl:w-9/12">
           <a className="flex w-1/5" href={process.env.FULL_URL}>
             <Image
               src={logo}
@@ -74,16 +74,18 @@ export default async function Home({ params: { lang } }: PageProps) {
             initialMessageText={dictionaire.initialMessageText}
             backgroundColor="green"
           />
-        </nav>
-      </header>
-      <main className="flex flex-col gap-6 lg:gap-16">
-        <section className="flex flex-1 lg:py-64 mt-6 justify-center items-center aspect-w-3 aspect-h-2 bg-primary-700">
+        </section>
+        <section className="flex flex-1 lg:py-64 mt-12 justify-center items-center aspect-w-3 aspect-h-2 ">
+          <br />
           <iframe
             src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
             allow="autoplay; picture-in-picture"
             allowFullScreen
           ></iframe>
+          <br />
         </section>
+      </header>
+      <main className="flex flex-col gap-6 lg:gap-16 mt-6">
         <section
           id="services"
           className="flex-1 flex flex-col justify-center items-center px-2 gap-4 scroll-mt-12"
