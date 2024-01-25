@@ -1,12 +1,16 @@
 import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
 import Image, { StaticImageData } from "next/image";
+import FoodIntolerence from "../../../public/food-intolerance.jpg";
+import IntestinalModulation from "../../../public/intestinal-modulation.jpg";
+import WeightLoss from "../../../public/weight-loss.jpg";
 import WhatsAppButton from "./WhatsAppButton";
 
-import Aesthetics from "../../../public/aesthetics.jpg";
-import FoodIntolerence from "../../../public/food-intolerance.jpg";
-import LifeQuality from "../../../public/life-quality.jpg";
+import AutoImmuneDisease from "../../../public/autoimmune-disease.jpg";
+import Hyperthrophy from "../../../public/hyperthrophy.jpg";
 import NutritionalReeducation from "../../../public/nutritional-reeducation.jpg";
-import WeightLoss from "../../../public/weight-loss.jpg";
+
+import Aesthetics from "../../../public/aesthetics.jpg";
+import LifeQuality from "../../../public/life-quality.jpg";
 
 export interface ServiceObject {
   code: number;
@@ -34,7 +38,7 @@ function Service({
 
   switch (service.code) {
     case 0:
-      image = NutritionalReeducation;
+      image = IntestinalModulation;
       break;
     case 1:
       image = WeightLoss;
@@ -43,10 +47,19 @@ function Service({
       image = FoodIntolerence;
       break;
     case 3:
-      image = Aesthetics;
+      image = AutoImmuneDisease;
       break;
     case 4:
+      image = Hyperthrophy;
+      break;
+    case 5:
+      image = Aesthetics;
+      break;
+    case 6:
       image = LifeQuality;
+      break;
+    case 7:
+      image = NutritionalReeducation;
       break;
   }
 
@@ -120,6 +133,7 @@ function ServiceImage({ serviceID, serviceName }: ServiceImageProps) {
         height={425}
         className="m-auto rounded-4xl"
         quality={100}
+        priority={true}
       />
     </figure>
   );
