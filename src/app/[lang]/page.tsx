@@ -104,11 +104,6 @@ export default async function Home({ params: { lang } }: PageProps) {
             {capitalizeSentence(dictionaire.mainMenu.worldwide)}
           </h2>
           <div className="flex-1 flex w-full lg:w-4/5 flex-col lg:flex-row gap-14">
-            <section className="flex flex-col flex-1 gap-8 text-justify">
-              <p>{capitalizeSentence(dictionaire.worldwideContent1)}</p>
-              <p>{capitalizeSentence(dictionaire.worldwideContent2)}</p>
-              <p>{capitalizeSentence(dictionaire.worldwideContent3)}</p>
-            </section>
             <figure className="flex flex-col gap-4 justify-center items-center">
               <Image
                 src={TheNutritionistImage}
@@ -127,6 +122,11 @@ export default async function Home({ params: { lang } }: PageProps) {
                 {capitalizePersonName(professionalFullNameWithTitle)}
               </figcaption>
             </figure>
+            <section className="flex flex-col flex-1 gap-8 text-justify">
+              <p>{capitalizeSentence(dictionaire.worldwideContent1)}</p>
+              <p>{capitalizeSentence(dictionaire.worldwideContent2)}</p>
+              <p>{capitalizeSentence(dictionaire.worldwideContent3)}</p>
+            </section>
           </div>
         </section>
 

@@ -93,7 +93,7 @@ function Service({
           ""
         )}
         <section className="flex-1 flex justify-between flex-col gap-6">
-          <h2 className="flex-1 text-5xl text-center font-semibold">
+          <h2 className="flex-1 text-4xl md:text-5xl text-center font-semibold">
             {capitalizeSentence(service.name)}
           </h2>
 
