@@ -1,7 +1,7 @@
 "use client";
 
 import { capitalizePersonName, capitalizeSentence } from "@/utils/utils";
-import { EnvelopeSimple, Phone, WhatsappLogo } from "@phosphor-icons/react";
+import { EnvelopeSimple, WhatsappLogo } from "@phosphor-icons/react";
 
 interface FooterProps {
   dictionaire: {
@@ -24,17 +24,6 @@ function Footer({ dictionaire }: FooterProps) {
       <section className="flex flex-col flex-1 items-left">
         <h2>{capitalizeSentence(dictionaire.consultationHeader)}</h2>
         <article className="mt-3">
-          <a
-            href={`tel:${dictionaire.phoneNumber}`}
-            title={`${capitalizeSentence(
-              dictionaire.callPrefix
-            )} ${capitalizeSentence(dictionaire.professionalName)}`}
-          >
-            <Phone size={28} />
-            <span>{dictionaire.phoneNumber}</span>
-          </a>
-        </article>
-        <article>
           <button onClick={handleClick} title={dictionaire.fullPhoneNumber}>
             <WhatsappLogo size={28} />
             <span>{dictionaire.whatsAppPhoneNumber}</span>

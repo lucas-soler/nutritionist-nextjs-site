@@ -5,7 +5,11 @@ import {
   capitalizeSentence,
   capitalizeWord,
 } from "@/utils/utils";
-import { EnvelopeSimple, InstagramLogo, Phone } from "@phosphor-icons/react";
+import {
+  EnvelopeSimple,
+  InstagramLogo,
+  WhatsappLogo,
+} from "@phosphor-icons/react";
 import LogoEN from "../../../public/logo-en.png";
 import Logo from "../../../public/logo.png";
 
@@ -37,6 +41,15 @@ function HeaderTop({
     menuProps.push(menuItemPropName);
     menuItems.push(menu[menuItemPropName]);
   }
+
+  const handleWhatsAppClick = () => {
+    window.open(
+      `https://wa.me/${dictionaire.fullPhoneNumber}?text=${encodeURIComponent(
+        capitalizeSentence(dictionaire.initialMessageText)
+      )}`,
+      "_blank"
+    );
+  };
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -95,14 +108,15 @@ function HeaderTop({
             <span className="hidden md:inline">Instagram</span>
           </a>
           <a
-            href={`tel:${dictionaire.phoneNumber}`}
-            title={`${capitalizeSentence(
-              dictionaire.callPrefix
-            )} ${capitalizeSentence(dictionaire.professionalName)}`}
-            className="flex flex-row items-center gap-1 hover:text-primary-700"
+            onClick={handleWhatsAppClick}
+            target="_blank"
+            title={dictionaire.fullPhoneNumber}
+            className="flex flex-row items-center gap-1 hover:text-primary-700 hover:cursor-pointer"
           >
-            <Phone size={32} color="gray" />
-            <span className="hidden md:inline">{dictionaire.phoneNumber}</span>
+            <WhatsappLogo size={32} color="gray" />
+            <span className="hidden lg:inline">
+              {dictionaire.whatsAppPhoneNumber}
+            </span>
           </a>
           <a
             href={`mailto:${dictionaire.emailAccount}?subject=${dictionaire.emailSubject}&body=${dictionaire.emailBody}`}

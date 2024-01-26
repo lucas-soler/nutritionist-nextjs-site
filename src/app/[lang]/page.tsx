@@ -139,6 +139,27 @@ export default async function Home({ params: { lang } }: PageProps) {
           </h2>
           <Testimonials testimonials={dictionaire.testimonials} />
         </section>
+
+        {dictionaire.services.map((service: ServiceObject, index: number) => {
+          let orientation: "right" | "left" = "left";
+          let hasBackground = false;
+
+          if (index % 2 === 0) {
+            orientation = "right";
+            hasBackground = true;
+          }
+
+          return (
+            <Service
+              orientation={orientation}
+              hasBackground={hasBackground}
+              key={service.id}
+              service={service}
+              servicesMessageText={dictionaire.servicesMessageText}
+              fullPhoneNumber={dictionaire.fullPhoneNumber}
+            />
+          );
+        })}
         <section
           id="about"
           className="flex-1 flex flex-col p-8 justify-center items-center gap-4 text-white bg-gradient-to-t from-primary-700 to-primary-600"
@@ -154,26 +175,6 @@ export default async function Home({ params: { lang } }: PageProps) {
             ))}
           </article>
         </section>
-        {dictionaire.services.map((service: ServiceObject, index: number) => {
-          let orientation: "right" | "left" = "left";
-          let hasBackground = true;
-
-          if (index % 2 === 0) {
-            orientation = "right";
-            hasBackground = false;
-          }
-
-          return (
-            <Service
-              orientation={orientation}
-              hasBackground={hasBackground}
-              key={service.id}
-              service={service}
-              servicesMessageText={dictionaire.servicesMessageText}
-              fullPhoneNumber={dictionaire.fullPhoneNumber}
-            />
-          );
-        })}
       </main>
       <Footer dictionaire={dictionaire} />
       <BackButton />
