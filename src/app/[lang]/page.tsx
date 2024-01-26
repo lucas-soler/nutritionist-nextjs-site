@@ -164,10 +164,10 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="about"
           className="flex-1 flex flex-col p-8 justify-center items-center gap-4 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
-          <h2 className="flex-1 w-full lg:w-4/5 text-left">
+          <h2 className="flex-1 w-full text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
           </h2>
-          <article className="flex-1 flex w-full lg:w-4/5 flex-col lg:flex-row gap-8 2xl:text-justify mb-3">
+          <article className="flex-1 flex w-full flex-col lg:flex-row gap-8 2xl:text-justify mb-3">
             {aboutSentences.map((phrase, index) => (
               <p className="xl:w-1/3 xl:gap-4" key={index}>
                 {phrase}

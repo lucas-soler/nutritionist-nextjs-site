@@ -20,7 +20,7 @@ function Footer({ dictionaire }: FooterProps) {
   };
 
   return (
-    <footer className="flex flex-col gap-6 sm:flex-row sm:gap-0 top-16 pb-4">
+    <footer className="flex flex-col gap-6 sm:flex-row sm:gap-0 top-16 pb-4 mt-[1px]">
       <section className="flex flex-col flex-1 items-left">
         <h2>{capitalizeSentence(dictionaire.consultationHeader)}</h2>
         <article className="mt-3">
