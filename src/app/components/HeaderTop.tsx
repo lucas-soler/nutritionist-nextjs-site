@@ -170,7 +170,7 @@ function HeaderTop({
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               {menuItems.map((menuItem, index) => {
-                const href = index === 0 ? "#" : `#${menuProps[index]}`;
+                const href = `#${menuProps[index]}`;
                 return (
                   <li
                     key={`hamburguer-${menuProps[index]}`}

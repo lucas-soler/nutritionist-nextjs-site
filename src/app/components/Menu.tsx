@@ -36,16 +36,10 @@ function Menu({ menu }: MenuProps) {
     setMenuItemStates(newMenuItemStates);
   };
 
-  function handleBackHome() {
-    setMenuItemStates(initialMenuItemStates);
-    window.location.href = "#";
-  }
-
   return (
     <ul className="hidden lg:flex w-3/5 flex-row" role="list" id="welcome">
       {menuItems.map((menuItem, index) => {
         const href = `#${menuProps[index]}`;
-
         return (
           <MenuLink
             key={menuProps[index]}

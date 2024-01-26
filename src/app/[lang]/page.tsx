@@ -86,14 +86,18 @@ export default async function Home({ params: { lang } }: PageProps) {
       <main className="flex flex-col gap-10 mt-6 lg:gap-20 lg:mt-16">
         <section
           id="worldwide"
-          className="flex-1 flex flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
+          className="flex-1 flex flex-col justify-center items-center px-4 gap-12 lg:gap-16 scroll-mt-12"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
             {capitalizeSentence(dictionaire.mainMenu.worldwide)}
           </h2>
           <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
-            <p>Suemi has been working</p>
-            <figure className="flex-1 flex flex-col gap-4 justify-center items-center">
+            <section className="flex flex-col flex-1 gap-8 text-justify">
+              <p>{capitalizeSentence(dictionaire.worldwideContent1)}</p>
+              <p>{capitalizeSentence(dictionaire.worldwideContent2)}</p>
+              <p>{capitalizeSentence(dictionaire.worldwideContent3)}</p>
+            </section>
+            <figure className="flex flex-col gap-4 justify-center items-center">
               <Image
                 src={TheNutritionistImage}
                 alt={
@@ -115,7 +119,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="services"
-          className="flex-1 flex flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
+          className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
             {capitalizeSentence(dictionaire.mainMenu.services)}
