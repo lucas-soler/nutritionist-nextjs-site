@@ -12,7 +12,7 @@ function BackButton() {
 
   useEffect(() => {
     document.addEventListener("scroll", (event) => {
-      setShowButton(window.scrollY > 800);
+      setShowButton(window.scrollY > 400);
     });
   }, []);
 
