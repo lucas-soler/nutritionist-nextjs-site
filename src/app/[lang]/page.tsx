@@ -98,9 +98,9 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="worldwide"
-          className="flex-1 flex flex-col justify-center items-center px-4 gap-12 lg:gap-16 scroll-mt-12 p-8 text-white bg-gradient-to-t from-primary-700 to-primary-600"
+          className="flex-1 flex flex-col justify-center items-center px-4 gap-4 scroll-mt-12 p-8 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
-          <h2 className="flex-1 w-full lg:w-4/5">
+          <h2 className="flex-1 w-full lg:w-4/5 text-center">
             {capitalizeSentence(dictionaire.mainMenu.worldwide)}
           </h2>
           <div className="flex-1 flex w-full lg:w-4/5 flex-col lg:flex-row gap-14">
@@ -122,7 +122,7 @@ export default async function Home({ params: { lang } }: PageProps) {
                 {capitalizePersonName(professionalFullNameWithTitle)}
               </figcaption>
             </figure>
-            <section className="flex flex-col flex-1 gap-8 text-justify">
+            <section className="flex flex-col flex-1 gap-8 text-justify justify-center">
               <p>{capitalizeSentence(dictionaire.worldwideContent1)}</p>
               <p>{capitalizeSentence(dictionaire.worldwideContent2)}</p>
               <p>{capitalizeSentence(dictionaire.worldwideContent3)}</p>
