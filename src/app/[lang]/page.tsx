@@ -85,6 +85,35 @@ export default async function Home({ params: { lang } }: PageProps) {
       </header>
       <main className="flex flex-col gap-6 mt-6 lg:gap-20 lg:mt-16">
         <section
+          id="worldwide"
+          className="flex-1 flex flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
+        >
+          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
+            {capitalizeSentence(dictionaire.mainMenu.worldwide)}
+          </h2>
+          <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
+            <ServicesList services={dictionaire.services} />
+            <figure className="flex-1 flex flex-col gap-4 justify-center items-center">
+              <Image
+                src={TheNutritionistImage}
+                alt={
+                  capitalizeSentence(
+                    dictionaire.basicPrefixAlternativeImageText
+                  ) +
+                  " " +
+                  capitalizePersonName(professionalFullNameWithTitle)
+                }
+                title={capitalizePersonName(professionalFullNameWithTitle)}
+                height={300}
+                quality={100}
+              />
+              <figcaption className="text-center font-bold">
+                {capitalizePersonName(professionalFullNameWithTitle)}
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section
           id="services"
           className="flex-1 flex flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
         >

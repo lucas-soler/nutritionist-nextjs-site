@@ -44,7 +44,7 @@ function Menu({ menu }: MenuProps) {
   return (
     <ul className="hidden lg:flex w-3/5 flex-row" role="list" id="welcome">
       {menuItems.map((menuItem, index) => {
-        const href = index === 0 ? "#" : `#${menuProps[index]}`;
+        const href = `#${menuProps[index]}`;
 
         return (
           <MenuLink
