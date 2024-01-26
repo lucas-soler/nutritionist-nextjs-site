@@ -88,10 +88,10 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="services"
           className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
         >
-          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
+          <h2 className="flex-1 w-full lg:w-4/5">
             {capitalizeSentence(dictionaire.mainMenu.services)}
           </h2>
-          <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-2 lg:gap-16">
+          <div className="flex-1 flex w-full lg:w-4/5 flex-col lg:flex-row gap-2 lg:gap-16">
             <ServicesList services={dictionaire.services.slice(0, 4)} />
             <ServicesList services={dictionaire.services.slice(4)} />
           </div>
@@ -100,10 +100,10 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="worldwide"
           className="flex-1 flex flex-col justify-center items-center px-4 gap-12 lg:gap-16 scroll-mt-12 p-8 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
-          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
+          <h2 className="flex-1 w-full lg:w-4/5">
             {capitalizeSentence(dictionaire.mainMenu.worldwide)}
           </h2>
-          <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
+          <div className="flex-1 flex w-full lg:w-4/5 flex-col lg:flex-row gap-14">
             <section className="flex flex-col flex-1 gap-8 text-justify">
               <p>{capitalizeSentence(dictionaire.worldwideContent1)}</p>
               <p>{capitalizeSentence(dictionaire.worldwideContent2)}</p>
@@ -134,7 +134,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="testimonials"
           className="flex-1 flex flex-col p-4 justify-center items-center gap-6 lg:gap-10"
         >
-          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
+          <h2 className="flex-1 w-full lg:w-4/5 text-left">
             {capitalizeSentence(dictionaire.mainMenu.testimonials)}
           </h2>
           <Testimonials testimonials={dictionaire.testimonials} />
@@ -143,10 +143,10 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="about"
           className="flex-1 flex flex-col p-8 justify-center items-center gap-4 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
-          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
+          <h2 className="flex-1 w-full lg:w-4/5 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
           </h2>
-          <article className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-8 2xl:text-justify mb-3">
+          <article className="flex-1 flex w-full lg:w-4/5 flex-col lg:flex-row gap-8 2xl:text-justify mb-3">
             {aboutSentences.map((phrase, index) => (
               <p className="xl:w-1/3 xl:gap-4" key={index}>
                 {phrase}
