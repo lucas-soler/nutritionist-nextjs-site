@@ -43,7 +43,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="top-0 gap-6 z-40 flex flex-col lg:bg-gradient-to-t lg:from-primary-600 lg:pb-14">
+      <header className="top-0 gap-6 z-40 flex flex-col lg:bg-gradient-to-t lg:from-primary-700 lg:pb-14">
         <HeaderTop
           menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
@@ -115,7 +115,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col p-8 justify-center items-center gap-4 bg-primary-700 text-white"
+          className="flex-1 flex flex-col p-8 justify-center items-center gap-4  text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
