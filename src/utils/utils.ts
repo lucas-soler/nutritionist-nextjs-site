@@ -23,7 +23,7 @@ export const capitalizeSentence = (wholeSentence: string) => {
     }
   }
 
-  return fullSentence.join(". ");
+  return fullSentence.join(". ").concat(".");
 };
 
 export const capitalizePersonName = (sentence: string) => {

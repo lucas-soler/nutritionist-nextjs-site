@@ -83,7 +83,7 @@ function Service({
             className="m-auto rounded-4xl"
             quality={100}
           />
-          <figcaption className="text-center font-bold">
+          <figcaption className="hidden text-center font-bold">
             {capitalizePersonName(service.name)}
           </figcaption>
         </figure>
@@ -93,8 +93,8 @@ function Service({
           ""
         )}
         <section className="flex-1 flex justify-between flex-col gap-6">
-          <h2 className="flex-1 text-4xl md:text-5xl text-center font-semibold">
-            {capitalizeSentence(service.name)}
+          <h2 className="flex-1 text-4xl md:text-5xl text-center font-semibold first-letter:uppercase">
+            {service.name}
           </h2>
 
           <p className="text-justify">
@@ -104,7 +104,7 @@ function Service({
             {capitalizeSentence(service.description2)}
           </p>
           <WhatsAppButton
-            text={capitalizeSentence(service.scheduleText)}
+            text={service.scheduleText}
             fullPhoneNumber={fullPhoneNumber}
             initialMessageText={`${servicesMessageText} ${capitalizeSentence(
               service.name

@@ -69,7 +69,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
           <Menu menu={dictionaire.mainMenu} />
           <WhatsAppButton
-            text={capitalizeSentence(dictionaire.scheduleConsultation)}
+            text={dictionaire.scheduleConsultation}
             fullPhoneNumber={dictionaire.fullPhoneNumber}
             initialMessageText={dictionaire.initialMessageText}
             backgroundColor="green"
@@ -88,8 +88,8 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="services"
           className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4"
         >
-          <h2 className="flex-1 w-full lg:w-4/5">
-            {capitalizeSentence(dictionaire.mainMenu.services)}
+          <h2 className="flex-1 w-full lg:w-4/5 first-letter:uppercase">
+            {dictionaire.mainMenu.services}
           </h2>
           <div className="flex-1 flex w-full lg:w-4/5 flex-col lg:flex-row gap-2 lg:gap-16">
             <ServicesList services={dictionaire.services.slice(0, 4)} />

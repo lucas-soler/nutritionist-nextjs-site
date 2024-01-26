@@ -41,15 +41,15 @@
       "id": "intestinal-modulation",
       "name": "intestinal modulation",
       "description1": "intestinal modulation is essential for the proper functioning of our digestive system. by maintaining a healthy balance of bacteria in the intestine, we promote efficient digestion and proper absorption of nutrients. this intestinal harmony not only improves gastrointestinal health but also benefits other aspects of our well-being, including the immune system.",
-      "description2": "by taking care of intestinal modulation, we can reduce the risk of digestive discomforts such as bloating and intestinal irregularities. additionally, a balanced intestinal microbiota has been associated with higher energy levels, improved mood, and even healthier skin. making healthy choices for our digestive system is an investment in the overall well-being of our body.",
+      "description2": "by taking care of intestinal modulation, we can reduce the risk of digestive discomforts such as bloating and intestinal irregularities. additionally, a balanced intestinal microbiota has been associated with higher energy levels, improved mood, combating depression, and even healthier skin. making healthy choices for our digestive system is an investment in the overall well-being of our body.",
       "scheduleText": "wanna heal! 🤕"
     },
     {
       "code": 1,
       "id": "weight-loss",
       "name": "permanent weight loss",
-      "description1": "losing weight permanently brings about a range of significant health benefits. beyond aesthetic improvements, sustainable weight loss is associated with a reduced risk of various chronic diseases, such as type 2 diabetes, heart disease, and hypertension. maintaining a healthy weight also contributes to optimal levels of cholesterol, blood pressure, and blood sugar, thereby promoting robust cardiovascular health.",
-      "description2": "in addition to the physical benefits, permanent weight loss can have positive impacts on emotional and mental well-being. many individuals report increased self-esteem, confidence, and mood enhancements upon achieving and sustaining a healthy weight. furthermore, adopting balanced eating habits and engaging in regular physical activity throughout the weight loss journey fosters a healthy mindset toward the body, providing a lasting sense of accomplishment and happiness.",
+      "description1": "losing weight permanently brings about a range of health benefits. beyond aesthetic improvements, sustainable weight loss is associated with a reduced risk of various chronic diseases, such as type 2 diabetes, heart disease, and hypertension. maintaining a healthy weight also contributes to optimal levels of cholesterol, blood pressure, and blood sugar, thereby promoting robust cardiovascular health.",
+      "description2": "in addition to the physical benefits, permanent weight loss can have positive impacts on emotional and mental well-being. many individuals report increased self-esteem, confidence, and mood enhancements upon achieving and sustaining a healthy weight. furthermore, adopting balanced eating habits fosters a healthy mindset toward the body, providing a lasting sense of accomplishment and happiness.",
       "scheduleText": "let's get thin forever! 🤩"
     },
     {
@@ -73,22 +73,22 @@
       "id": "hypertrophy",
       "name": "hyperthrophy and lean mass gain",
       "description1": "diet plays a crucial role in providing the necessary nutrients to sustain muscle growth. a balanced diet, with an emphasis on appropriate intake of proteins, carbohydrates, and fats, forms the essential nutritional foundation to promote healthy muscular development.",
-      "description2": "furthermore, the proper timing of meals in relation to training and maintaining adequate hydration are important factors to optimize results. by recognizing the relationship between nutrition and hypertrophy, individuals can create dietary strategies that cater to the specific needs of the body during the training process, contributing to more effective progress in the quest for muscle gains.",
+      "description2": "furthermore, the proper timing of meals in relation to training and maintaining adequate hydration are important factors to optimize results. by recognizing the relationship between nutrition and hypertrophy, we can create dietary strategies that cater to the specific needs of the body during the training process, contributing to more effective progress in the quest for muscle gains.",
       "scheduleText": "enhance my muscles 💪"
     },
     {
       "code": 5,
       "id": "aesthetics",
       "name": "aesthetics",
-      "description1": "nutrition plays a central role in the pursuit of aesthetics, directly influencing various aspects related to health and physical appearance. a balanced diet not only provides essential nutrients to maintain the health of the skin, hair, and nails but also plays a fundamental role in regulating body weight. adequate intake of vitamins, minerals, and antioxidants contributes to skin vitality and the prevention of premature aging, essential elements for achieving a healthier aesthetic.",
-      "description2": "furthermore, nutrition plays a significant role in overall energy and well-being, affecting mood and the ability to engage in physical activities that can contribute to body aesthetics. by recognizing the intrinsic relationship between nutrition and aesthetics, dietary choices become a crucial component in supporting overall health and striving for a physical appearance that reflects internal balance.",
+      "description1": "a balanced diet not only provides essential nutrients to maintain the health of the skin, hair, and nails but also plays a fundamental role in regulating body weight. adequate intake of vitamins, minerals, and antioxidants contributes to skin vitality and the prevention of premature aging, essential elements for achieving a healthier aesthetic.",
+      "description2": "furthermore, nutrition plays a significant role in overall energy and well-being, affecting mood and the ability to engage in physical activities that can contribute to body aesthetics. by recognizing the relationship between nutrition and aesthetics, dietary choices become a crucial component in supporting overall health and striving for a physical appearance that reflects internal balance.",
       "scheduleText": "wanna be more beautiful than ever 💄💇‍♀️"
     },
     {
       "code": 6,
       "id": "life-quality",
       "name": "life quality",
-      "description1": "the importance of nutrition goes beyond the mere acquisition of essential nutrients; it is a fundamental pillar for quality of life. a balanced diet provides the body with the necessary elements for efficient functioning, directly impacting energy, vitality, and physical resilience. additionally, nutrition plays an essential role in preventing chronic diseases, contributing to longevity and well-being throughout life.",
+      "description1": "nutrition is a fundamental pillar for quality of life. a balanced diet provides the body with the necessary elements for efficient functioning, directly impacting energy, vitality, and physical resilience. additionally, nutrition plays an essential role in preventing chronic diseases, contributing to longevity and well-being throughout life.",
       "description2": "beyond physical benefits, nutrition also plays a vital role in supporting mental health. nutrient-rich foods have the potential to influence mood, cognition, and even the quality of sleep. by prioritizing healthy dietary choices, individuals can promote a balance between body and mind, contributing to a higher and more sustainable quality of life.",
       "scheduleText": "help me to live better ✨🥰"
     },
@@ -96,7 +96,7 @@
       "code": 7,
       "id": "nutritional-education",
       "name": "nutritional education",
-      "description1": "the importance of dietary reeducation lies in promoting healthy and sustainable eating habits. instead of adopting temporary diets, dietary reeducation encourages a behavioral shift towards a balanced and long-term approach to food. by understanding the quality of food, appropriate portions, and the importance of a nutritious variety, individuals can cultivate more mindful eating choices, resulting in lasting health benefits.",
+      "description1": "instead of adopting temporary diets, dietary reeducation encourages a behavioral shift towards a balanced and long-term approach to food. by understanding the quality of food, appropriate portions, and the importance of a nutritious variety, individuals can cultivate more mindful eating choices, resulting in lasting health benefits.",
       "description2": "furthermore, dietary reeducation contributes to a healthier relationship with food, helping overcome harmful eating patterns. by learning to recognize hunger and satiety cues, as well as understanding individual nutritional needs, people can develop a more balanced and positive approach to eating, promoting not only weight loss but overall well-being.",
       "scheduleText": "wanna reeducate 🤓"
     }

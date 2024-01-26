@@ -1,6 +1,5 @@
 "use client";
 
-import { capitalizeSentence } from "@/utils/utils";
 import { ServiceObject } from "./Service";
 
 interface ServicesListProps {
@@ -33,10 +32,10 @@ function ServicesList({ services }: ServicesListProps) {
         return (
           <p
             key={`services-service-${index}`}
-            className="text-center justify-center items-center align-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r bg-primary-700 from-primary-700 to-primary-600"
+            className="text-center first-letter:uppercase justify-center items-center align-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r bg-primary-700 from-primary-700 to-primary-600"
             onClick={() => handleClick(service.id)}
           >
-            {capitalizeSentence(service.name)}
+            {service.name}
           </p>
         );
       })}

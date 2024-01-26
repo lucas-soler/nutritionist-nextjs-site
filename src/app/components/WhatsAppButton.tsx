@@ -38,10 +38,10 @@ function WhatsAppButton({
     <button
       onClick={handleClick}
       className={hasIcon ? style + " text-sm" : style + " text-xl"}
-      title={`${capitalizeSentence(text)}`}
+      title={`${text}`}
     >
       {hasIcon ? <WhatsappLogo size={30} className="ml-1" /> : ""}
-      <span className="flex-1 font-bold">{capitalizeSentence(text)}</span>
+      <span className="flex-1 font-bold first-letter:uppercase">{text}</span>
     </button>
   );
 }
