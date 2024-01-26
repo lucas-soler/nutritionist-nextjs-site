@@ -43,7 +43,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <header className="top-0 gap-6 z-40 flex flex-col lg:bg-gradient-to-t lg:from-primary-700 lg:pb-14">
+      <header className="top-0 gap-6 z-40 flex flex-col lg:pb-14">
         <HeaderTop
           menu={dictionaire.mainMenu}
           dictionaire={dictionaire}
@@ -75,7 +75,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             backgroundColor="green"
           />
         </section>
-        <section className="flex flex-1 lg:py-64 justify-center items-center aspect-w-3 aspect-h-2">
+        <section className="flex flex-1 lg:py-64 justify-center items-center aspect-w-3 aspect-h-2 bg-gradient-to-t from-primary-700 to-primary-600">
           <iframe
             src="https://player.vimeo.com/video/103239608?autoplay=1&muted=1&h=61f97c9b28&title=0&byline=0&portrait=0"
             allow="autoplay; picture-in-picture"
@@ -83,7 +83,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           ></iframe>
         </section>
       </header>
-      <main className="flex flex-col gap-8 mt-6 lg:gap-20 lg:mt-16">
+      <main className="flex flex-col gap-8 mt-6 lg:gap-20">
         <section
           id="services"
           className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4"
@@ -100,8 +100,8 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="worldwide"
           className="flex-1 flex flex-col justify-center items-center px-4 gap-4 p-8 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
-          <h2 className="flex-1 w-full lg:w-4/5 text-center">
-            {capitalizeSentence(dictionaire.mainMenu.worldwide)}
+          <h2 className="flex-1 w-full lg:w-4/5 text-center first-letter:uppercase">
+            {dictionaire.mainMenu.worldwide}
           </h2>
           <div className="flex-1 flex w-full lg:w-4/5 flex-col lg:flex-row gap-14">
             <figure className="flex flex-col gap-4 justify-center items-center">
@@ -134,8 +134,8 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="testimonials"
           className="flex-1 flex flex-col p-4 justify-center items-center gap-6 lg:gap-10"
         >
-          <h2 className="flex-1 w-full lg:w-4/5 text-left">
-            {capitalizeSentence(dictionaire.mainMenu.testimonials)}
+          <h2 className="flex-1 w-full lg:w-4/5 text-left first-letter:uppercase">
+            {dictionaire.mainMenu.testimonials}
           </h2>
           <Testimonials testimonials={dictionaire.testimonials} />
         </section>
@@ -164,8 +164,8 @@ export default async function Home({ params: { lang } }: PageProps) {
           id="about"
           className="flex-1 flex flex-col p-8 justify-center items-center gap-4 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
-          <h2 className="flex-1 w-full text-left">
-            {capitalizeSentence(dictionaire.mainMenu.about)}
+          <h2 className="flex-1 w-full text-left first-letter:uppercase">
+            {dictionaire.mainMenu.about}
           </h2>
           <article className="flex-1 flex w-full flex-col lg:flex-row gap-8 2xl:text-justify mb-3">
             {aboutSentences.map((phrase, index) => (
