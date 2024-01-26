@@ -17,11 +17,11 @@ function BackButton() {
   }, []);
 
   let buttonStyle =
-    "hidden justify-center items-center bottom-1 right-1 z-50 rounded-full bg-primary-400 w-20 h-20 cursor-pointer";
+    "hidden justify-center items-center bottom-4 right-4 z-50 rounded-full bg-primary-400 w-20 h-20 cursor-pointer";
 
   if (showButton) {
     buttonStyle =
-      "fixed justify-center items-center bottom-1 right-1 z-50 rounded-full bg-primary-400 w-20 h-20 cursor-pointer";
+      "fixed justify-center items-center bottom-4 right-4 z-50 rounded-full bg-primary-400 w-20 h-20 cursor-pointer";
   }
 
   return (

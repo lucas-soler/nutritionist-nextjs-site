@@ -93,7 +93,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           </h2>
           <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
             <ServicesList services={dictionaire.services} />
-            <figure className="flex-1 flex flex-col gap-4">
+            <figure className="flex-1 flex flex-col gap-4 justify-center items-center">
               <Image
                 src={TheNutritionistImage}
                 alt={
@@ -104,20 +104,12 @@ export default async function Home({ params: { lang } }: PageProps) {
                   capitalizePersonName(professionalFullNameWithTitle)
                 }
                 title={capitalizePersonName(professionalFullNameWithTitle)}
-                className="m-auto"
                 height={300}
                 quality={100}
               />
               <figcaption className="text-center font-bold">
                 {capitalizePersonName(professionalFullNameWithTitle)}
               </figcaption>
-              <WhatsAppButton
-                text={capitalizeSentence(dictionaire.scheduleText)}
-                fullPhoneNumber={dictionaire.fullPhoneNumber}
-                initialMessageText={dictionaire.initialMessageText}
-                backgroundColor="green"
-                hasIcon={false}
-              />
             </figure>
           </div>
         </section>
