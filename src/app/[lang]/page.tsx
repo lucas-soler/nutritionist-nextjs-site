@@ -115,22 +115,18 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col p-4 justify-center items-center scroll-mt-56 gap-4 bg-primary-700"
+          className="flex-1 flex flex-col p-8 justify-center items-center scroll-mt-56 gap-4 bg-primary-700 text-white"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
           </h2>
-          <p className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-1 lg:gap-4">
-            {aboutSentences.map((phrase) => {
-              return (
-                <>
-                  <span className="xl:w-1/3 xl:gap-4">{phrase}</span>
-                  <br />
-                </>
-              );
-            })}
-            .
-          </p>
+          <article className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-8 2xl:text-justify mb-3">
+            {aboutSentences.map((phrase, index) => (
+              <p className="xl:w-1/3 xl:gap-4" key={index}>
+                {phrase}
+              </p>
+            ))}
+          </article>
         </section>
         <section
           id="testimonials"
