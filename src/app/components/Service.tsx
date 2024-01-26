@@ -23,6 +23,7 @@ export interface ServiceObject {
 
 interface ServiceProps {
   orientation: "right" | "left";
+  hasBackground?: boolean;
   service: ServiceObject;
   servicesMessageText: string;
   fullPhoneNumber: string;
@@ -30,6 +31,7 @@ interface ServiceProps {
 
 function Service({
   orientation,
+  hasBackground = false,
   service,
   servicesMessageText,
   fullPhoneNumber,
@@ -66,13 +68,13 @@ function Service({
   return (
     <section
       id={service.id}
-      className="flex-1 flex flex-col justify-center items-center p-4 gap-8 scroll-mt-4 2xl:scroll-mt-64"
+      className={
+        hasBackground
+          ? "flex-1 flex flex-col justify-center items-center px-80 py-4 gap-8 scroll-mt-4 2xl:scroll-mt-64 text-white bg-gradient-to-t from-primary-700 to-primary-600"
+          : "flex-1 flex flex-col justify-center items-center px-80 py-4 gap-8 scroll-mt-4 2xl:scroll-mt-64"
+      }
     >
-      <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
-        {capitalizeSentence(service.name)}
-      </h2>
-
-      <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-4 lg:gap-16">
+      <div className="flex-1 flex flex-col lg:flex-row gap-4 lg:gap-16">
         <figure className="lg:hidden flex-1 flex flex-col gap-4">
           <Image
             src={image}
@@ -91,6 +93,10 @@ function Service({
           ""
         )}
         <section className="flex-1 flex justify-between flex-col gap-6">
+          <h2 className="flex-1 text-5xl text-center font-semibold">
+            {capitalizeSentence(service.name)}
+          </h2>
+
           <p className="text-justify">
             {capitalizeSentence(service.description1)}
           </p>
@@ -103,9 +109,10 @@ function Service({
             initialMessageText={`${servicesMessageText} ${capitalizeSentence(
               service.name
             )}`}
-            backgroundColor="green"
+            backgroundColor={hasBackground ? "white" : "green"}
             hasIcon={false}
           />
+          <br />
         </section>
         {orientation === "left" ? (
           <ServiceImage serviceID={service.id} serviceName={service.name} />

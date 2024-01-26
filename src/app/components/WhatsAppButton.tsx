@@ -28,7 +28,7 @@ function WhatsAppButton({
   };
 
   let style =
-    "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-white text-primary-700 rounded-full justify-center items-center animated-button";
+    "basis-2/5 p-2 lg:basis-2/12 flex flex-row shrink-0 gap-1 bg-yellow-600 text-white rounded-full justify-center items-center animated-button";
 
   if (backgroundColor === "green")
     style =

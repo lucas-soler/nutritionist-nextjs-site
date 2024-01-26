@@ -11,6 +11,9 @@ export default {
       title: ['"Montserrat"', "sans-serif"],
     },
     colors: {
+      yellow: {
+        600: "#b69e55",
+      },
       salmon: {
         400: "#fa968b",
         600: "#d7796f",

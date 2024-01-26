@@ -85,8 +85,20 @@ export default async function Home({ params: { lang } }: PageProps) {
       </header>
       <main className="flex flex-col gap-10 mt-6 lg:gap-20 lg:mt-16">
         <section
+          id="services"
+          className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
+        >
+          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
+            {capitalizeSentence(dictionaire.mainMenu.services)}
+          </h2>
+          <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-2 lg:gap-16">
+            <ServicesList services={dictionaire.services.slice(0, 4)} />
+            <ServicesList services={dictionaire.services.slice(4)} />
+          </div>
+        </section>
+        <section
           id="worldwide"
-          className="flex-1 flex flex-col justify-center items-center px-4 gap-12 lg:gap-16 scroll-mt-12"
+          className="flex-1 flex flex-col justify-center items-center px-4 gap-12 lg:gap-16 scroll-mt-12 p-8 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
             {capitalizeSentence(dictionaire.mainMenu.worldwide)}
@@ -117,18 +129,6 @@ export default async function Home({ params: { lang } }: PageProps) {
             </figure>
           </div>
         </section>
-        <section
-          id="services"
-          className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
-        >
-          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
-            {capitalizeSentence(dictionaire.mainMenu.services)}
-          </h2>
-          <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-2 lg:gap-16">
-            <ServicesList services={dictionaire.services.slice(0, 4)} />
-            <ServicesList services={dictionaire.services.slice(4)} />
-          </div>
-        </section>
 
         <section
           id="testimonials"
@@ -141,7 +141,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="about"
-          className="flex-1 flex flex-col p-8 justify-center items-center gap-4  text-white bg-gradient-to-t from-primary-700 to-primary-600"
+          className="flex-1 flex flex-col p-8 justify-center items-center gap-4 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
             {capitalizeSentence(dictionaire.mainMenu.about)}
@@ -155,11 +155,18 @@ export default async function Home({ params: { lang } }: PageProps) {
           </article>
         </section>
         {dictionaire.services.map((service: ServiceObject, index: number) => {
-          const orientation = index % 2 === 0 ? "right" : "left";
+          let orientation: "right" | "left" = "left";
+          let hasBackground = true;
+
+          if (index % 2 === 0) {
+            orientation = "right";
+            hasBackground = false;
+          }
 
           return (
             <Service
               orientation={orientation}
+              hasBackground={hasBackground}
               key={service.id}
               service={service}
               servicesMessageText={dictionaire.servicesMessageText}

@@ -15,8 +15,7 @@ function ServicesList({ services }: ServicesListProps) {
   return (
     <section className="flex-1 flex flex-col gap-2">
       {services.map((service: ServiceObject, index: number) => {
-        let elementStyle =
-          "text-center justify-center items-center align-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r";
+        let elementStyle = "";
         switch (index) {
           case 0:
             elementStyle += ` bg-salmon from-salmon-600 to-salmon-400`;
@@ -34,7 +33,7 @@ function ServicesList({ services }: ServicesListProps) {
         return (
           <p
             key={`services-service-${index}`}
-            className={elementStyle}
+            className="text-center justify-center items-center align-center rounded-lg font-bold text-white p-5 lg:p-7 hover:cursor-pointer hover:opacity-75 bg-gradient-to-r bg-primary-700 from-primary-700 to-primary-600"
             onClick={() => handleClick(service.id)}
           >
             {capitalizeSentence(service.name)}
