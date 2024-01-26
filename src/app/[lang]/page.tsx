@@ -83,7 +83,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           ></iframe>
         </section>
       </header>
-      <main className="flex flex-col gap-10 mt-6 lg:gap-20 lg:mt-16">
+      <main className="flex flex-col gap-8 mt-6 lg:gap-20 lg:mt-16">
         <section
           id="services"
           className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
