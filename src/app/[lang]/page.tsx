@@ -86,7 +86,7 @@ export default async function Home({ params: { lang } }: PageProps) {
       <main className="flex flex-col gap-8 mt-6 lg:gap-20 lg:mt-16">
         <section
           id="services"
-          className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
+          className="flex-1 flex mt-1 flex-col justify-center items-center px-4 gap-4"
         >
           <h2 className="flex-1 w-full lg:w-4/5">
             {capitalizeSentence(dictionaire.mainMenu.services)}
@@ -98,7 +98,7 @@ export default async function Home({ params: { lang } }: PageProps) {
         </section>
         <section
           id="worldwide"
-          className="flex-1 flex flex-col justify-center items-center px-4 gap-4 scroll-mt-12 p-8 text-white bg-gradient-to-t from-primary-700 to-primary-600"
+          className="flex-1 flex flex-col justify-center items-center px-4 gap-4 p-8 text-white bg-gradient-to-t from-primary-700 to-primary-600"
         >
           <h2 className="flex-1 w-full lg:w-4/5 text-center">
             {capitalizeSentence(dictionaire.mainMenu.worldwide)}
