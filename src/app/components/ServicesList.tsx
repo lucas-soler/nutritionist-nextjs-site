@@ -30,19 +30,6 @@ function ServicesList({ services }: ServicesListProps) {
           case 3:
             elementStyle += ` bg-brown from-brown-600 to-brown-400`;
             break;
-          case 4:
-            elementStyle += ` bg-orange from-orange-600 to-orange-400`;
-            break;
-
-          case 5:
-            elementStyle += ` bg-brown from-moss-600 to-moss-400`;
-            break;
-          case 6:
-            elementStyle += ` bg-orange from-purple-600 to-purple-400`;
-            break;
-          case 7:
-            elementStyle += ` bg-brown from-salmon-600 to-salmon-400`;
-            break;
         }
         return (
           <p

@@ -83,7 +83,7 @@ export default async function Home({ params: { lang } }: PageProps) {
           ></iframe>
         </section>
       </header>
-      <main className="flex flex-col gap-6 mt-6 lg:gap-20 lg:mt-16">
+      <main className="flex flex-col gap-10 mt-6 lg:gap-20 lg:mt-16">
         <section
           id="worldwide"
           className="flex-1 flex flex-col justify-center items-center px-4 gap-4 scroll-mt-12"
@@ -92,7 +92,7 @@ export default async function Home({ params: { lang } }: PageProps) {
             {capitalizeSentence(dictionaire.mainMenu.worldwide)}
           </h2>
           <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
-            <ServicesList services={dictionaire.services} />
+            <p>Suemi has been working</p>
             <figure className="flex-1 flex flex-col gap-4 justify-center items-center">
               <Image
                 src={TheNutritionistImage}
@@ -120,27 +120,20 @@ export default async function Home({ params: { lang } }: PageProps) {
           <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3">
             {capitalizeSentence(dictionaire.mainMenu.services)}
           </h2>
-          <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-14">
-            <ServicesList services={dictionaire.services} />
-            <figure className="flex-1 flex flex-col gap-4 justify-center items-center">
-              <Image
-                src={TheNutritionistImage}
-                alt={
-                  capitalizeSentence(
-                    dictionaire.basicPrefixAlternativeImageText
-                  ) +
-                  " " +
-                  capitalizePersonName(professionalFullNameWithTitle)
-                }
-                title={capitalizePersonName(professionalFullNameWithTitle)}
-                height={300}
-                quality={100}
-              />
-              <figcaption className="text-center font-bold">
-                {capitalizePersonName(professionalFullNameWithTitle)}
-              </figcaption>
-            </figure>
+          <div className="flex-1 flex w-full xl:w-3/4 2xl:w-2/3 flex-col lg:flex-row gap-2 lg:gap-16">
+            <ServicesList services={dictionaire.services.slice(0, 4)} />
+            <ServicesList services={dictionaire.services.slice(4)} />
           </div>
+        </section>
+
+        <section
+          id="testimonials"
+          className="flex-1 flex flex-col p-4 justify-center items-center gap-6 lg:gap-10"
+        >
+          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
+            {capitalizeSentence(dictionaire.mainMenu.testimonials)}
+          </h2>
+          <Testimonials testimonials={dictionaire.testimonials} />
         </section>
         <section
           id="about"
@@ -156,15 +149,6 @@ export default async function Home({ params: { lang } }: PageProps) {
               </p>
             ))}
           </article>
-        </section>
-        <section
-          id="testimonials"
-          className="flex-1 flex flex-col p-4 justify-center items-center gap-6 lg:gap-10"
-        >
-          <h2 className="flex-1 w-full xl:w-3/4 2xl:w-2/3 text-left">
-            {capitalizeSentence(dictionaire.mainMenu.testimonials)}
-          </h2>
-          <Testimonials testimonials={dictionaire.testimonials} />
         </section>
         {dictionaire.services.map((service: ServiceObject, index: number) => {
           const orientation = index % 2 === 0 ? "right" : "left";
