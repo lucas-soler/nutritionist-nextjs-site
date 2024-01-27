@@ -104,24 +104,24 @@
   "testimonials": [
     {
       "id": 1,
-      "photo": "poliana.png",
-      "alternative_image_text": "testimonial of Poliana da Inglaterra 🇬🇧",
-      "name": "Poliana da Inglaterra 🇬🇧",
-      "description": "i lost 4kg in just 1 month with the nutritional treatment! also, my bowel function has improved significantly, and my energy levels have increased!"
-    },
-    {
-      "id": 2,
       "photo": "pamela.png",
       "alternative_image_text": "testimonial of Pamela Iosnere",
       "name": "Pamela Iosnere",
       "description": "i went to the first consultation already 'tired' of trying to lose weight and not succeeding. Suemi was the only nutritionist who truly helped me! finally, my bowel function worked properly for the first time in my life!"
     },
     {
-      "id": 3,
+      "id": 2,
       "photo": "vanessa.png",
       "alternative_image_text": "testimonial of Vanessa Cavai",
       "name": "Vanessa Cavai from Japan 🇯🇵",
       "description": "suemi goes beyond competence. she has so much love in everything she does and an incredible human side! i'm lucky to have found Suemi. thank you for transforming my life and my family's!"
+    },
+    {
+      "id": 3,
+      "photo": "poliana.png",
+      "alternative_image_text": "testimonial of Poliana da Inglaterra 🇬🇧",
+      "name": "Poliana da Inglaterra 🇬🇧",
+      "description": "i lost 4kg in just 1 month with the nutritional treatment! also, my bowel function has improved significantly, and my energy levels have increased!"
     }
   ],
   "rights": "Suemi Soler Nutritionist. All rights reserved.",
